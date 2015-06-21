@@ -1,0 +1,20 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## LLEventTimer and LLTimer ignore stop() method.dpatch by  <root@debian.example.org>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: patch by Gigs Taggart
+
+@DPATCH@
+
+--- linden.orig/indra/llcommon/lltimer.cpp	2008-02-03 17:11:03.000000000 -0500
++++ linden/indra/llcommon/lltimer.cpp	2008-03-14 09:26:03.538356830 -0400
+@@ -530,7 +530,8 @@
+ 	{
+ 		LLEventTimer* timer = *iter++;
+ 		F32 et = timer->mEventTimer.getElapsedTimeF32();
+-		if (et > timer->mPeriod) {
++		if ((et > timer->mPeriod)&&(timer->mEventTimer.getStarted())) 
++		{
+ 			timer->mEventTimer.reset();
+ 			if ( timer->tick() )
+ 			{

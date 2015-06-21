@@ -1,0 +1,14 @@
+# ChangeLog for mail-client/roundcube
+# Copyright 1999-2010 Ycarus/Zugaina; Distributed under the GPL v2
+# $Header: $
+
+*roundcube-0.4 (30 Aug 2010)
+
+  30 Aug 2010; Ycarus <ycarus@zugaina.org> +roundcube-0.4.ebuild,
+  +metadata.xml:
+  Bump to 0.4
+
+  08 Jul 2009; Ycarus <ycarus@zugaina.org> +roundcube-0.2.2.ebuild,
+  +files/postinstall-en.txt:
+  Bump to 0.2.2
+

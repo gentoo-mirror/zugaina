@@ -1,0 +1,22 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## dam flex 2.5.34.dpatch by  <robin@debian>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description.
+
+@DPATCH@
+
+Index: ./indra/lscript/lscript_compile/indra.l
+===================================================================
+--- ./indra/lscript/lscript_compile/indra.l	(revision 178)
++++ ./indra/lscript/lscript_compile/indra.l	(working copy)
+@@ -4,9 +4,6 @@
+ H			[a-fA-F0-9]
+ E			[Ee][+-]?{N}+
+ FS			(f|F)
+-%e 10000
+-%n 4000
+-%p 5000
+ 
+ %{
+ #include "linden_common.h"

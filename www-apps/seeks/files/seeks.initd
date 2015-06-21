@@ -1,0 +1,31 @@
+#!/sbin/runscript
+# Copyright 1999-2009 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
+depend() {
+    need net
+}
+
+opts="${opts} reload"
+
+start() {
+	ebegin "Starting Seeks"
+	start-stop-daemon --start --exec /usr/bin/seeks \
+	    --pidfile /var/run/seeks.pid \
+	    -- ${SEEKS_ARGS}
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping Seeks"
+	start-stop-daemon --stop --exec /usr/bin/seeks \
+	    --pidfile /var/run/seeks.pid
+	eend $?
+}
+
+reload() {
+	ebegin "Reloading configuration"
+	start-stop-daemon --oknodo --stop --signal HUP --pidfile /var/run/seeks.pid seeks
+	eend $?
+}

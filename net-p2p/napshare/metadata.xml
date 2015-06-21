@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<herd>net-p2p</herd>
+<maintainer>
+  <email>ycarus@zugaina.org</email>
+  <description>This ebuild come from http://gentoo.zugaina.org/</description>
+</maintainer>
+    <longdescription lang="en">NapShare is a fully automated MUTE P2P client made to run 24/7 unattended</longdescription>
+    <longdescription lang="fr">NapShare est un client automatique pour le reseau P2P MUTE prevu pour etre lance 24h/24</longdescription>
+</pkgmetadata>

@@ -1,0 +1,10 @@
+DEFINED_PHASES=install
+DEPEND=>=dev-lang/ghc-6.4
+DESCRIPTION=Adelie is a fast replacement for equery
+HOMEPAGE=http://home.exetel.com.au/tjaden/adelie/
+KEYWORDS=~amd64 ~x86
+LICENSE=as-is
+RESTRICT=nomirror
+SLOT=0
+SRC_URI=http://home.exetel.com.au/tjaden/adelie/adelie-20060430.tar.gz
+_md5_=c63791e8bdad74a77dacd192dc1cdcb7

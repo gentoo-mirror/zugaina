@@ -1,0 +1,19 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 1294_llworkerthread_when_terminating_program.patch.dpatch by  <robin@debian>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: 1294_llworkerthread_when_terminating_program.patch
+
+@DPATCH@
+
+--- linden/indra/llcommon/llworkerthread.cpp	2007-08-02 14:16:42.000000000 +0200
++++ linden/indra/llcommon/llworkerthread.cpp	2007-08-08 00:56:01.750000000 +0200
+@@ -105,7 +105,7 @@
+ 		delete *iter;
+ 	}
+     // delete and aborted entries mean there's still work to do
+-	res += delete_list.size() + abort_list.size();
++	res +=  !mDeleteList.empty() + !delete_list.empty();  // deleted entries mean there's still work to do
+ 	return res;
+ }
+ 

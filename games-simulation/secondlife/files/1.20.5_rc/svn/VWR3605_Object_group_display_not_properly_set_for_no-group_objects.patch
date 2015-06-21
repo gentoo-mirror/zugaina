@@ -1,0 +1,25 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## Object group display not properly set for no-group objects.dpatch by  <root@debian.example.org>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: Patch by Jacek Antonelli
+
+@DPATCH@
+
+Index: linden/indra/newview/llpanelpermissions.cpp
+===================================================================
+@@ -337,6 +337,14 @@
+ 			mLabelGroupName->setEnabled(TRUE);
+ 		}
+ 	}
++	else
++	{
++		if(mLabelGroupName)
++		{
++			mLabelGroupName->setNameID(LLUUID::null, TRUE);
++			mLabelGroupName->setEnabled(FALSE);
++		}
++	}
+ 	childSetEnabled("button set group",owners_identical && (mOwnerID == gAgent.getID()));
+ 
+ 	// figure out the contents of the name, description, & category

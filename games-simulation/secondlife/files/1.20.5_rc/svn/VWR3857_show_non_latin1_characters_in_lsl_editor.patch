@@ -1,0 +1,56 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## Script (LSL) editor shows non Latin 1 characters as square boxes.dpatch by  <root@debian.example.org>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: Patch by Alissa Sabre
+
+@DPATCH@
+
+Index: linden/indra/llrender/llfontgl.cpp
+===================================================================
+--- linden/indra/llrender/llfontgl.cpp	(.../tags/1.18.5.3)	(revision 435)
++++ linden/indra/llrender/llfontgl.cpp	(.../tags/20071217)	(revision 435)
+@@ -54,6 +54,7 @@
+ LLFontGL* LLFontGL::sSansSerifBig = NULL;
+ LLFontGL* LLFontGL::sSansSerifHuge = NULL;
+ LLFontGL* LLFontGL::sSansSerifBold = NULL;
++LLFontList*	LLFontGL::sMonospaceFallback = NULL;
+ LLFontList*	LLFontGL::sSSFallback = NULL;
+ LLFontList*	LLFontGL::sSSSmallFallback = NULL;
+ LLFontList*	LLFontGL::sSSBigFallback = NULL;
+@@ -304,8 +305,22 @@
+ 		sMonospace->reset();
+ 	}
+ 
+-	failed |= !loadFace(sMonospace, monospace_file, monospace_size, NULL);
++	if (sMonospaceFallback)
++	{
++		delete sMonospaceFallback;
++	}
++	sMonospaceFallback = new LLFontList();
++	if (!loadFaceFallback(
++			sMonospaceFallback,
++			sanserif_fallback_file,
++			monospace_size * ss_fallback_scale))
++	{
++		delete sMonospaceFallback;
++		sMonospaceFallback = NULL;
++	}
+ 
++	failed |= !loadFace(sMonospace, monospace_file, monospace_size, sMonospaceFallback);
++
+ 	//
+ 	// Sans-serif fonts
+ 	//
+Index: linden/indra/llrender/llfontgl.h
+===================================================================
+--- linden/indra/llrender/llfontgl.h	(.../tags/IME-20071201)	(revision 435)
++++ linden/indra/llrender/llfontgl.h	(.../branches/1.18.5.3-IME)	(revision 435)
+@@ -223,6 +223,7 @@
+ 	static LLString sAppDir;			// For loading fonts
+ 		
+ 	static LLFontGL*	sMonospace;		// medium
++	static LLFontList*	sMonospaceFallback;
+ 
+ 	static LLFontGL*	sSansSerifSmall;	// small
+ 	static LLFontList*	sSSSmallFallback;

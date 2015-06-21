@@ -1,0 +1,11 @@
+--- llurlsimstring.cpp.anc	2008-02-26 21:26:21.000000000 +0100
++++ linden/indra/newview/llurlsimstring.cpp	2008-02-26 21:37:03.000000000 +0100
+@@ -77,7 +77,7 @@
+ {
+ 	if (idx0 == LLString::npos || in_string[idx0] != '/')
+ 	{
+-		return LLString::npos; // parse error
++		// return LLString::npos; // parse error
+ 	}
+ 	idx0++;
+ 	LLString::size_type idx1 = in_string.find_first_of('/', idx0);

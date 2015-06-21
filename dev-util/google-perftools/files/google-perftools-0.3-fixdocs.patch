@@ -1,0 +1,79 @@
+--- Makefile.am.orig	2005-09-29 00:40:30.746834056 -0400
++++ Makefile.am	2005-09-29 00:45:41.691563272 -0400
+@@ -21,12 +21,10 @@
+ # We'll add to this later, on a library-by-library basis
+ perftoolsinclude_HEADERS =
+ 
+-docdir = $(prefix)/doc/$(PACKAGE)-$(VERSION)
+-# This is for HTML and other documentation you want to install.
+ # Add your documentation files (in doc/) in addition to these
+ # top-level boilerplate files.  Also add a TODO file if you have one.
+ # We'll add to this later, on a library-by-library basis
+-dist_doc_DATA = AUTHORS COPYING ChangeLog INSTALL NEWS README TODO 
++EXTRA_DIST = AUTHORS COPYING ChangeLog INSTALL NEWS README TODO 
+ 
+ # The libraries (.so's) you want to install
+ # We'll add to this later, on a library-by-library basis
+@@ -46,7 +44,7 @@
+ 
+ ## vvvv RULES TO MAKE THE LIBRARIES, BINARIES, AND UNITTESTS
+ 
+-dist_doc_DATA += doc/index.html
++EXTRA_DIST += doc/index.html
+ 
+ ### ------- stack trace
+ 
+@@ -75,7 +73,7 @@
+ stacktrace_unittest_LDADD = libstacktrace.la
+ 
+ ### Documentation
+-dist_doc_DATA += 
++EXTRA_DIST += 
+ 
+ ### ------- tcmalloc_minimal (thread-caching malloc)
+ 
+@@ -154,7 +152,7 @@
+ ptmalloc_unittest2_LDADD = $(PTHREAD_LIBS)
+ 
+ ### Documentation
+-dist_doc_DATA += doc/tcmalloc.html \
++EXTRA_DIST += doc/tcmalloc.html \
+                  doc/overview.gif \
+                  doc/pageheap.gif \
+                  doc/spanmap.gif \
+@@ -186,7 +184,7 @@
+ # noinst doesn't seem to work with data.  I separate them out anyway, in case
+ # one day we figure it out.  Regardless, installing the dot files isn't the
+ # end of the world.
+-dist_doc_DATA += doc/overview.dot \
++EXTRA_DIST += doc/overview.dot \
+                  doc/pageheap.dot \
+                  doc/spanmap.dot \
+                  doc/threadheap.dot
+@@ -290,7 +288,7 @@
+ 	PPROF_PATH=$(top_srcdir)/src/pprof sh $(top_srcdir)/src/tests/heap-checker-death_unittest.sh
+ 
+ ### Documentation (above and beyond tcmalloc_minimal documentation)
+-dist_doc_DATA += doc/heap_profiler.html \
++EXTRA_DIST += doc/heap_profiler.html \
+                  doc/heap-example1.png \
+                  doc/heap_checker.html
+ 
+@@ -348,7 +346,7 @@
+ 
+ ### Documentation
+ dist_man_MANS = doc/pprof.1
+-dist_doc_DATA += doc/cpu_profiler.html \
++EXTRA_DIST += doc/cpu_profiler.html \
+                  doc/pprof-test-big.gif \
+                  doc/pprof-test.gif \
+                  doc/pprof-vsnprintf-big.gif \
+@@ -373,7 +371,7 @@
+ libtool: $(LIBTOOL_DEPS)
+ 	$(SHELL) ./config.status --recheck
+ 
+-EXTRA_DIST = packages/rpm.sh packages/rpm/rpm.spec packages/deb.sh packages/deb \
++EXTRA_DIST += packages/rpm.sh packages/rpm/rpm.spec packages/deb.sh packages/deb \
+              $(SCRIPTS) libtool
+ 
+ DISTCLEANFILES = src/google/perftools/hash_set.h

@@ -1,0 +1,7 @@
+# ChangeLog for sci-geosciences/gpsman
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  25 Feb 2009; Ycarus <ycarus@zugaina.org> +gpsman-6.4.ebuild:
+  Add gpsman 6.4
+

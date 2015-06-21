@@ -1,0 +1,21 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 59_need_llpreprocessor_to_access_endian_macros.dpatch by Paul "TBBle" Hampson <Paul.Hampson@Pobox.com>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: Message.h implements htonmemcpy, which uses the LL_BIG_ENDIAN macro
+## DP: to check if swizzle of the largely little-endian data is needed
+## DP: However, the LL_BIG_ENDIAN macro is not current dragged in by any headers
+## DP: already included
+
+@DPATCH@
+diff -urNad linden~/indra/llmessage/message.h linden/indra/llmessage/message.h
+--- linden~/indra/llmessage/message.h	2007-05-20 22:07:39.000000000 +1000
++++ linden/indra/llmessage/message.h	2007-05-20 22:17:14.000000000 +1000
+@@ -47,6 +47,7 @@
+ #include "winsock2.h" // htons etc.
+ #endif
+ 
++#include "llpreprocessor.h"
+ #include "llerror.h"
+ #include "net.h"
+ #include "string_table.h"

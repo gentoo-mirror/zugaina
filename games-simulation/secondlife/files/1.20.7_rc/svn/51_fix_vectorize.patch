@@ -1,0 +1,52 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## don't force sse on non x86 based archs.dpatch by  <root@debian.example.org>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description.
+
+@DPATCH@
+
+Index: ./indra/SConstruct
+===================================================================
+--- ./indra/SConstruct	(Revision 199)
++++ ./indra/SConstruct	(Arbeitskopie)
+@@ -422,18 +422,22 @@
+ 
+     env_no_distcc = env.Copy(CXX = compiler_no_distcc)
+ 
+-    vec_match	= re.compile("_vec\.")
++    vec_match = re.compile("_vec\.")
++    sse_match = re.compile("_sse\.")
++    sse2_match = re.compile("_sse2\.") 
++
+     env_vec = env.Copy()	# _vec is for default vector optimizations or none
+-
+-    sse_match	= re.compile("_sse\.")
+     env_sse = env.Copy()
+-    env_sse.Append(CPPFLAGS = ' -msse -mfpmath=sse')
+-
+-    sse2_match	= re.compile("_sse2\.") 
+     env_sse2 = env.Copy()
+-    env_sse2.Append(CPPFLAGS = ' -msse2 -mfpmath=sse')
++    	
++    if arch == 'powerpc':
++    	env_vec.Append(CPPFLAGS = ' -faltivec ') 
++    elif arch == 'i686' or arch == 'x86_64':
++    	env_sse.Append(CPPFLAGS = ' -msse -mfpmath=sse')
++    	env_sse2.Append(CPPFLAGS = ' -msse2 -mfpmath=sse')
++    else:
++	print("What ARCH are you??? no Vectorisation possible");
+ 
+-
+     ### Distributed build hosts ###
+ 
+     if enable_distcc:
+@@ -477,7 +481,7 @@
+             return env_sse.Object(file)
+         elif sse2_match.search(file) != None:
+             return env_sse2.Object(file)
+-        else:
++    	else:
+             return file
+ 
+     ### Load a files.lst and files.PLATFORM.lst for each module ###

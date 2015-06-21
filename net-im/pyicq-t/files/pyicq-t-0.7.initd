@@ -1,0 +1,19 @@
+#!/sbin/runscript
+
+depend() {
+	need net
+	need jabber-server
+}
+
+start() {
+	ebegin "Starting ICQ Jabber Transport"
+	cd /var/run/jabber
+	/usr/lib/python2.4/site-packages/pyicq-t/PyICQt.py -c /etc/jabber/pyicq-t.xml -b -p /var/run/jabber/pyicq-t.pid
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping ICQ Jabber Transport"
+	start-stop-daemon --stop --quiet --pidfile /var/run/jabber/pyicq-t.pid
+	eend $?
+}

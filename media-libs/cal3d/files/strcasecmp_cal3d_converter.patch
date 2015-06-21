@@ -1,0 +1,11 @@
+--- cal3d_converter.cpp.orig    2008-09-08 09:37:06.000000000 +0000
++++ cal3d_converter.cpp 2008-09-08 09:38:45.000000000 +0000
+@@ -11,6 +11,8 @@
+
+ #include "cal3d/cal3d.h"
+
++#include <string.h> // added for strcasecmp
++
+ #define SKELETON 0
+ #define MESH 1
+ #define ANIMATION 2

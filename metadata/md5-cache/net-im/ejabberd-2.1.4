@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile configure install postinst prepare
+DEPEND=>=net-im/jabber-base-0.01 >=dev-libs/expat-1.95 >=dev-lang/erlang-12.2.5[ssl?] odbc? ( dev-db/unixODBC ) ldap? ( =net-nds/openldap-2* ) ssl? ( >=dev-libs/openssl-0.9.8e ) captcha? ( media-gfx/imagemagick[truetype,png] ) zlib? ( sys-libs/zlib ) ssl? ( dev-libs/openssl )
+DESCRIPTION=The Erlang Jabber Daemon
+EAPI=3
+HOMEPAGE=http://www.ejabberd.im/
+IUSE=captcha debug ldap odbc pam ssl +web zlib mod_irc mod_muc mod_proxy65 mod_pubsub mod_statsdx ssl
+KEYWORDS=~amd64 ~arm ~ia64 ~ppc ~x86
+LICENSE=GPL-2
+PROVIDE=virtual/jabber-server
+RDEPEND=>=net-im/jabber-base-0.01 >=dev-libs/expat-1.95 >=dev-lang/erlang-12.2.5[ssl?] odbc? ( dev-db/unixODBC ) ldap? ( =net-nds/openldap-2* ) ssl? ( >=dev-libs/openssl-0.9.8e ) captcha? ( media-gfx/imagemagick[truetype,png] ) zlib? ( sys-libs/zlib ) >=sys-apps/shadow-4.1.4.2-r2
+SLOT=0
+SRC_URI=http://www.process-one.net/downloads/ejabberd/2.1.4/ejabberd-2.1.4.tar.gz
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	flag-o-matic	c9602887773166fe300444712fc7ff98	multilib	62927b3db3a589b0806255f3a002d5d3	pam	aa1ebb3ab720ea04dbbdd6eaaf9554ed	ssl-cert	b53367370fde96e19beca78050a47c61	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_md5_=9e1a8ea340455cb31091d4e14c06a46e

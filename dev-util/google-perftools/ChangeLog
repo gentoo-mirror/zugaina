@@ -1,0 +1,15 @@
+# ChangeLog for dev-util/google-perftools
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  24 Jun 2009; Ycarus <ycarus@zugaina.org> +google-perftools-1.3.ebuild:
+  Bump to 1.3
+
+  25 Feb 2009; Ycarus <ycarus@zugaina.org> +google-perftools-1.0.ebuild:
+  Bump to 1.0
+
+  09 Sep 2008; Ycarus <ycarus@zugaina.org>
+  +files/google-perftools-0.94-gentoo.patch, +google-perftools-0.97.ebuild,
+  +google-perftools-0.98.ebuild:
+  Bump to version 0.98
+

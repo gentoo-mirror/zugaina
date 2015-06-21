@@ -1,0 +1,15 @@
+--- NDOF.cmake.anc	2009-03-27 23:32:17.061065080 +0100
++++ indra/cmake/NDOF.cmake	2009-03-27 23:33:21.156692802 +0100
+@@ -3,9 +3,8 @@
+ 
+-use_prebuilt_binary(ndofdev)
+ 
+-if (WINDOWS OR DARWIN OR LINUX)
+-  add_definitions(-DLIB_NDOF=1)
+-endif (WINDOWS OR DARWIN OR LINUX)
++#if (WINDOWS OR DARWIN OR LINUX)
++#  add_definitions(-DLIB_NDOF=1)
++#endif (WINDOWS OR DARWIN OR LINUX)
+ 
+ if (WINDOWS)
+   set(NDOF_LIBRARY libndofdev)

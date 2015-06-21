@@ -1,0 +1,49 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## Keep stat bars from overshooting.dpatch by  <root@debian.example.org>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description.
+
+@DPATCH@
+
+Index: ./indra/newview/llstatbar.cpp
+===================================================================
+--- ./indra/newview/llstatbar.cpp	(revision 49)
++++ ./indra/newview/llstatbar.cpp	(working copy)
+@@ -223,6 +223,7 @@
+ 		}
+ 
+ 		right = (S32) ((max - mMinBar) * value_scale);
++		right = llclamp(0, right, width);
+ 		gl_rect_2d(left, top, right, bottom, LLColor4(1.f, 0.f, 0.f, 0.25f));
+ 
+ 		S32 num_values = mStatp->getNumValues() - 1;
+@@ -238,22 +239,22 @@
+ 				if (mPerSec)
+ 				{
+ 					left = (S32)((mStatp->getPrevPerSec(i) - mMinBar) * value_scale);
+-					right = (S32)((mStatp->getPrevPerSec(i) - mMinBar) * value_scale) + 1;
+-					gl_rect_2d(left, bottom+i+1, right, bottom+i, LLColor4(1.f, 0.f, 0.f, 1.f));
+ 				}
+ 				else
+ 				{
+ 					left = (S32)((mStatp->getPrev(i) - mMinBar) * value_scale);
+-					right = (S32)((mStatp->getPrev(i) - mMinBar) * value_scale) + 1;
+-					gl_rect_2d(left, bottom+i+1, right, bottom+i, LLColor4(1.f, 0.f, 0.f, 1.f));
+-				}
++				}	
++				left = llclamp(0, left, width-1);
++				right = left+1;
++				gl_rect_2d(left, bottom+i+1, right, bottom+i, LLColor4(1.f, 0.f, 0.f, 1.f));
+ 			}
+ 		}
+ 		else
+ 		{
+ 			// draw current
+ 			left = (S32) ((current - mMinBar) * value_scale) - 1;
+-			right = (S32) ((current - mMinBar) * value_scale) + 1;
++			left = llclamp(0, left, width-1);
++			right = left + 2;
+ 			gl_rect_2d(left, top, right, bottom, LLColor4(1.f, 0.f, 0.f, 1.f));
+ 		}
+ 

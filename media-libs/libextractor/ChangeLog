@@ -1,0 +1,14 @@
+# ChangeLog for media-libs/libextractor
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*libextractor-0.5.23 (23 Feb 2010)
+
+  23 Feb 2010; Ycarus <ycarus@zugaina.org> +libextractor-0.5.23.ebuild:
+  Add 0.5.23
+
+*libextractor-0.6.0 (23 Feb 2010)
+
+  23 Feb 2010; Ycarus <ycarus@zugaina.org> +libextractor-0.6.0.ebuild:
+  Bump to 0.6.0
+

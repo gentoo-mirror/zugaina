@@ -1,0 +1,11 @@
+--- llviewermedia.cpp.anc	2008-08-17 11:12:52.167136748 +0200
++++ indra/newview/llviewermedia.cpp	2008-08-17 11:13:04.414429612 +0200
+@@ -489,7 +489,7 @@
+ #elif LL_LINUX
+ 	std::string component_dir( gDirUtilp->getExpandedFilename( LL_PATH_APP_SETTINGS, "" ) );
+ 	component_dir += gDirUtilp->getDirDelimiter();
+-	component_dir += "mozilla-runtime-linux-i686";
++	component_dir += "mozilla";
+ #else
+ 	std::string component_dir( gDirUtilp->getExpandedFilename( LL_PATH_APP_SETTINGS, "" ) );
+ 	component_dir += gDirUtilp->getDirDelimiter();

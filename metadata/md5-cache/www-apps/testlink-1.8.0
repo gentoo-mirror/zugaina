@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND=dev-lang/php >=app-admin/webapp-config-1.50.15
+DESCRIPTION=TestLink enables easily to create and manage Test cases as well as organize them into Test plans.
+HOMEPAGE=http://testlink.org
+IUSE=mysql postgre bugzilla mantis vhosts
+KEYWORDS=~alpha ~ppc ~sparc ~x86 ~amd64
+LICENSE=GPL
+RDEPEND=mysql? ( >=virtual/mysql-4.1 ) postgre? ( dev-db/postgresql ) bugzilla? ( www-apps/bugzilla ) mantis? ( www-apps/mantisbt ) dev-lang/php >=app-admin/webapp-config-1.50.15
+SLOT=1.8.0
+SRC_URI=mirror://sourceforge/testlink/testlink_1.8.0.tar.gz
+_eclasses_=depend.php	df169a364e191b840b695604097e3c21	eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	phpconfutils	e108303831029e5b8a9d24b991b1d62a	toolchain-funcs	42408102d713fbad60ca21349865edb4	webapp	6621f8b5df9f14800054a5953065efeb
+_md5_=ae83be6abdb1ffe6a05a5283686b6b0a

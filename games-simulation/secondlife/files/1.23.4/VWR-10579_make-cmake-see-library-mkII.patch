@@ -1,0 +1,95 @@
+Index: indra/cmake/FindNDOF.cmake
+===================================================================
+--- indra/cmake/FindNDOF.cmake	(revision 0)
++++ indra/cmake/FindNDOF.cmake	(revision 0)
+@@ -0,0 +1,44 @@
++# -*- cmake -*-
++
++# - Find NDOF
++# Find the NDOF includes and library
++# This module defines
++#  NDOF_INCLUDE_DIR, where to find ndofdev_external.h, etc.
++#  NDOF_LIBRARY, the library needed to use NDOF.
++#  NDOF_FOUND, If false, do not try to use NDOF.
++
++find_path(NDOF_INCLUDE_DIR ndofdev_external.h
++  /usr/local/include/ndofdev
++  /usr/local/include
++  /usr/include/ndofdev
++  /usr/include
++  ${LIBS_PREBUILT_DIR}/include/ndofdev
++)
++
++set(NDOF_NAMES ${NDOF_NAMES} ndofdev libndofdev)
++find_library(NDOF_LIBRARY
++  NAMES ${NDOF_NAMES}
++  PATHS /usr/lib /usr/local/lib ${LIBS_PREBUILT_DIR}/${LL_ARCH_DIR}/lib_release_client
++  )
++
++if (NDOF_LIBRARY AND NDOF_INCLUDE_DIR)
++  set(NDOF_FOUND "YES")
++else (NDOF_LIBRARY AND NDOF_INCLUDE_DIR)
++  set(NDOF_FOUND "NO")
++endif (NDOF_LIBRARY AND NDOF_INCLUDE_DIR)
++
++
++if (NDOF_FOUND)
++  if (NOT NDOF_FIND_QUIETLY)
++    message(STATUS "Found NDOF: Library in '${NDOF_LIBRARY}' and header in '${NDOF_INCLUDE_DIR}' ")
++  endif (NOT NDOF_FIND_QUIETLY)
++else (NDOF_FOUND)
++  if (NDOF_FIND_REQUIRED)
++    message(FATAL_ERROR "Could not find NDOF library!")
++  endif (NDOF_FIND_REQUIRED)
++endif (NDOF_FOUND)
++
++mark_as_advanced(
++  NDOF_LIBRARY
++  NDOF_INCLUDE_DIR
++  )
+Index: indra/cmake/NDOF.cmake
+===================================================================
+--- indra/cmake/NDOF.cmake	(revision 1735)
++++ indra/cmake/NDOF.cmake	(working copy)
+@@ -1,14 +1,31 @@
+ # -*- cmake -*-
+ include(Prebuilt)
+ 
+-use_prebuilt_binary(ndofdev)
++set(NDOF_FIND_QUIETLY OFF CACHE BOOL "Use NDOF if found")
++set(NDOF_FIND_REQUIRED ON CACHE BOOL "Make NDOF required")
+ 
+-if (WINDOWS OR DARWIN OR LINUX)
+-  add_definitions(-DLIB_NDOF=1)
+-endif (WINDOWS OR DARWIN OR LINUX)
+-
+-if (WINDOWS)
+-  set(NDOF_LIBRARY libndofdev)
+-elseif (DARWIN OR LINUX)
+-  set(NDOF_LIBRARY ndofdev)
+-endif (WINDOWS)
++if (STANDALONE)
++  include(FindNDOF)
++  if(NOT NDOF_FOUND)
++     message(STATUS "Building without N-DoF joystick support")
++  endif(NOT NDOF_FOUND)
++else (STANDALONE)
++  use_prebuilt_binary(ndofdev)
++  
++  if (WINDOWS)
++    set(NDOF_LIBRARY libndofdev)
++  elseif (DARWIN OR LINUX)
++    set(NDOF_LIBRARY ndofdev)
++  endif (WINDOWS)
++  
++  set(NDOF_INCLUDE_DIR ${ARCH_PREBUILT_DIRS}/include/ndofdev)
++  set(NDOF_FOUND 1)
++endif (STANDALONE)
++
++if (NDOF_FOUND)
++   add_definitions(-DLIB_NDOF=1)
++   include_directories(${NDOF_INCLUDE_DIR})
++else (NDOF_FOUND)
++   set(NDOF_INCLUDE_DIR "")
++   set(NDOF_LIBRARY "")
++endif (NDOF_FOUND)

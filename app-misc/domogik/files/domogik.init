@@ -1,0 +1,38 @@
+#!/sbin/runscript
+# Copyright 1999-2012 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License, v2 or later
+# $Header $
+
+depend() {
+	need net
+}
+
+start() {
+	if [ ${LAUNCH_DOMOGIK_XPL_HUB} == "true" ] ; then
+		ebegin "Starting xPL Hub"
+		start-stop-daemon --start --user ${DOMOGIK_USER} --exec /usr/sbin/xPL_Hub -- -interface ${HUB_IFACE}
+		eend $?
+	fi
+	ebegin "Starting domogik manager"
+	start-stop-daemon --start --user ${DOMOGIK_USER} --exec /usr/bin/dmg_manager -- ${MANAGER_PARAMS}
+	eend $?
+	ebegin "Updating packages cache"
+	sleep 10
+	start-stop-daemon --quiet --user ${DOMOGIK_USER} --exec /usr/bin/dmg_pkgmgr -- -u
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping plugins"
+        start-stop-daemon --user ${DOMOGIK_USER} --exec dmg_send -- xpl-cmnd domogik.system 'command=stop,plugin=*,host=${HOSTNAME}'
+        sleep 2
+	eend $?
+	if [ ${LAUNCH_DOMOGIK_XPL_HUB} == "true" ] ; then
+		ebegin "Stopping xPL Hub"
+		start-stop-daemon --stop --quiet --name xPL_Hub
+		eend $?
+	fi
+	ebegin "Stopping domogik manager"
+	start-stop-daemon --stop --exec /usr/bin/dmg_manager --pidfile /var/run/domogik/manager.pid
+	eend $?
+}

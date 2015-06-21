@@ -1,0 +1,22 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 55_use_system_locale.dpatch by Paul "TBBle" Hampson <Paul.Hampson@Pobox.com>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: Use current locale by default, not en_US.utf8
+## DP: Patch changed to use C locale as this screws up if you have a german
+## DP: locale. The viewer needs to set the user locale at a higher level but
+## DP: always use a C locale here.
+
+@DPATCH@
+diff -urNad linden~/indra/llui/llresmgr.cpp linden/indra/llui/llresmgr.cpp
+--- linden~/indra/llui/llresmgr.cpp	2007-07-14 16:25:21.000000000 +1000
++++ linden/indra/llui/llresmgr.cpp	2007-07-14 16:29:14.000000000 +1000
+@@ -444,7 +444,7 @@
+ const LLString LLLocale::USER_LOCALE("en_US.ISO8859-1");
+ const LLString LLLocale::SYSTEM_LOCALE("C");
+ #else // LL_LINUX likes this
+-const LLString LLLocale::USER_LOCALE("en_US.utf8");
++const LLString LLLocale::USER_LOCALE("C");
+ const LLString LLLocale::SYSTEM_LOCALE("C");
+ #endif
+ 

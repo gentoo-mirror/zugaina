@@ -1,0 +1,177 @@
+--- indra/newview/CMakeLists.txt	2008-08-21 01:01:19.000000000 +0100
++++ indra/newview/CMakeLists.txt	2008-08-30 15:26:11.000000000 +0100
+@@ -430,6 +430,8 @@
+     pipeline.cpp
+     )
+ 
++set(BINARY_NAME CACHE STRING "secondlife-bin")
++
+ if (LINUX)
+   # We can't set these flags for Darwin, because they get passed to
+   # the PPC compiler.  Ugh.
+@@ -1264,15 +1266,15 @@
+ set_source_files_properties(${viewer_HEADER_FILES}
+                             PROPERTIES HEADER_FILE_ONLY TRUE)
+ 
+-add_executable(secondlife-bin
++add_executable(${BINARY_NAME}
+     WIN32
+     MACOSX_BUNDLE
+     ${viewer_SOURCE_FILES}
+     )
+-check_message_template(secondlife-bin)
++check_message_template(${BINARY_NAME})
+ 
+ if (LLKDU_LIBRARY)
+-  add_dependencies(secondlife-bin ${LLKDU_LIBRARY})
++  add_dependencies(${BINARY_NAME} ${LLKDU_LIBRARY})
+ endif (LLKDU_LIBRARY)
+ 
+ set(PACKAGE OFF CACHE BOOL
+@@ -1280,12 +1282,12 @@
+ 
+ if (WINDOWS)
+     if(MSVC71)
+-        set(release_flags "/MAP:Release/secondlife-bin.map /MAPINFO:LINES")
++        set(release_flags "/MAP:Release/${BINARY_NAME}.map /MAPINFO:LINES")
+     else(MSVC71)
+-        set(release_flags "/MAP:Release/secondlife-bin.map")
++        set(release_flags "/MAP:Release/${BINARY_NAME}.map")
+     endif(MSVC71)
+     
+-    set_target_properties(secondlife-bin
++    set_target_properties(${BINARY_NAME}
+         PROPERTIES
+         LINK_FLAGS "/debug /NODEFAULTLIB:MSVCRT /SUBSYSTEM:WINDOWS"
+         LINK_FLAGS_DEBUG "/NODEFAULTLIB:LIBCMT /NODEFAULTLIB:MSVCRTD"
+@@ -1295,20 +1297,20 @@
+     # sets the 'working directory' for debugging from visual studio.
+     if (NOT UNATTENDED)
+         add_custom_command(
+-            TARGET secondlife-bin PRE_BUILD
++            TARGET ${BINARY_NAME} PRE_BUILD
+             COMMAND ${CMAKE_SOURCE_DIR}/tools/vstool/vstool.exe
+             ARGS
+               --solution 
+               ${CMAKE_BINARY_DIR}/${CMAKE_PROJECT_NAME}.sln
+               --workingdir
+-              secondlife-bin
++              ${BINARY_NAME}
+               ${CMAKE_CURRENT_SOURCE_DIR}
+-            COMMENT "Setting the secondlife-bin working directory for debugging."
++            COMMENT "Setting the ${BINARY_NAME} working directory for debugging."
+             )
+     endif (NOT UNATTENDED)
+ 
+     add_custom_command(
+-        TARGET secondlife-bin PRE_BUILD
++        TARGET ${BINARY_NAME} PRE_BUILD
+         COMMAND ${CMAKE_COMMAND}
+         ARGS
+           -E
+@@ -1319,7 +1321,7 @@
+         )
+ 
+     add_custom_command(
+-        TARGET secondlife-bin PRE_BUILD
++        TARGET ${BINARY_NAME} PRE_BUILD
+         COMMAND ${CMAKE_COMMAND}
+         ARGS
+           -E
+@@ -1329,10 +1331,10 @@
+         COMMENT "Copying message.xml to the runtime folder."
+         )
+        
+-    add_dependencies(secondlife-bin copy_win_libs)
++    add_dependencies(${BINARY_NAME} copy_win_libs)
+ 
+     if (EXISTS ${CMAKE_SOURCE_DIR}/copy_win_scripts)
+-      add_dependencies(secondlife-bin copy_win_scripts)
++      add_dependencies(${BINARY_NAME} copy_win_scripts)
+     endif (EXISTS ${CMAKE_SOURCE_DIR}/copy_win_scripts)
+         
+     add_custom_command(
+@@ -1349,7 +1351,7 @@
+               --build=${CMAKE_CURRENT_BINARY_DIR}
+               --dest=${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}
+               --touch=${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/touched.bat
+-        DEPENDS secondlife-bin ${CMAKE_CURRENT_SOURCE_DIR}/viewer_manifest.py
++        DEPENDS ${BINARY_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/viewer_manifest.py
+         )
+     if (PACKAGE)
+       add_custom_target(package ALL DEPENDS ${CMAKE_CFG_INTDIR}/touched.bat)
+@@ -1357,7 +1359,7 @@
+     endif (PACKAGE)
+ endif (WINDOWS)
+ 
+-target_link_libraries(secondlife-bin
++target_link_libraries(${BINARY_NAME}
+     ${LLAUDIO_LIBRARIES}
+     ${LLCHARACTER_LIBRARIES}
+     ${LLIMAGE_LIBRARIES}
+@@ -1404,8 +1406,8 @@
+   add_custom_command(
+       OUTPUT secondlife-stripped
+       COMMAND strip
+-      ARGS --strip-debug -o secondlife-stripped secondlife-bin
+-      DEPENDS secondlife-bin
++      ARGS --strip-debug -o secondlife-stripped ${BINARY_NAME}
++      DEPENDS ${BINARY_NAME}
+       )
+ 
+   set(product SecondLife-${ARCH}-${viewer_VERSION})
+@@ -1437,7 +1439,7 @@
+ if (DARWIN)
+   set(product "Second Life")
+   set_target_properties(
+-    secondlife-bin
++    ${BINARY_NAME}
+     PROPERTIES
+     OUTPUT_NAME "${product}"
+     MACOSX_BUNDLE_INFO_STRING "info string - localize me"
+@@ -1451,7 +1453,7 @@
+     )
+ 
+   add_custom_command(
+-    TARGET secondlife-bin POST_BUILD
++    TARGET ${BINARY_NAME} POST_BUILD
+     COMMAND ${PYTHON_EXECUTABLE}
+     ARGS
+       ${CMAKE_CURRENT_SOURCE_DIR}/viewer_manifest.py
+@@ -1462,7 +1464,7 @@
+       --artwork=${ARTWORK_DIR}
+       --build=${CMAKE_CURRENT_BINARY_DIR}
+       --dest=${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/${product}.app
+-    DEPENDS secondlife-bin ${CMAKE_CURRENT_SOURCE_DIR}/viewer_manifest.py
++    DEPENDS ${BINARY_NAME} ${CMAKE_CURRENT_SOURCE_DIR}/viewer_manifest.py
+     )
+ 
+   if (PACKAGE)
+@@ -1480,7 +1482,7 @@
+         --dest=${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/${product}.app
+         --touch=${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_CFG_INTDIR}/.${product}.touched
+       DEPENDS
+-        secondlife-bin
++        ${BINARY_NAME}
+         ${CMAKE_CURRENT_SOURCE_DIR}/viewer_manifest.py
+       )
+       add_dependencies(package mac-updater mac-crash-logger)
+--- ViewerInstall.cmake.anc	2008-09-15 22:07:17.252192943 +0200
++++ indra/newview/ViewerInstall.cmake	2008-09-15 22:08:24.743685095 +0200
+@@ -1,4 +1,4 @@
+-install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/secondlife-bin
++install(PROGRAMS ${CMAKE_CURRENT_BINARY_DIR}/${BINARY_NAME}
+         DESTINATION ${APP_BINARY_DIR}
+         )
+ 
+--- CMakeLists.txt.anc	2008-09-15 22:04:43.989139334 +0200
++++ indra/CMakeLists.txt	2008-09-15 22:05:48.061127418 +0200
+@@ -77,7 +77,7 @@
+   endif (LINUX)
+ 
+   add_subdirectory(${VIEWER_PREFIX}newview)
+-  add_dependencies(viewer secondlife-bin)
++  add_dependencies(viewer ${BINARY_NAME})
+ endif (VIEWER)
+ 
+ # Linux builds the viewer and server in 2 separate projects

@@ -1,0 +1,75 @@
+#!/sbin/runscript
+# Copyright 1999-2010 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: $
+
+# for openrc
+description="An open-source turn-key solution for DNSSEC"
+
+checkconf_binary=/usr/bin/ods-kaspcheck
+signer_binary=/usr/sbin/ods-signer
+signer_pidfile=/var/lib/run/opendnssec/signerd.pid
+enforcer_binary=/usr/sbin/ods-enforcerd
+enforcer_pidfile=/var/lib/run/opendnssec/enforcerd.pid
+
+depend() {
+	need net
+	use logger
+}
+
+checkconfig() {
+	out=$($checkconf_binary)
+	return $(echo $out | grep ERROR | wc -l)
+}
+
+
+start_signerd() {
+	checkconfig || return $?
+	ebegin "Starting OpenDNSSEC Signer"
+	start-stop-daemon --start --exec "${signer_binary}" --pidfile "${signer_pidfile}" -- start > /dev/null
+
+	# ugly trick to generate a pidfile, idea from tools/solaris/ods-signerd.init.in
+	sleep 1
+	local pid=$(ps -ef | grep 'signer/Engine.py' | grep -v grep | awk '{ print $2 }')
+	if [ -n "$pid" ]; then
+		echo $pid > "${signer_pidfile}"
+		eend 0
+	else
+		eend 1
+	fi
+}
+
+stop_signerd() {
+	ebegin "Stopping OpenDNSSEC Signer"
+	start-stop-daemon --stop --exec "${signer_binary}" --pidfile "${signer_pidfile}" -- stop > /dev/null
+	eend $?
+}
+
+start_enforcerd() {
+	checkconfig || return $?
+	ebegin "Starting OpenDNSSEC Enforcer"
+	start-stop-daemon --start --exec "${enforcer_binary}" --pidfile "${enforcer_pidfile}" > /dev/null
+	eend $?
+}
+
+stop_enforcerd() {
+	ebegin "Stopping OpenDNSSEC Enforcer"
+	start-stop-daemon --stop --exec "${enforcer_binary}" --pidfile "${enforcer_pidfile}" > /dev/null
+	eend $?
+}
+
+start() {
+	start_signerd
+	start_enforcerd
+}
+
+stop() {
+	stop_enforcerd
+	stop_signerd
+}
+
+restart() {
+	checkconfig || return $?
+	svc_stop
+	svc_start
+}

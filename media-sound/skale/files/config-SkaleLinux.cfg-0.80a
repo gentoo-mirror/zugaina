@@ -1,0 +1,106 @@
+[ Skale Tracker Config file ]
+
+WARNING This config file works exactly the opposite as usual config files.
+Indeed, every line beginning by a # is a config option. Every 
+other lines are considered as comments.
+  
+[ Config Options ]
+
+Force blit from backbuffer to frontbuffer. If not set, a flip operation is used when possible
+FORCE_TO_BLIT
+
+Enable hardware mouse. If not set, a software emulation is used
+#HARDWARE_MOUSE 
+
+Set fullscreen mode. If not set, a windowed mode is used
+FULLSCREEN
+
+Load all graphics at init. If not set, graphics are loaded when needed.
+LOADGFX_AT_INIT
+
+Enable Multichannel recording
+MULTICHANNEL_RECORD
+
+Enable Multichannel edit
+MULTICHANNEL_EDIT
+
+Record MIDI In Velocity
+RECORD_VELOCITY
+
+Record noteoffs
+RECORD_NOTEOFFS
+
+Record transpose
+RECORD_TRANSPOSE
+
+Autotone samples to C-4 note when a sample is loaded in an empty slot
+#AUTO_TUNE_SAMPLE 
+
+Sound device number (dspX)
+#NUM_DEVICE 0
+
+Sound output mode (ignored for the moment for Linux)
+MODE 2 
+
+Hardware output amplification (floating point value)
+#AMPLIFICATION 0.800000
+
+Latency (in ms)
+#LATENCY 100 
+
+MIDI Out delay (16 values)
+#MIDIOUT_DELAY 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+
+Interpolation mode (possible values are: NONE, LINEAR, CUBIC)
+#INTERPOLATION "LINEAR" 
+
+Number of visible channels on screen (possible values are: 4, 8, 6, 24, 32, AUTO)
+#PATTERN_CHANNELS "AUTO" 
+
+Pattern number mode hexa or decimal (HEX, DEC)
+#PATTERN_NUM_MODE "HEX"
+
+Keyboard repeat ticks per second
+#TICKS_PER_SEC_KEYB 25
+
+Mouse repeat ticks per second
+#TICKS_PER_SEC_MOUSE 25
+
+Keyboard ticks of delay to repeat
+#TICKS_DELAY_KEYB 7 
+
+Mouse ticks of delay to repeat
+#TICKS_DELAY_MOUSE 7 
+
+Sound samplerate (11050, 22050, 44100)
+#SAMPLERATE 44100 
+
+Default directory for module files
+DIRECTORY_MODULE " " 
+
+Default directory for instrument files
+DIRECTORY_INSTRUMENT " " 
+
+Default directory for sample files
+DIRECTORY_SAMPLE " " 
+
+Default directory for synth files
+DIRECTORY_SYNTH " " 
+
+Default directory for FX files
+DIRECTORY_FX " " 
+
+Default directory for visual files
+DIRECTORY_VISUAL " " 
+
+Default directory for game files
+DIRECTORY_GAME " " 
+
+Bits per pixel in Fullscreen mode
+#FULLSCREEN_BITS "16" 
+
+Skin to use (possible values are: Default.sks, SilentHill.sks)
+#SKIN "Default.sks"
+
+Mouse configuration
+#MOUSE 1 2 0 3 

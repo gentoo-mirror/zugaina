@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<herd>x11-misc</herd>
+<maintainer>
+  <email>ycarus@zugaina.org</email>
+  <description>This ebuild come from http://gentoo.zugaina.org/</description>
+</maintainer>
+    <longdescription lang="en">A GTK file manager with menu-based navigation</longdescription>
+    <longdescription lang="fr">Un gestionnaire de fichiers utilisant GTK</longdescription>
+</pkgmetadata>

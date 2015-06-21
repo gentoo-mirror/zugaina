@@ -1,0 +1,20 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 34_dont_hide_symbols.dpatch by Paul "TBBle" Hampson <Paul.Hampson@Pobox.com>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No need to hide symbols when not static-linking most of the known world
+
+@DPATCH@
+diff -U3 -r ../linden/indra/SConstruct ./indra/SConstruct
+--- ../linden/indra/SConstruct 2007-11-08 02:18:05.000000000 +0000
++++ ./indra/SConstruct 2007-11-10 10:08:42.000000000 +0000
+@@ -365,7 +365,7 @@
+     # used mainly to hide the symbols of the many common libraries we
+     # static-link, which otherwise cause hard-to-trace fatal crashes due
+     # to clashes in the run-time symbol namespace.
+-    if platform == 'linux':
++    if not standalone and platform == 'linux':
+         exposed_symbols_file = 'newview/linux_tools/exposed-symbols.txt'
+         hidesyms_cmd = 'objcopy --keep-global-symbols ' + exposed_symbols_file + ' $SOURCE $TARGET'
+     else:
+

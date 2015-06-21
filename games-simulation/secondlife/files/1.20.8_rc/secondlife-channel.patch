@@ -1,0 +1,9 @@
+Index: ./indra/llcommon/llversionviewer.h
+===================================================================
+--- ./indra/llcommon/llversionviewer.h	(revision 217)
++++ ./indra/llcommon/llversionviewer.h	(working copy)
+@@ -39,3 +39,3 @@
+ 
+-const char * const LL_CHANNEL = "Second Life Release";
++const char * const LL_CHANNEL = "Second Life Zugaina Gentoo Release";
+ 

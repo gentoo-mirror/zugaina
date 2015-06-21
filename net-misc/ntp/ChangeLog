@@ -1,0 +1,13 @@
+# ChangeLog for net-misc/ntp
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header$
+
+*ntp-4.2.6_p1 (15 Apr 2010)
+
+  15 Apr 2010; Ycarus <ycarus@zugaina.org>
+  +files/ntp-4.2.4_p5-adjtimex.patch, +files/ntp-4.2.4_p7-nano.patch,
+  +ntp-4.2.6_p1.ebuild, +files/ntp-4.2.6-linking.patch, +files/ntp.conf,
+  +files/ntp-client.confd, +files/ntp-client.rc, +files/ntpd.confd,
+  +files/ntpd.rc:
+  Bump to 4.2.6 p1
+

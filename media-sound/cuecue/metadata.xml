@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<herd>media-sound</herd>
+<maintainer>
+  <email>ycarus@zugaina.org</email>
+  <description>This ebuild come from http://gentoo.zugaina.org/</description>
+</maintainer>
+    <longdescription lang="en">A program to convert .cue + [.ogg|.flac|.wav|.mp3] to .cue + .bin, to make them easier to burn.</longdescription>
+    <longdescription lang="fr">Un utilitaire pour convertir .cue + [.ogg|.flac|.wav|.mp3] en .cue + .bin, pour faciliter la gravure.</longdescription>
+</pkgmetadata>

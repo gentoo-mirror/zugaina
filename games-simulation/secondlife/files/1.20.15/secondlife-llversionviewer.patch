@@ -1,0 +1,11 @@
+--- llversionviewer.h.anc	2008-08-17 20:50:58.125975192 +0200
++++ indra/llcommon/llversionviewer.h	2008-08-17 20:51:45.256038729 +0200
+@@ -35,7 +35,7 @@
+ const S32 LL_VERSION_MAJOR = 1;
+ const S32 LL_VERSION_MINOR = 20;
+ const S32 LL_VERSION_PATCH = 15;
+-const S32 LL_VERSION_BUILD = 0;
++const S32 LL_VERSION_BUILD = 100;
+ 
+ const char * const LL_CHANNEL = "Second Life Zugaina Gentoo Release";
+ 

@@ -1,0 +1,17 @@
+# ChangeLog for app-misc/fslint
+# Copyright 1999-2010 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*fslint-2.42 (24 Aug 2010)
+
+  24 Aug 2010; Ycarus <ycarus@zugaina.org> +fslint-2.42.ebuild:
+  Bump to 2.42
+
+*fslint-2.40 (20 Jan 2010)
+
+  20 Jan 2010; Ycarus <ycarus@zugaina.org> +fslint-2.40.ebuild:
+  Bump to 2.40
+
+  21 Jun 2009; Ycarus <ycarus@zugaina.org> +metadata.xml:
+  Add metadata.xml
+

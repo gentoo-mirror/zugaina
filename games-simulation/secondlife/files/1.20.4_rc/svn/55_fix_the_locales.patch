@@ -1,0 +1,55 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## Why am i the only one with this locale bug.dpatch by  <robin@debian.example.org>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: No description.
+
+@DPATCH@
+
+Index: ./indra/llxml/llxmlnode.cpp
+===================================================================
+--- ./indra/llxml/llxmlnode.cpp	(Revision 218)
++++ ./indra/llxml/llxmlnode.cpp	(Arbeitskopie)
+@@ -572,6 +572,9 @@
+ 	LLXMLNode* defaults_tree)
+ {
+ 	// Read file
++
++	std::string saved_locale = setlocale(LC_ALL,"C");
++
+ 	FILE* fp = LLFile::fopen(filename.c_str(), "rb");		/* Flawfinder: ignore */
+ 	if (fp == NULL)
+ 	{
+@@ -589,6 +592,9 @@
+ 
+ 	bool rv = parseBuffer(buffer, nread, node, defaults_tree);
+ 	delete [] buffer;
++
++	setlocale(LC_ALL, saved_locale.c_str() );
++
+ 	return rv;
+ }
+ 
+Index: ./indra/llxml/llxmlparser.cpp
+===================================================================
+--- ./indra/llxml/llxmlparser.cpp	(Revision 218)
++++ ./indra/llxml/llxmlparser.cpp	(Arbeitskopie)
+@@ -76,7 +76,9 @@
+ 	llassert( !mDepth );
+ 	
+ 	BOOL success = TRUE;
++	std::string saved_locale = setlocale(LC_ALL,"C");
+ 
++
+ 	FILE* file = LLFile::fopen(path.c_str(), "rb");		/* Flawfinder: ignore */
+ 	if( !file )
+ 	{
+@@ -129,6 +131,9 @@
+ 		llwarns << mAuxErrorString << llendl;
+ 	}
+ 
++	setlocale(LC_ALL, saved_locale.c_str() );
++
++
+ 	return success;
+ }

@@ -1,0 +1,11 @@
+--- ozwcp.cpp	2012-08-30 14:41:06.000000000 +0200
++++ ozwcp.cpp	2012-08-30 14:40:58.000000000 +0200
+@@ -672,7 +672,7 @@
+   for (i = 0; i < MAX_NODES; i++)
+     nodes[i] = NULL;
+ 
+-  Options::Create("./config/", "", "--SaveConfiguration=true");
++  Options::Create("~/.config/openzwave-control-panel/", "", "--SaveConfiguration=true");
+   Options::Get()->Lock();
+ 
+   Manager::Create();

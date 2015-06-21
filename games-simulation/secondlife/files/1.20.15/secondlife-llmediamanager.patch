@@ -1,0 +1,12 @@
+--- llmediamanager.cpp.anc	2008-08-11 17:36:04.574869159 +0200
++++ indra/llmedia/llmediamanager.cpp	2008-08-11 17:36:44.095652683 +0200
+@@ -138,7 +138,9 @@
+ void LLMediaManager::setBrowserUserAgent(std::string user_agent)
+ {
+ 	// *HACK: Breaks encapsulation model, as initClass does above. JC
++#if LL_LLMOZLIB_ENABLED
+ 	LLMediaImplLLMozLib::setBrowserUserAgent(user_agent);
++#endif // LL_LLMOZLIB_ENABLED
+ }
+ 
+ ////////////////////////////////////////////////////////////////////////////////

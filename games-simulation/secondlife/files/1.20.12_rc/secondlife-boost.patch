@@ -1,0 +1,23 @@
+--- SConstruct.anc	2008-05-23 17:09:37.600408342 +0200
++++ linden/indra/SConstruct	2008-05-23 17:11:08.837695881 +0200
+@@ -306,9 +306,9 @@
+             if standalone:
+                 include_dirs += [d[2:] for d in
+                                  pkgconfig('--cflags-only-I').split()]
+-		client_external_libs += [ 'boost_program_options-gcc34-mt', 'boost_signals-gcc34-mt', 'boost_regex-gcc34-mt']
++		client_external_libs += [ 'boost_program_options-mt', 'boost_signals-mt', 'boost_regex-mt']
+             else:
+-                client_external_libs += [ 'fontconfig', 'gtk-x11-2.0', 'atk-1.0', 'gmodule-2.0', 'gdk-x11-2.0', 'gdk_pixbuf-2.0', 'pango-1.0', 'pangoft2-1.0', 'pangox-1.0', 'pangoxft-1.0', 'Xinerama', 'boost_program_options-gcc34-mt', 'boost_signals-gcc34-mt', 'boost_regex-gcc34-mt' ]
++                client_external_libs += [ 'fontconfig', 'gtk-x11-2.0', 'atk-1.0', 'gmodule-2.0', 'gdk-x11-2.0', 'gdk_pixbuf-2.0', 'pango-1.0', 'pangoft2-1.0', 'pangox-1.0', 'pangoxft-1.0', 'Xinerama', 'boost_program_options-mt', 'boost_signals-mt', 'boost_regex-mt' ]
+                 incdirs = [ 'ELFIO', 'atk-1.0', 'glib-2.0', 'gtk-2.0',
+                             'llfreetype2', 'pango-1.0' ]
+                 include_dirs += ['../libraries/' + system_str + '/include/' + d
+@@ -650,7 +650,7 @@
+                                   pkgconfig('--libs-only-l', ['gtk+-2.0']).split()]
+             else:
+                 external_libs = net_external_libs + [ 'db-4.2', 'gtk-x11-2.0' ]
+-            external_libs += ['boost_signals-gcc34-mt']
++            external_libs += ['boost_signals-mt']
+             internal_libs = [ 'llui', 'llxml', 'llmessage', 'llvfs', 'llmath', 'llcommon' ]
+             create_executable(output_crashlogger_bin + '-globalsyms',
+                               'linux_crash_logger',

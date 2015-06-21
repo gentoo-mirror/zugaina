@@ -1,0 +1,11 @@
+DEFINED_PHASES=compile install
+DEPEND=>=x11-libs/gtk+-2 dev-util/pkgconfig x11-base/xorg-server x11-libs/libXt x11-libs/libXv x11-proto/xf86driproto x11-proto/xf86vidmodeproto
+DESCRIPTION=NVIDIA Linux X11 Settings Utility
+HOMEPAGE=http://www.nvidia.com/
+KEYWORDS=-* ~amd64 ~x86 ~x86-fbsd
+LICENSE=GPL-2
+RDEPEND=>=x11-libs/gtk+-2 x11-base/xorg-server x11-libs/libXt x11-drivers/nvidia-drivers
+SLOT=0
+SRC_URI=ftp://download.nvidia.com/XFree86/nvidia-settings/nvidia-settings-180.18.tar.gz
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_md5_=1c35e71bd4d2b0a500492e359c26f7b0

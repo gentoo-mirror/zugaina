@@ -1,0 +1,51 @@
+# Makefile for gxmms2
+
+#Installation directory
+INSTALLPATH=/usr/bin
+
+# Path to XMMS2 header files
+XMMS2_INCLUDE_DIR=/usr/include/xmms2
+
+ALLFILES=*.c *.h *.xpm Makefile README COPYING
+
+GTK_INCLUDE = `pkg-config gtk+-2.0 --cflags`
+GTK_LIB = `pkg-config gtk+-2.0 --libs`
+
+FLAGS = -O2 -Wall -fPIC $(GTK_INCLUDE) -I${XMMS2_INCLUDE_DIR}
+LIBS = $(GTK_LIB) -lxmmsclient -lxmmsclient-glib
+
+LFLAGS =
+
+CC = gcc $(CFLAGS) $(FLAGS)
+
+OBJS = gxmms2src/gxmms2.o gxmms2src/statusdisplay.o gxmms2src/wejpconfig.o gxmms2src/wejpscroller.o xmms2ctrl/xmms2ctrl.o gtrackinfo/trackinfo.o gtrackinfo/gtrackinfo.o gmedialib/gmlplaylist.o gmedialib/gmladdfiles.o gmedialib/gmedialib.o gmedialib/gmlbrowser.o gmedialib/gmlsearch.o gmedialib/gmlplaylists.o sdecode/sdecode.o
+
+projname := gxmms2-$(shell awk '/define VERSION_NUMBER/ { print $$3 }' gxmms2.c )
+
+gxmms2: $(OBJS)
+	$(CC) $(OBJS) -o gxmms2 $(LFLAGS) $(LIBS)
+
+dist: $(ALLFILES)
+	-rm -rf $(projname)
+	mkdir $(projname)
+	cp -rl --parents $(ALLFILES) $(projname)
+	tar chfz $(projname).tar.gz $(projname)
+	-rm -rf $(projname)
+
+clean:
+	rm -f *.o core *.so* *.bak *~
+
+gxmms2.o: gxmms2.c
+trackinfo.o: trackinfo.c
+xmms2ctrl.o: xmms2ctrl.c
+gtrackinfo.o: gtrackinfo.c
+gmedialib.o: gmedialib.c
+gmlplaylist.o: gmlplaylist.c
+gmlbrowser.o: gmlbrowser.c
+gmlsearch.o: gmlsearch.c
+
+install:
+	install -D gxmms2 $(INSTALLPATH)/gxmms2
+
+uninstall:
+	-rm $(INSTALLPATH)/gxmms2

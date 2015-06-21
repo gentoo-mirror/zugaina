@@ -1,0 +1,34 @@
+#! /bin/sh /usr/share/dpatch/dpatch-run
+## 50_get_cpu_clock_count_for_more_than_just_i386.dpatch by Paul "TBBle" Hampson <Paul.Hampson@Pobox.com>
+##
+## All lines beginning with `## DP:' are a description of the patch.
+## DP: Drop RDTSC reads on Linux and Solaris, and fallback to
+## DP: gettimeofday()-based implementation
+
+@DPATCH@
+diff -urNad linden~/indra/llcommon/llfasttimer.cpp linden/indra/llcommon/llfasttimer.cpp
+--- linden~/indra/llcommon/llfasttimer.cpp	2007-05-12 13:44:24.000000000 +1000
++++ linden/indra/llcommon/llfasttimer.cpp	2007-05-13 11:22:49.000000000 +1000
+@@ -91,20 +91,8 @@
+ #endif // LL_WINDOWS
+ 
+ 
+-#if (LL_LINUX || LL_SOLARIS) && (defined(__i386__) || defined(__amd64__))
+-U64 get_cpu_clock_count()
+-{
+-	U64 x;
+-	__asm__ volatile (".byte 0x0f, 0x31" : "=A" (x));
+-	return x;
+-}
+-#endif
+-
+-#if LL_DARWIN || (LL_SOLARIS && defined(__sparc__))
+-//
+-// Mac implementation of CPU clock
+-//
+-// Just use gettimeofday implementation for now
++#if LL_LINUX || LL_DARWIN || LL_SOLARIS
++// Both Linux and Mac use gettimeofday for accurate time
+ 
+ U64 get_cpu_clock_count()
+ {

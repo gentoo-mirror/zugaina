@@ -1,0 +1,124 @@
+--- libopenjpeg/dwt.c	(revision 369)
++++ OpenJPEG/libopenjpeg/dwt.c	(working copy)
+@@ -95,6 +95,14 @@
+ FIXME : comment ???
+ */
+ static void dwt_encode_stepsize(int stepsize, int numbps, opj_stepsize_t *bandno_stepsize);
++/*
++Allocate memory for maximum computed resolution level in decode
++*/
++static int* dwt_decode_alloc(opj_tcd_tilecomp_t * tilec, int stop);
++/*
++Free memory used for maximum computed resolution level in decode
++*/
++static void dwt_decode_free(int* m);
+ 
+ /*@}*/
+ 
+@@ -400,6 +408,7 @@
+ 	w = tilec->x1-tilec->x0;
+ 	l = tilec->numresolutions-1;
+ 	a = tilec->data;
++	bj = dwt_decode_alloc(tilec, stop);
+ 	
+ 	for (i = l - 1; i >= stop; i--) {
+ 		int rw;			/* width of the resolution level computed                                                           */
+@@ -420,7 +429,6 @@
+ 		
+ 		sn = rw1;
+ 		dn = rw - rw1;
+-		bj = (int*)opj_malloc(rw * sizeof(int));
+ 		for (j = 0; j < rh; j++) {
+ 			aj = a + j*w;
+ 			dwt_interleave_h(aj, bj, dn, sn, cas_row);
+@@ -427,11 +435,9 @@
+ 			dwt_decode_1(bj, dn, sn, cas_row);
+ 			for (k = 0; k < rw; k++)  aj[k] = bj[k];
+ 		}
+-		opj_free(bj);
+ 		
+ 		sn = rh1;
+ 		dn = rh - rh1;
+-		bj = (int*)opj_malloc(rh * sizeof(int));
+ 		for (j = 0; j < rw; j++) {
+ 			aj = a + j;
+ 			dwt_interleave_v(aj, bj, dn, sn, w, cas_col);
+@@ -438,8 +444,8 @@
+ 			dwt_decode_1(bj, dn, sn, cas_col);
+ 			for (k = 0; k < rh; k++)  aj[k * w] = bj[k];
+ 		}
+-		opj_free(bj);
+ 	}
++	dwt_decode_free(bj);
+ }
+ 
+ 
+@@ -531,6 +537,7 @@
+ 	w = tilec->x1-tilec->x0;
+ 	l = tilec->numresolutions-1;
+ 	a = tilec->data;
++	bj = dwt_decode_alloc(tilec, stop);
+ 	
+ 	for (i = l-1; i >= stop; i--) {
+ 		int rw;			/* width of the resolution level computed                       */
+@@ -551,7 +558,6 @@
+         
+ 		sn = rw1;
+ 		dn = rw-rw1;
+-		bj = (int*)opj_malloc(rw * sizeof(int));
+ 		for (j = 0; j < rh; j++) {
+ 			aj = a + j * w;
+ 			dwt_interleave_h(aj, bj, dn, sn, cas_col);
+@@ -558,11 +564,9 @@
+ 			dwt_decode_1_real(bj, dn, sn, cas_col);
+ 			for (k = 0; k < rw; k++)  aj[k] = bj[k];
+ 		}
+-		opj_free(bj);
+ 		
+ 		sn = rh1;
+ 		dn = rh-rh1;
+-		bj = (int*)opj_malloc(rh * sizeof(int));
+ 		for (j = 0; j < rw; j++) {
+ 			aj = a + j;
+ 			dwt_interleave_v(aj, bj, dn, sn, w, cas_row);
+@@ -569,8 +573,8 @@
+ 			dwt_decode_1_real(bj, dn, sn, cas_row);
+ 			for (k = 0; k < rh; k++)  aj[k * w] = bj[k];
+ 		}
+-		opj_free(bj);
+ 	}
++	dwt_decode_free(bj);
+ }
+ 
+ 
+@@ -609,3 +613,30 @@
+ 		dwt_encode_stepsize((int) floor(stepsize * 8192.0), prec + gain, &tccp->stepsizes[bandno]);
+ 	}
+ }
++
++
++/* <summary>                             */
++/* Allocate memory for maximum computed resolution level in decode */
++/* </summary>                            */
++static int* dwt_decode_alloc(opj_tcd_tilecomp_t * tilec, int stop) {
++	opj_tcd_resolution_t* tr = tilec->resolutions;
++	int i	= tilec->numresolutions - stop;
++	int mr	= 1;
++	int w;
++	while( --i ) {
++		tr++;
++		if( mr < ( w = tr->x1 - tr->x0 ) )
++			mr = w ;
++		if( mr < ( w = tr->y1 - tr->y0 ) )
++			mr = w ;
++	}
++	return (int*)opj_malloc(mr * sizeof(int));
++}
++
++
++/* <summary>                             */
++/* Free memory used for maximum computed resolution level in decode */
++/* </summary>                            */
++static void dwt_decode_free(int* m) {
++	opj_free(m);
++}

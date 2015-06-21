@@ -1,0 +1,7 @@
+#!/bin/sh
+## Skale wrapper script
+
+cd /opt/skale
+./skale.bin
+
+exit 0

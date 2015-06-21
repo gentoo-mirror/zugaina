@@ -1,0 +1,18 @@
+#!/bin/bash
+
+function die ()
+{
+	echo
+	echo "***"
+	echo "*** Fatal error: $*"
+	echo "***"
+	exit 1
+}
+
+if [ $1 = "install" ]; then
+	sed -e "s:\*HOST\*:localhost:g" -e "s:\*PATH\*:${MY_INSTALLDIR}:g" -i ${MY_INSTALLDIR}/lib/atomcfg.pm  ${MY_INSTALLDIR}/data_source/IcecatToPIMImport/PIMImportConfiguration.pm ${MY_INSTALLDIR}/conf/pim_vhost.conf || die "sed failed"
+	sed -e "s:/home/pim:${MY_INSTALLDIR}:g" -e "s:import.pl:importFromIcecat.pl:g" -i ${MY_INSTALLDIR}/conf/crontab || die "sed failed"
+	find -type f ${MY_INSTALLDIR} -exec sed -e "s:/home/pim:${MY_INSTALLDIR}:g" -e "s:/home/gcc:${MY_INSTALLDIR}:g" -i {} \;
+else
+	echo "done."
+fi

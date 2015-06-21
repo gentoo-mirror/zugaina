@@ -1,0 +1,7 @@
+# ChangeLog for net-wireless/asleap
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  25 Feb 2009; Ycarus <ycarus@zugaina.org> +asleap-2.2.ebuild:
+  Add asleap 2.2
+

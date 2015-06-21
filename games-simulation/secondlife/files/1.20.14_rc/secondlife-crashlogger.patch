@@ -1,0 +1,23 @@
+diff -U3 -r ../linden/indra/SConstruct ./indra/SConstruct
+--- ../linden/indra/SConstruct  2007-11-08 02:18:05.000000000 +0000
++++ ./indra/SConstruct  2007-11-10 09:15:13.000000000 +0000
+@@ -605,7 +605,7 @@
+     common_external_libs = net_external_libs + [ 'xmlrpc-epi', 'z' ]
+
+     if build_target == 'client':
+-        if platform == 'linux':
++        if not opensource and platform == 'linux':
+             #############################
+             # BUILD LINUX_CRASH_LOGGER  #
+             #############################
+
+--- ./indra/SConstruct	(revision 49)
++++ ./indra/SConstruct	(working copy)
+@@ -590,7 +590,6 @@
+     create_cond_module('llvfs')
+     create_cond_module('llimagej2coj', module_libs=['openjpeg'])
+     create_cond_module('llimage', module_libs=['llimagej2coj', 'jpeg', 'png12'])
+-    create_static_module('llcrashlogger')
+     create_static_module('llmessage')
+     create_static_module('llinventory')
+     create_static_module('llcharacter')

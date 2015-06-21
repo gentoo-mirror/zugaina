@@ -1,0 +1,316 @@
+# ChangeLog for games-simulation/secondlife
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+*secondlife-1.23.4 (16 Jun 2009)
+
+  16 Jun 2009; Ycarus <ycarus@zugaina.org>
+  +files/1.23.4/fix_keeping_dbus_stuff_together.patch,
+  +files/1.23.4/secondlife-llmozlib-svn.patch, +secondlife-1.23.4.ebuild,
+  +files/1.23.4/VWR-12995.patch, +files/1.23.4/secondlife-cmake.patch,
+  +files/1.23.4/secondlife-llvoiceclient.patch, +files/1.23.4/settings.xml,
+  +files/1.23.4/VWR-10579_make-cmake-see-library-mkII.patch:
+  Bump to 1.23.4
+
+  11 Mar 2009; Ycarus <ycarus@zugaina.org> +files/1.22.10_rc/settings.xml,
+  +files/1.22.11/fix_keeping_dbus_stuff_together.patch,
+  +files/1.22.11/secondlife-cmake.patch,
+  +files/1.22.11/secondlife-llcrashloggerlinux.patch,
+  +files/1.22.11/secondlife-llmozlib-svn.patch, +files/1.22.11/settings.xml,
+  +files/1.22.11/VWR-9256.patch, secondlife-1.22.10_rc.ebuild,
+  +secondlife-1.22.11.ebuild:
+  Bump to 1.22.11
+
+  27 Feb 2009; Ycarus <ycarus@zugaina.org>
+  +files/1.22.10_rc/fix_keeping_dbus_stuff_together.patch,
+  +files/1.22.10_rc/secondlife-llcrashloggerlinux.patch,
+  +files/1.22.10_rc/VWR-9256.patch,
+  +files/1.22.10_rc/secondlife-cmake.patch,
+  +files/1.22.10_rc/secondlife-llmozlib-svn.patch,
+  +secondlife-1.22.10_rc.ebuild:
+  Bump to 1.22.10 rc
+
+  13 Feb 2009; Ycarus <ycarus@zugaina.org>
+  +files/1.22.9_rc/fix_keeping_dbus_stuff_together.patch,
+  +files/1.22.9_rc/secondlife-llcrashloggerlinux.patch,
+  +files/1.22.9_rc/VWR-9256.patch, +files/1.22.9_rc/secondlife-cmake.patch,
+  +files/1.22.9_rc/secondlife-llmozlib-svn.patch,
+  +secondlife-1.22.9_rc.ebuild:
+  Bump to 1.22.9 rc
+
+  20 Oct 2008; Ycarus <ycarus@zugaina.org>
+  +files/1.21.5_rc/rename_binary_cmake.patch,
+  +files/1.21.5_rc/secondlife-cmake.patch,
+  +files/1.21.5_rc/secondlife-llmozlib-svn.patch,
+  +files/1.21.5_rc/secondlife-llrender.patch,
+  +files/1.21.6/rename_binary_cmake.patch,
+  +files/1.21.6/vwr-2662-linden2.patch,
+  +files/1.21.6/secondlife-cmake.patch,
+  +files/1.21.5_rc/vwr-2662-linden2.patch,
+  +files/1.21.6/secondlife-llmozlib-svn.patch,
+  +files/1.21.6/secondlife-llrender.patch, +secondlife-1.21.6.ebuild,
+  +secondlife-1.21.5_rc.ebuild:
+  Bump to 1.21.6
+
+  17 Aug 2008; Ycarus <ycarus@zugaina.org>
+  +files/1.20.15/secondlife-llviewermedia.patch, secondlife-1.20.15.ebuild:
+  Correct llmozlib again and cursors
+
+  16 Aug 2008; Ycarus <ycarus@zugaina.org secondlife-1.20.15.ebuild:
+  Correct ebuild bugs with llmozlib
+
+  11 Aug 2008; Ycarus <ycarus@zugaina.org>
+  +files/1.20.15/secondlife-llmediamanager.patch, secondlife-1.20.15.ebuild:
+  Correct problem when compiling without llmozlib
+
+  17 Jul 2008; Ycarus <ycarus@zugaina.org> ChangeLog:
+  Bump to version 1.20.14 rc
+
+  15 Jul 2008; Ycarus <ycarus@zugaina.org>
+  +files/1.20.13_rc/secondlife-apr_thread_mutex_nested.patch,
+  +files/1.20.13_rc/secondlife-channel.patch,
+  +files/1.20.13_rc/secondlife-gcc43-fixes.patch,
+  +files/1.20.13_rc/svn/0001_possible_crash_and_leak_llassetstorage.patch,
+  +files/1.20.13_rc/svn/2003_possible_crash_draganddrop.patch,
+  +files/1.20.13_rc/secondlife-faster_wind-7.patch,
+  +files/1.20.13_rc/svn/VWR-3766_llGetInventoryNumber_tooltip_missing_INVENT
+  ORY_ANIMATION.patch, +files/1.20.13_rc/gstreamer_audio_1.20.6.patch,
+  +files/1.20.13_rc/secondlife-boost.patch,
+  +files/1.20.13_rc/secondlife-crashlogger.patch,
+  +files/1.20.13_rc/secondlife-gentoo.patch,
+  +files/1.20.13_rc/secondlife-gstreamer_audio.patch,
+  +files/1.20.13_rc/secondlife-llmozlib-svn.patch,
+  +files/1.20.13_rc/secondlife-openal.patch,
+  +files/1.20.13_rc/svn/1294_llworkerthread_when_terminating_program.patch,
+  +files/1.20.13_rc/svn/24_fix_64bit_times.patch,
+  +files/1.20.13_rc/svn/2543_possible_crash_in_group_voting_propsals.patch,
+  +files/1.20.13_rc/svn/2683_possible_crash_update_speaker_list.patch,
+  +files/1.20.13_rc/svn/34_dont_hide_symbols.patch,
+  +files/1.20.13_rc/svn/4022_jpeg_error_gracefully.patch,
+  +files/1.20.13_rc/secondlife-mutelist.patch,
+  +files/1.20.13_rc/svn/0000_keep_statbars_from_overshooting.patch,
+  +files/1.20.13_rc/svn/50_get_cpu_clock_count_for_more_than_just_i386.patch
+  , +files/1.20.13_rc/svn/51_fix_vectorize.patch,
+  +files/1.20.13_rc/svn/55_use_system_locale.patch,
+  +files/1.20.13_rc/svn/59_need_llpreprocessor_to_access_endian_macros.patch
+  , +files/1.20.13_rc/svn/61_use_debain_cares_1.5.1.patch,
+  +files/1.20.13_rc/svn/71_use_debian_alternatives_for_www_browser.patch,
+  +files/1.20.13_rc/svn/VWR1320_buggy_ati_driver_workaround.patch,
+  +files/1.20.13_rc/svn/VWR5636_use_stop_menthod_for_llevent_timer.patch,
+  +files/1.20.13_rc/svn/VWR5715_text_not_replaced_by_input_with_japanses_im.
+  patch, +files/1.20.13_rc/svn/dam_flex_2.5.34.patch,
+  +secondlife-1.20.13_rc.ebuild:
+  Bump to version 1.20.13 rc
+
+  03 Jul 2008; Ycarus <ycarus@zugaina.org>
+  +files/1.20.12_rc/secondlife-apr_thread_mutex_nested.patch,
+  +files/1.20.12_rc/secondlife-channel.patch,
+  +files/1.20.12_rc/secondlife-gcc43-fixes.patch,
+  +files/1.20.12_rc/svn/0001_possible_crash_and_leak_llassetstorage.patch,
+  +files/1.20.12_rc/svn/2003_possible_crash_draganddrop.patch,
+  +files/1.20.12_rc/secondlife-faster_wind-7.patch,
+  +files/1.20.12_rc/svn/VWR-3766_llGetInventoryNumber_tooltip_missing_INVENT
+  ORY_ANIMATION.patch, +files/1.20.12_rc/gstreamer_audio_1.20.6.patch,
+  +files/1.20.12_rc/secondlife-boost.patch,
+  +files/1.20.12_rc/secondlife-crashlogger.patch,
+  +files/1.20.12_rc/secondlife-gentoo.patch,
+  +files/1.20.12_rc/secondlife-gstreamer_audio.patch,
+  +files/1.20.12_rc/secondlife-llmozlib-svn.patch,
+  +files/1.20.12_rc/secondlife-openal.patch,
+  +files/1.20.12_rc/svn/1294_llworkerthread_when_terminating_program.patch,
+  +files/1.20.12_rc/svn/24_fix_64bit_times.patch,
+  +files/1.20.12_rc/svn/2543_possible_crash_in_group_voting_propsals.patch,
+  +files/1.20.12_rc/svn/2683_possible_crash_update_speaker_list.patch,
+  +files/1.20.12_rc/svn/34_dont_hide_symbols.patch,
+  +files/1.20.12_rc/svn/4022_jpeg_error_gracefully.patch,
+  +files/1.20.12_rc/secondlife-mutelist.patch,
+  +files/1.20.12_rc/svn/0000_keep_statbars_from_overshooting.patch,
+  +files/1.20.12_rc/svn/50_get_cpu_clock_count_for_more_than_just_i386.patch
+  , +files/1.20.12_rc/svn/51_fix_vectorize.patch,
+  +files/1.20.12_rc/svn/55_use_system_locale.patch,
+  +files/1.20.12_rc/svn/59_need_llpreprocessor_to_access_endian_macros.patch
+  , +files/1.20.12_rc/svn/61_use_debain_cares_1.5.1.patch,
+  +files/1.20.12_rc/svn/71_use_debian_alternatives_for_www_browser.patch,
+  +files/1.20.12_rc/svn/VWR1320_buggy_ati_driver_workaround.patch,
+  +files/1.20.12_rc/svn/VWR5636_use_stop_menthod_for_llevent_timer.patch,
+  +files/1.20.12_rc/svn/VWR5715_text_not_replaced_by_input_with_japanses_im.
+  patch, +files/1.20.12_rc/svn/dam_flex_2.5.34.patch,
+  +secondlife-1.20.12_rc.ebuild:
+  Bump to version 1.20.12 rc
+
+  26 Jun 2008; Ycarus <ycarus@zugaina.org>
+  +files/1.20.11_rc/secondlife-apr_thread_mutex_nested.patch,
+  +files/1.20.11_rc/secondlife-channel.patch,
+  +files/1.20.11_rc/secondlife-gcc43-fixes.patch,
+  +files/1.20.11_rc/svn/0001_possible_crash_and_leak_llassetstorage.patch,
+  +files/1.20.11_rc/svn/2003_possible_crash_draganddrop.patch,
+  +files/1.20.11_rc/secondlife-faster_wind-7.patch,
+  +files/1.20.11_rc/svn/VWR-3766_llGetInventoryNumber_tooltip_missing_INVENT
+  ORY_ANIMATION.patch, +files/1.20.11_rc/gstreamer_audio_1.20.6.patch,
+  +files/1.20.11_rc/secondlife-boost.patch,
+  +files/1.20.11_rc/secondlife-crashlogger.patch,
+  +files/1.20.11_rc/secondlife-gentoo.patch,
+  +files/1.20.11_rc/secondlife-gstreamer_audio.patch,
+  +files/1.20.11_rc/secondlife-llmozlib-svn.patch,
+  +files/1.20.11_rc/secondlife-openal.patch,
+  +files/1.20.11_rc/svn/1294_llworkerthread_when_terminating_program.patch,
+  +files/1.20.11_rc/svn/24_fix_64bit_times.patch,
+  +files/1.20.11_rc/svn/2543_possible_crash_in_group_voting_propsals.patch,
+  +files/1.20.11_rc/svn/2683_possible_crash_update_speaker_list.patch,
+  +files/1.20.11_rc/svn/34_dont_hide_symbols.patch,
+  +files/1.20.11_rc/svn/4022_jpeg_error_gracefully.patch,
+  +files/1.20.11_rc/secondlife-mutelist.patch,
+  +files/1.20.11_rc/svn/0000_keep_statbars_from_overshooting.patch,
+  +files/1.20.11_rc/svn/50_get_cpu_clock_count_for_more_than_just_i386.patch
+  , +files/1.20.11_rc/svn/51_fix_vectorize.patch,
+  +files/1.20.11_rc/svn/55_use_system_locale.patch,
+  +files/1.20.11_rc/svn/59_need_llpreprocessor_to_access_endian_macros.patch
+  , +files/1.20.11_rc/svn/61_use_debain_cares_1.5.1.patch,
+  +files/1.20.11_rc/svn/71_use_debian_alternatives_for_www_browser.patch,
+  +files/1.20.11_rc/svn/dam_flex_2.5.34.patch,
+  +files/1.20.11_rc/svn/VWR1320_buggy_ati_driver_workaround.patch,
+  +files/1.20.11_rc/svn/VWR5636_use_stop_menthod_for_llevent_timer.patch,
+  +files/1.20.11_rc/svn/VWR5715_text_not_replaced_by_input_with_japanses_im.
+  patch, +secondlife-1.20.11_rc.ebuild:
+  Bump ebuild to version 1.20.11 rc
+
+  13 Jun 2008; <ycarus@zugaina.org>
+  +files/1.20.10_rc/gstreamer_audio_1.20.6.patch,
+  +files/1.20.10_rc/secondlife-apr_thread_mutex_nested.patch,
+  +files/1.20.10_rc/secondlife-channel.patch,
+  +files/1.20.10_rc/secondlife-gcc43-fixes.patch,
+  +files/1.20.10_rc/svn/0001_possible_crash_and_leak_llassetstorage.patch,
+  +files/1.20.10_rc/svn/2003_possible_crash_draganddrop.patch,
+  +files/1.20.10_rc/secondlife-faster_wind-7.patch,
+  +files/1.20.10_rc/secondlife-gentoo.patch,
+  +files/1.20.10_rc/secondlife-gstreamer_audio.patch,
+  +files/1.20.10_rc/secondlife-llmozlib-svn.patch,
+  +files/1.20.10_rc/secondlife-openal.patch,
+  +files/1.20.10_rc/svn/1294_llworkerthread_when_terminating_program.patch,
+  +files/1.20.10_rc/svn/24_fix_64bit_times.patch,
+  +files/1.20.10_rc/svn/2543_possible_crash_in_group_voting_propsals.patch,
+  +files/1.20.10_rc/secondlife-boost.patch,
+  +files/1.20.10_rc/svn/2683_possible_crash_update_speaker_list.patch,
+  +files/1.20.10_rc/svn/4022_jpeg_error_gracefully.patch,
+  +files/1.20.10_rc/svn/50_get_cpu_clock_count_for_more_than_just_i386.patch
+  , +files/1.20.10_rc/svn/51_fix_vectorize.patch,
+  +files/1.20.10_rc/svn/55_use_system_locale.patch,
+  +files/1.20.10_rc/svn/59_need_llpreprocessor_to_access_endian_macros.patch
+  , +files/1.20.10_rc/svn/61_use_debain_cares_1.5.1.patch,
+  +files/1.20.10_rc/svn/dam_flex_2.5.34.patch,
+  +files/1.20.10_rc/svn/VWR-3766_llGetInventoryNumber_tooltip_missing_INVENT
+  ORY_ANIMATION.patch, +files/1.20.10_rc/secondlife-crashlogger.patch,
+  +files/1.20.10_rc/svn/0000_keep_statbars_from_overshooting.patch,
+  +files/1.20.10_rc/svn/34_dont_hide_symbols.patch,
+  +files/1.20.10_rc/secondlife-mutelist.patch,
+  +files/1.20.10_rc/svn/71_use_debian_alternatives_for_www_browser.patch,
+  +files/1.20.10_rc/svn/VWR1320_buggy_ati_driver_workaround.patch,
+  +files/1.20.10_rc/svn/VWR5636_use_stop_menthod_for_llevent_timer.patch,
+  +files/1.20.10_rc/svn/VWR5715_text_not_replaced_by_input_with_japanses_im.
+  patch, +secondlife-1.20.10_rc.ebuild:
+  Bump to version 1.20.10 RC
+
+  12 Jun 2008; <ycarus@zugaina.org>
+  +files/1.20.9_rc/gstreamer_audio_1.20.6.patch,
+  +files/1.20.9_rc/secondlife-apr_thread_mutex_nested.patch,
+  +files/1.20.9_rc/secondlife-channel.patch,
+  +files/1.20.9_rc/secondlife-gcc43-fixes.patch,
+  +files/1.20.9_rc/svn/0001_possible_crash_and_leak_llassetstorage.patch,
+  +files/1.20.9_rc/svn/2003_possible_crash_draganddrop.patch,
+  +files/1.20.9_rc/secondlife-faster_wind-7.patch,
+  +files/1.20.9_rc/secondlife-gentoo.patch,
+  +files/1.20.9_rc/secondlife-gstreamer_audio.patch,
+  +files/1.20.9_rc/secondlife-llmozlib-svn.patch,
+  +files/1.20.9_rc/secondlife-openal.patch,
+  +files/1.20.9_rc/svn/1294_llworkerthread_when_terminating_program.patch,
+  +files/1.20.9_rc/svn/24_fix_64bit_times.patch,
+  +files/1.20.9_rc/svn/2543_possible_crash_in_group_voting_propsals.patch,
+  +files/1.20.9_rc/secondlife-boost.patch,
+  +files/1.20.9_rc/svn/2683_possible_crash_update_speaker_list.patch,
+  +files/1.20.9_rc/svn/4022_jpeg_error_gracefully.patch,
+  +files/1.20.9_rc/svn/50_get_cpu_clock_count_for_more_than_just_i386.patch,
+  +files/1.20.9_rc/svn/51_fix_vectorize.patch,
+  +files/1.20.9_rc/svn/55_use_system_locale.patch,
+  +files/1.20.9_rc/svn/59_need_llpreprocessor_to_access_endian_macros.patch,
+  +files/1.20.9_rc/svn/61_use_debain_cares_1.5.1.patch,
+  +files/1.20.9_rc/svn/dam_flex_2.5.34.patch,
+  +files/1.20.9_rc/svn/VWR-3766_llGetInventoryNumber_tooltip_missing_INVENTO
+  RY_ANIMATION.patch, +files/1.20.9_rc/secondlife-crashlogger.patch,
+  +files/1.20.9_rc/svn/0000_keep_statbars_from_overshooting.patch,
+  +files/1.20.9_rc/svn/34_dont_hide_symbols.patch,
+  +files/1.20.9_rc/secondlife-mutelist.patch,
+  +files/1.20.9_rc/svn/71_use_debian_alternatives_for_www_browser.patch,
+  +files/1.20.9_rc/svn/VWR1320_buggy_ati_driver_workaround.patch,
+  +files/1.20.9_rc/svn/VWR5636_use_stop_menthod_for_llevent_timer.patch,
+  +files/1.20.9_rc/svn/VWR5715_text_not_replaced_by_input_with_japanses_im.p
+  atch, secondlife-1.20.8_rc.ebuild, +secondlife-1.20.9_rc.ebuild:
+  Bump to version 1.20.9_rc
+
+  27 May 2008; <ycarus@zugaina.org>
+  +files/1.20.6_rc/gstreamer_audio_1.20.6.patch,
+  +files/1.20.7_rc/gstreamer_audio_1.20.6.patch,
+  +files/1.20.7_rc/secondlife-apr_thread_mutex_nested.patch,
+  +files/1.20.7_rc/secondlife-crashlogger.patch,
+  +files/1.20.7_rc/secondlife-gentoo.patch,
+  +files/1.20.7_rc/secondlife-gstreamer_audio.patch,
+  +files/1.20.7_rc/secondlife-openal.patch,
+  +files/1.20.7_rc/svn/0001_possible_crash_and_leak_llassetstorage.patch,
+  +files/1.20.7_rc/svn/1294_llworkerthread_when_terminating_program.patch,
+  +files/1.20.7_rc/svn/2003_possible_crash_draganddrop.patch,
+  +files/1.20.7_rc/svn/24_fix_64bit_times.patch,
+  +files/1.20.7_rc/svn/2543_possible_crash_in_group_voting_propsals.patch,
+  +files/1.20.7_rc/svn/2683_possible_crash_update_speaker_list.patch,
+  +files/1.20.7_rc/secondlife-boost.patch,
+  +files/1.20.7_rc/secondlife-mutelist.patch,
+  +files/1.20.7_rc/svn/0000_keep_statbars_from_overshooting.patch,
+  +files/1.20.7_rc/svn/34_dont_hide_symbols.patch,
+  +files/1.20.7_rc/svn/4022_jpeg_error_gracefully.patch,
+  +files/1.20.7_rc/svn/50_get_cpu_clock_count_for_more_than_just_i386.patch,
+  +files/1.20.7_rc/svn/51_fix_vectorize.patch,
+  +files/1.20.7_rc/svn/55_use_system_locale.patch,
+  +files/1.20.7_rc/svn/59_need_llpreprocessor_to_access_endian_macros.patch,
+  +files/1.20.7_rc/svn/61_use_debain_cares_1.5.1.patch,
+  +files/1.20.7_rc/svn/VWR5636_use_stop_menthod_for_llevent_timer.patch,
+  +files/1.20.8_rc/secondlife-apr_thread_mutex_nested.patch,
+  +files/1.20.8_rc/secondlife-channel.patch,
+  +files/1.20.7_rc/svn/71_use_debian_alternatives_for_www_browser.patch,
+  +files/1.20.7_rc/svn/VWR1320_buggy_ati_driver_workaround.patch,
+  +files/1.20.7_rc/svn/VWR1352_fix_strange_llstyle_copy_operation.patch,
+  +files/1.20.7_rc/svn/VWR5715_text_not_replaced_by_input_with_japanses_im.p
+  atch, +files/1.20.7_rc/svn/dam_flex_2.5.34.patch,
+  +files/1.20.8_rc/secondlife-openal.patch,
+  +files/1.20.8_rc/svn/0001_possible_crash_and_leak_llassetstorage.patch,
+  +files/1.20.7_rc/svn/VWR-3766_llGetInventoryNumber_tooltip_missing_INVENTO
+  RY_ANIMATION.patch,
+  +files/1.20.8_rc/svn/2003_possible_crash_draganddrop.patch,
+  +files/1.20.8_rc/secondlife-faster_wind-7.patch,
+  +files/1.20.8_rc/svn/VWR-3766_llGetInventoryNumber_tooltip_missing_INVENTO
+  RY_ANIMATION.patch, +files/1.20.7_rc/secondlife-channel.patch,
+  +files/1.20.8_rc/gstreamer_audio_1.20.6.patch,
+  +files/1.20.8_rc/secondlife-boost.patch,
+  +files/1.20.8_rc/secondlife-crashlogger.patch,
+  +files/1.20.8_rc/secondlife-gentoo.patch,
+  +files/1.20.8_rc/secondlife-gstreamer_audio.patch,
+  +files/1.20.8_rc/secondlife-mutelist.patch,
+  +files/1.20.8_rc/svn/0000_keep_statbars_from_overshooting.patch,
+  +files/1.20.8_rc/svn/1294_llworkerthread_when_terminating_program.patch,
+  +files/1.20.8_rc/svn/24_fix_64bit_times.patch,
+  +files/1.20.8_rc/svn/2543_possible_crash_in_group_voting_propsals.patch,
+  +files/1.20.8_rc/svn/2683_possible_crash_update_speaker_list.patch,
+  +files/1.20.8_rc/svn/34_dont_hide_symbols.patch,
+  +files/1.20.8_rc/svn/4022_jpeg_error_gracefully.patch,
+  +files/1.20.7_rc/secondlife-faster_wind-7.patch,
+  +files/1.20.8_rc/svn/50_get_cpu_clock_count_for_more_than_just_i386.patch,
+  +files/1.20.8_rc/svn/51_fix_vectorize.patch,
+  +files/1.20.8_rc/svn/55_use_system_locale.patch,
+  +files/1.20.8_rc/svn/59_need_llpreprocessor_to_access_endian_macros.patch,
+  +files/1.20.8_rc/svn/61_use_debain_cares_1.5.1.patch,
+  +files/1.20.8_rc/svn/71_use_debian_alternatives_for_www_browser.patch,
+  +files/1.20.8_rc/svn/VWR1320_buggy_ati_driver_workaround.patch,
+  +files/1.20.8_rc/svn/VWR1352_fix_strange_llstyle_copy_operation.patch,
+  +files/1.20.8_rc/svn/VWR5636_use_stop_menthod_for_llevent_timer.patch,
+  +files/1.20.8_rc/svn/VWR5715_text_not_replaced_by_input_with_japanses_im.p
+  atch, +files/1.20.8_rc/svn/dam_flex_2.5.34.patch, +metadata.xml,
+  +secondlife-1.20.7_rc.ebuild, +secondlife-1.20.8_rc.ebuild:
+  Add Secondlife 1.20.8_rc
+

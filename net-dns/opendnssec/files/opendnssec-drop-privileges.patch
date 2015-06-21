@@ -1,0 +1,42 @@
+Index: conf/conf.xml.in
+===================================================================
+--- conf/conf.xml.in	(revision 2828)
++++ conf/conf.xml.in	(working copy)
+@@ -38,24 +38,20 @@
+ 	</Common>
+ 
+ 	<Enforcer>
+-<!--
+ 		<Privileges>
+ 			<User>opendnssec</User>
+ 			<Group>opendnssec</Group>
+ 		</Privileges>
+--->
+ 
+ 		<Datastore><SQLite>@opendnsseclocalstatedir@/kasp.db</SQLite></Datastore>
+ 		<Interval>PT3600S</Interval>
+ 	</Enforcer>
+ 
+ 	<Signer>
+-<!--
+ 		<Privileges>
+ 			<User>opendnssec</User>
+ 			<Group>opendnssec</Group>
+ 		</Privileges>
+--->
+ 
+ 		<WorkingDirectory>@opendnsseclocalstatedir@/tmp</WorkingDirectory>
+ 		<WorkerThreads>8</WorkerThreads>
+@@ -74,12 +70,10 @@
+ 	</Signer>
+ 
+ 	<Auditor>
+-<!--
+ 		<Privileges>
+ 			<User>opendnssec</User>
+ 			<Group>opendnssec</Group>
+ 		</Privileges>
+--->
+ 
+ 		<WorkingDirectory>@opendnsseclocalstatedir@/tmp</WorkingDirectory>
+ 	</Auditor>

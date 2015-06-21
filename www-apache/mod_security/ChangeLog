@@ -1,0 +1,11 @@
+# ChangeLog for www-apache/mod_security
+# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
+# $Header: $
+
+  12 Mar 2009; Ycarus <ycarus@zugaina.org> ChangeLog:
+  Bump to 2.5.9
+
+  09 Jun 2008; <ycarus@zugaina.org> +files/2.1.2/99_mod_security.conf,
+  +metadata.xml, +mod_security-2.5.5.ebuild:
+  Bump to version 2.5.5
+

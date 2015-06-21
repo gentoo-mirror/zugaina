@@ -1,0 +1,12 @@
+diff -urN linden/indra/newview/llfloaterfriends.cpp linden-patched/indra/newview/llfloaterfriends.cpp
+--- linden/indra/newview/llfloaterfriends.cpp	2008-01-04 00:07:13.000000000 +0100
++++ linden-patched/indra/newview/llfloaterfriends.cpp	2008-01-10 20:23:51.000000000 +0100
+@@ -333,7 +333,7 @@
+ 
+ struct SortFriendsByID
+ {
+-	bool SortFriendsByID::operator() (const LLScrollListItem* const a, const LLScrollListItem* const b) const
++	bool operator() (const LLScrollListItem* const a, const LLScrollListItem* const b) const
+ 	{
+ 		return a->getValue().asUUID() < b->getValue().asUUID();
+ 	}

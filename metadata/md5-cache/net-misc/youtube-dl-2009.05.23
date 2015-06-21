@@ -1,0 +1,11 @@
+DEFINED_PHASES=install
+DEPEND=>=dev-lang/python-2.4
+DESCRIPTION=A small command-line program to download videos from YouTube.
+EAPI=2
+HOMEPAGE=http://bitbucket.org/rg3/youtube-dl/
+KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~x86
+LICENSE=MIT
+RDEPEND=>=dev-lang/python-2.4
+SLOT=0
+SRC_URI=http://bitbucket.org/rg3/youtube-dl/get/2009.05.23.bz2 -> youtube-dl-2009.05.23.tar.bz2
+_md5_=69790442365844bb3e0173e2cdfada2d

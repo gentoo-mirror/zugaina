@@ -1,0 +1,33 @@
+--- linden/indra/llmedia/llmediaimplexample1.cpp	2008-04-08 04:37:55.000000000 +0200
++++ linden1/indra/llmedia/llmediaimplexample1.cpp	2008-06-12 17:38:36.000000000 +0200
+@@ -36,6 +36,7 @@
+ static LLMediaImplRegister sLLMediaImplExample1Reg( "LLMediaImplExample1", new LLMediaImplExample1Maker() );
+ 
+ #include <iostream>
++#include <string.h>
+ 
+ #include <time.h>
+ 
+--- linden/indra/llmedia/llmediaimplexample2.cpp.1	2008-06-12 17:51:29.000000000 +0200
++++ linden/indra/llmedia/llmediaimplexample2.cpp	2008-06-12 17:51:12.000000000 +0200
+@@ -35,6 +35,7 @@
+ // register this impl with media manager factory
+ static LLMediaImplRegister sLLMediaImplExample2Reg( "LLMediaImplExample2", new LLMediaImplExample2Maker() );
+ 
++#include <string.h>
+ #include <iostream>
+ #include <time.h>
+ 
+--- linden/indra/llcommon/llhash.h.1	2008-06-12 14:39:08.000000000 +0200
++++ linden/indra/llcommon/llhash.h	2008-06-12 14:39:49.000000000 +0200
+@@ -38,7 +38,9 @@
+ #include <hash_map>
+ #include <algorithm>
+ #elif LL_DARWIN || LL_LINUX
+-#  if GCC_VERSION >= 30400 // gcc 3.4 and up
++#  if GCC_VERSION >= 40300 // gcc 4.3 and up
++#    include <backward/hashtable.h>
++#  elif GCC_VERSION >= 30400 // gcc 3.4 and up
+ #    include <ext/hashtable.h>
+ #  elif __GNUC__ >= 3
+ #    include <ext/stl_hashtable.h>
