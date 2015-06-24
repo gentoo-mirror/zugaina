@@ -1,12 +1,11 @@
-DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-lang/perl virtual/perl-MIME-Base64 www-apache/mod_perl dev-perl/Net-NIS dev-lang/perl:=[-build(-)]
+DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
+DEPEND=dev-lang/perl virtual/perl-MIME-Base64 www-apache/mod_perl dev-perl/Net-NIS
 DESCRIPTION=mod_perl NIS Authentication module
-EAPI=5
 HOMEPAGE=http://search.cpan.org/~speeves/Apache-AuthenNIS-0.13/
 KEYWORDS=~amd64 ~x86
 LICENSE=|| ( Artistic GPL-2 )
-RDEPEND=dev-lang/perl:=[-build(-)]
+RDEPEND=dev-lang/perl virtual/perl-MIME-Base64 www-apache/mod_perl dev-perl/Net-NIS
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/S/SP/SPEEVES/Apache-AuthenNIS-0.13.tar.gz
-_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	multiprocessing	d7f2985a2c76c365ee20269db5261414	perl-module	79253b64b2972a3e513329a729242b27	toolchain-funcs	42408102d713fbad60ca21349865edb4	unpacker	f300a7ca9131b1024a79762e8edd3c52
-_md5_=6d0ac9494b585b3eb0b8256aa4a78a19
+_eclasses_=base	ec46b36a6f6fd1d0b505a33e0b74e413	eutils	af81d52c25ec93fbdff71e0efb0de7b7	multilib	fac675dcccf94392371a6abee62d909f	multiprocessing	c2d96fb38f2596209e98fceda58ba1ed	perl-module	1d50a6ea2d8d319e3205b005b3ed0dfa	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
+_md5_=219364a1e962b7a36f40da9bda82f308

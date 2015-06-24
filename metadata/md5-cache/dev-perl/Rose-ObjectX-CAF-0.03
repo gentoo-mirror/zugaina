@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-perl/Rose-Object test? ( >=virtual/perl-Test-Simple-0.01 ) dev-lang/perl:=[-build(-)]
+DEPEND=dev-perl/Rose-Object test? ( >=virtual/perl-Test-Simple-0.01 ) || ( >=dev-lang/perl-5.16 <dev-lang/perl-5.16[-build] )
 DESCRIPTION=Class::Accessor::Fast compatability for Rose::Object
-EAPI=5
+EAPI=2
 HOMEPAGE=http://search.cpan.org/dist/Rose-ObjectX-CAF/
 IUSE=test
 KEYWORDS=~amd64 ~x86
 LICENSE=|| ( Artistic GPL-2 )
-RDEPEND=dev-perl/Rose-Object dev-lang/perl:=[-build(-)]
+RDEPEND=dev-perl/Rose-Object || ( >=dev-lang/perl-5.16 <dev-lang/perl-5.16[-build] )
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/K/KA/KARMAN/Rose-ObjectX-CAF-0.03.tar.gz
-_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	multiprocessing	d7f2985a2c76c365ee20269db5261414	perl-module	79253b64b2972a3e513329a729242b27	toolchain-funcs	42408102d713fbad60ca21349865edb4	unpacker	f300a7ca9131b1024a79762e8edd3c52
-_md5_=ca321d1dd115053bca346e58f22bdeaa
+_eclasses_=base	ec46b36a6f6fd1d0b505a33e0b74e413	eutils	af81d52c25ec93fbdff71e0efb0de7b7	multilib	fac675dcccf94392371a6abee62d909f	multiprocessing	c2d96fb38f2596209e98fceda58ba1ed	perl-module	1d50a6ea2d8d319e3205b005b3ed0dfa	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
+_md5_=36909d52fb93e68b0aca618251b230b3
