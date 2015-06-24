@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install
-DEPEND=ewf? ( app-forensics/libewf ) fuse? ( sys-fs/fuse ) ncurses? ( sys-libs/ncurses ) python? ( dev-lang/python ) readline? ( sys-libs/readline ) s3? ( net-misc/curl dev-libs/expat ) sys-libs/zlib dev-libs/openssl !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.13 >=sys-devel/automake-1.14 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=ewf? ( app-forensics/libewf ) fuse? ( sys-fs/fuse ) ncurses? ( sys-libs/ncurses ) python? ( dev-lang/python ) readline? ( sys-libs/readline ) s3? ( net-misc/curl dev-libs/expat ) sys-libs/zlib dev-libs/openssl !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.14.1 >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
 DESCRIPTION=Library that implements the AFF image standard
 HOMEPAGE=http://www.afflib.org/
 IUSE=ewf fuse ncurses python qemu readline s3 threads
@@ -8,5 +8,5 @@ LICENSE=BSD-4
 RDEPEND=ewf? ( app-forensics/libewf ) fuse? ( sys-fs/fuse ) ncurses? ( sys-libs/ncurses ) python? ( dev-lang/python ) readline? ( sys-libs/readline ) s3? ( net-misc/curl dev-libs/expat ) sys-libs/zlib dev-libs/openssl
 SLOT=0
 SRC_URI=http://www.afflib.org/downloads/afflib-3.3.4.tar.gz
-_eclasses_=autotools	5256b4f4c1798109f39f308f9f7eaf5f	eutils	af81d52c25ec93fbdff71e0efb0de7b7	libtool	b9b3340e3a19510f0d9f05cfccbf209f	multilib	fac675dcccf94392371a6abee62d909f	multiprocessing	c2d96fb38f2596209e98fceda58ba1ed	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
+_eclasses_=autotools	a9597abac7226d89ad9d010abeef6cfb	eutils	9fb270e417e0e83d64ca52586c4a79de	libtool	52d0e17251d04645ffaa61bfdd858944	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
 _md5_=8b4823ddd5df72acdcdfefaf20e1cd33
