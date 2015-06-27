@@ -8,5 +8,5 @@ RDEPEND=>=x11-libs/gtk+-2.6 || ( >=media-sound/xmms2-0.2.1 media-sound/xmms2-git
 RESTRICT=nomirror
 SLOT=0
 SRC_URI=mirror://sourceforge/azrael/azrael-0.3.5.tar.bz2
-_eclasses_=eutils	af81d52c25ec93fbdff71e0efb0de7b7	multilib	fac675dcccf94392371a6abee62d909f	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
 _md5_=fd3ba165e51fe7ff31f5f70e11d81f83
