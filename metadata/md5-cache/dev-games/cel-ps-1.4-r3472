@@ -9,5 +9,5 @@ RDEPEND=virtual/opengl virtual/glu cegui? ( dev-games/cegui ) ode? ( dev-games/o
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://dev.gentooexperimental.org/~loux/distfiles/cel-ps-1.4-r3472.tar.bz2 http://loux.thefuture.free.fr/distfiles/cel-ps-1.4-r3472.tar.bz2
-_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	flag-o-matic	c9602887773166fe300444712fc7ff98	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_eclasses_=eutils	af81d52c25ec93fbdff71e0efb0de7b7	flag-o-matic	9a539029fe1d390c1828ff633baf26b5	multilib	fac675dcccf94392371a6abee62d909f	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
 _md5_=55dabf0f01953d7746694a0af74d11b1
