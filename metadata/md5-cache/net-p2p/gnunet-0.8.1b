@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install postinst preinst prepare setup
-DEPEND=>=dev-libs/libgcrypt-1.2.0 =media-libs/libextractor-0.5.23 >=dev-libs/gmp-4.0.0 gnome-base/libglade sys-libs/zlib net-misc/curl gtk? ( >=x11-libs/gtk+-2.6.10 ) sys-apps/sed >=dev-scheme/guile-1.8.0 mysql? ( >=virtual/mysql-4.0 ) sqlite? ( >=dev-db/sqlite-3.0.8 ) nls? ( sys-devel/gettext ) smtp? ( net-libs/libesmtp ) http? ( net-libs/libmicrohttpd ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.13:1.13 >=sys-devel/automake-1.14:1.14 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
+DEPEND=>=dev-libs/libgcrypt-1.2.0 =media-libs/libextractor-0.5.23 >=dev-libs/gmp-4.0.0 gnome-base/libglade sys-libs/zlib net-misc/curl gtk? ( >=x11-libs/gtk+-2.6.10 ) sys-apps/sed >=dev-scheme/guile-1.8.0 mysql? ( >=virtual/mysql-4.0 ) sqlite? ( >=dev-db/sqlite-3.0.8 ) nls? ( sys-devel/gettext ) smtp? ( net-libs/libesmtp ) http? ( net-libs/libmicrohttpd ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.14.1:1.14 >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
 DESCRIPTION=GNUnet is an anonymous, distributed, reputation based network.
 EAPI=2
 HOMEPAGE=http://gnunet.org/
@@ -10,5 +10,5 @@ RDEPEND=>=dev-libs/libgcrypt-1.2.0 =media-libs/libextractor-0.5.23 >=dev-libs/gm
 RESTRICT=test
 SLOT=0
 SRC_URI=http://gnunet.org/download/GNUnet-0.8.1b.tar.gz
-_eclasses_=autotools	5256b4f4c1798109f39f308f9f7eaf5f	eutils	af81d52c25ec93fbdff71e0efb0de7b7	libtool	b9b3340e3a19510f0d9f05cfccbf209f	multilib	fac675dcccf94392371a6abee62d909f	multiprocessing	c2d96fb38f2596209e98fceda58ba1ed	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
+_eclasses_=autotools	a9597abac7226d89ad9d010abeef6cfb	eutils	9fb270e417e0e83d64ca52586c4a79de	libtool	52d0e17251d04645ffaa61bfdd858944	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
 _md5_=0c554f92c877c5a4066fffb2edecdb38
