@@ -1,11 +1,12 @@
-DEFINED_PHASES=compile install postinst postrm preinst prerm setup test unpack
-DEPEND=dev-lang/perl
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=dev-lang/perl dev-lang/perl:=[-build(-)]
 DESCRIPTION=Interface to Sun's Network Information Service
+EAPI=5
 HOMEPAGE=http://search.cpan.org/~esm/
 KEYWORDS=~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=Artistic
-RDEPEND=dev-lang/perl
+RDEPEND=dev-lang/perl:=[-build(-)]
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/E/ES/ESM/Net-NIS-0.43.tar.gz
-_eclasses_=base	ec46b36a6f6fd1d0b505a33e0b74e413	eutils	af81d52c25ec93fbdff71e0efb0de7b7	multilib	fac675dcccf94392371a6abee62d909f	multiprocessing	c2d96fb38f2596209e98fceda58ba1ed	perl-module	1d50a6ea2d8d319e3205b005b3ed0dfa	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
-_md5_=261adecc745afbfcd00507f3fa171c10
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	multiprocessing	d7f2985a2c76c365ee20269db5261414	perl-module	9ff260c452d420630500e700913be8d8	toolchain-funcs	42408102d713fbad60ca21349865edb4	unpacker	f300a7ca9131b1024a79762e8edd3c52
+_md5_=da9fc476dc3c4f460d9a33472d16deb3
