@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=dev-db/sqlite:3 dev-games/physfs dev-libs/popt media-libs/libogg media-libs/libpng media-libs/libsdl[opengl] media-libs/libtheora media-libs/libvorbis media-libs/openal media-libs/sdl-net media-libs/quesoglc virtual/glu virtual/opengl nls? ( virtual/libintl ) app-arch/zip dev-util/pkgconfig nls? ( sys-devel/gettext )
+DESCRIPTION=3D real-time strategy game
+EAPI=2
+HOMEPAGE=http://wz2100.net/
+IUSE=debug nls videos
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-2 CCPL-Attribution-ShareAlike-3.0 public-domain
+RDEPEND=dev-db/sqlite:3 dev-games/physfs dev-libs/popt media-libs/libogg media-libs/libpng media-libs/libsdl[opengl] media-libs/libtheora media-libs/libvorbis media-libs/openal media-libs/sdl-net media-libs/quesoglc virtual/glu virtual/opengl nls? ( virtual/libintl ) media-fonts/dejavu games-misc/games-envd
+SLOT=0
+SRC_URI=mirror://sourceforge/warzone2100/warzone2100-2.2.1.tar.bz2 videos? ( http://download.gna.org/warzone/videos/sequences-2.2.wz )
+_eclasses_=base	ec46b36a6f6fd1d0b505a33e0b74e413	eutils	af81d52c25ec93fbdff71e0efb0de7b7	games	016d5de1968de77e56a90938ed6e5aba	multilib	fac675dcccf94392371a6abee62d909f	toolchain-funcs	48b38a216afb92db6314d6c3187abea3	user	d0a4d0735a6c0183d707ca919bd72f28	versionator	a8a3963967d6140be9a14b08bb8f047f
+_md5_=ddb522f9a00cfd321c74cd8f0a0f29ee
