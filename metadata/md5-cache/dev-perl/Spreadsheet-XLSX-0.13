@@ -1,13 +1,13 @@
 DEFINED_PHASES=compile configure install prepare test unpack
-DEPEND=dev-perl/Spreadsheet-ParseExcel test? ( >=virtual/perl-Test-Simple-0.01 ) dev-lang/perl:=[-build(-)]
+DEPEND=dev-perl/Spreadsheet-ParseExcel test? ( >=virtual/perl-Test-Simple-0.01 ) || ( >=dev-lang/perl-5.16 <dev-lang/perl-5.16[-build] )
 DESCRIPTION=Perl extension for readinf MS Excel 2007 files
-EAPI=5
+EAPI=2
 HOMEPAGE=http://search.cpan.org/dist/Spreadsheet-XLSX/
 IUSE=test
 KEYWORDS=~amd64 ~x86
 LICENSE=|| ( Artistic GPL-2 )
-RDEPEND=dev-lang/perl:=[-build(-)]
+RDEPEND=|| ( >=dev-lang/perl-5.16 <dev-lang/perl-5.16[-build] )
 SLOT=0
 SRC_URI=mirror://cpan/authors/id/D/DM/DMOW/Spreadsheet-XLSX-0.13.tar.gz
-_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	multiprocessing	d7f2985a2c76c365ee20269db5261414	perl-module	9ff260c452d420630500e700913be8d8	toolchain-funcs	42408102d713fbad60ca21349865edb4	unpacker	f300a7ca9131b1024a79762e8edd3c52
-_md5_=2707b6b40ae583ec4cbb84a34a8b1c29
+_eclasses_=base	ec46b36a6f6fd1d0b505a33e0b74e413	eutils	af81d52c25ec93fbdff71e0efb0de7b7	multilib	fac675dcccf94392371a6abee62d909f	multiprocessing	c2d96fb38f2596209e98fceda58ba1ed	perl-module	1d50a6ea2d8d319e3205b005b3ed0dfa	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
+_md5_=d3117db3dbdfbbf5c29b333fcfd28dfc

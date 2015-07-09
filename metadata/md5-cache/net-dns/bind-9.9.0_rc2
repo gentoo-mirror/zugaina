@@ -1,5 +1,5 @@
 DEFINED_PHASES=config configure install postinst prepare setup
-DEPEND=ssl? ( >=dev-libs/openssl-0.9.6g ) mysql? ( >=virtual/mysql-4.0 ) odbc? ( >=dev-db/unixODBC-2.2.6 ) ldap? ( net-nds/openldap ) idn? ( net-dns/idnkit ) postgres? ( dev-db/postgresql-base ) caps? ( >=sys-libs/libcap-2.1.0 ) xml? ( dev-libs/libxml2 ) gssapi? ( virtual/krb5 ) sdb-ldap? ( net-nds/openldap ) gost? ( >=dev-libs/openssl-1.0.0 ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.14.1:1.14 >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DEPEND=ssl? ( >=dev-libs/openssl-0.9.6g ) mysql? ( >=virtual/mysql-4.0 ) odbc? ( >=dev-db/unixODBC-2.2.6 ) ldap? ( net-nds/openldap ) idn? ( net-dns/idnkit ) postgres? ( dev-db/postgresql-base ) caps? ( >=sys-libs/libcap-2.1.0 ) xml? ( dev-libs/libxml2 ) gssapi? ( virtual/krb5 ) sdb-ldap? ( net-nds/openldap ) gost? ( >=dev-libs/openssl-1.0.0 ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.13:1.13 >=sys-devel/automake-1.14:1.14 ) >=sys-devel/autoconf-2.68 sys-devel/libtool
 DESCRIPTION=BIND - Berkeley Internet Name Domain - Name Server
 EAPI=4
 HOMEPAGE=http://www.isc.org/software/bind
@@ -10,5 +10,5 @@ RDEPEND=ssl? ( >=dev-libs/openssl-0.9.6g ) mysql? ( >=virtual/mysql-4.0 ) odbc? 
 REQUIRED_USE=postgres? ( dlz ) berkdb? ( dlz ) mysql? ( dlz !threads ) odbc? ( dlz ) ldap? ( dlz ) sdb-ldap? ( dlz ) gost? ( ssl )
 SLOT=0
 SRC_URI=ftp://ftp.isc.org/isc/bind9/9.9.0rc2/bind-9.9.0rc2.tar.gz doc? ( mirror://gentoo/dyndns-samples.tbz2 ) sdb-ldap? ( http://ftp.disconnected-by-peer.at/pub/bind-sdb-ldap-1.1.0-fc14.patch.bz2 )
-_eclasses_=autotools	a9597abac7226d89ad9d010abeef6cfb	eutils	9fb270e417e0e83d64ca52586c4a79de	flag-o-matic	c9602887773166fe300444712fc7ff98	libtool	52d0e17251d04645ffaa61bfdd858944	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_eclasses_=autotools	5256b4f4c1798109f39f308f9f7eaf5f	eutils	af81d52c25ec93fbdff71e0efb0de7b7	flag-o-matic	9a539029fe1d390c1828ff633baf26b5	libtool	b9b3340e3a19510f0d9f05cfccbf209f	multilib	fac675dcccf94392371a6abee62d909f	multiprocessing	c2d96fb38f2596209e98fceda58ba1ed	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
 _md5_=cf15a52458a73363f0bc0e3bb895519b

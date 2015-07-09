@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-2
 RDEPEND=ssl? ( >=app-crypt/qca-tls-1.0-r2 ) crypt? ( >=app-crypt/gnupg-1.2.2 ) dev-libs/expat media-libs/speex net-libs/ortp
 SLOT=0
-_eclasses_=darcs	107294374ffc58b6cb67719ef8487504	eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_eclasses_=darcs	04f63caa2ef9dbb662f5b5fcd80c2c30	eutils	af81d52c25ec93fbdff71e0efb0de7b7	multilib	fac675dcccf94392371a6abee62d909f	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
 _md5_=75eb03a5aba6291f404c538b43ab8d4d
