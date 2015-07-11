@@ -9,5 +9,5 @@ RDEPEND=virtual/ghostscript >=net-print/cups-1.1.14 !amd64? ( sys-libs/glibc >=d
 RESTRICT=nomirror
 SLOT=0
 SRC_URI=ftp://download.canon.jp/pub/driver/bj/linux/bjfilter-common-2.50-2.src.rpm
-_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	flag-o-matic	c9602887773166fe300444712fc7ff98	multilib	62927b3db3a589b0806255f3a002d5d3	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_eclasses_=eutils	af81d52c25ec93fbdff71e0efb0de7b7	flag-o-matic	9a539029fe1d390c1828ff633baf26b5	multilib	fac675dcccf94392371a6abee62d909f	rpm	b94b54b44f14d6bee3e966c8f5c86fba	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
 _md5_=a78268d237850b43a9d608a5e0d88f63
