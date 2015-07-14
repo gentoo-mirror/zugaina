@@ -1,10 +1,10 @@
 DEFINED_PHASES=compile install unpack
-DEPEND=doc? ( app-doc/doxygen virtual/tetex ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.13 >=sys-devel/automake-1.14 ) >=sys-devel/autoconf-2.68 sys-devel/libtool dev-vcs/cvs
+DEPEND=doc? ( app-doc/doxygen virtual/tetex ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.14.1 >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/cvs
 DESCRIPTION=Open Source video codec
 HOMEPAGE=http://dirac.sourceforge.net/
 IUSE=mmx debug doc
 KEYWORDS=-*
 LICENSE=MPL-1.1
 SLOT=0
-_eclasses_=autotools	5256b4f4c1798109f39f308f9f7eaf5f	cvs	638266995fbb0c9c6b1eabbb8582c3f3	eutils	af81d52c25ec93fbdff71e0efb0de7b7	libtool	b9b3340e3a19510f0d9f05cfccbf209f	multilib	fac675dcccf94392371a6abee62d909f	multiprocessing	c2d96fb38f2596209e98fceda58ba1ed	toolchain-funcs	48b38a216afb92db6314d6c3187abea3
+_eclasses_=autotools	a9597abac7226d89ad9d010abeef6cfb	cvs	a4cb8da1bb586b224ade5b54f1d2fda0	eutils	9fb270e417e0e83d64ca52586c4a79de	libtool	52d0e17251d04645ffaa61bfdd858944	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
 _md5_=3067efb4973f6938bd8d291edd3b3d51
