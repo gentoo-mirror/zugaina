@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install setup
+DEPEND=sys-fs/device-mapper >=dev-libs/libgcrypt-1.1.94 ssl? ( dev-libs/openssl ) nls? ( virtual/libintl ) nls? ( sys-devel/gettext )
+DESCRIPTION=A utility for management and user-mode mounting of encrypted filesystems
+HOMEPAGE=http://cryptmount.sourceforge.net/
+IUSE=nls ssl
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=sys-fs/device-mapper >=dev-libs/libgcrypt-1.1.94 ssl? ( dev-libs/openssl ) nls? ( virtual/libintl )
+SLOT=0
+SRC_URI=mirror://sourceforge/cryptmount/cryptmount-3.0.tar.gz
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	linux-info	8cbc678e083c23e4ad546ca6509cf304	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4	versionator	cd0bcdb170807e4a1984115e9d53a26f
+_md5_=426f020b278ee6ad05b7aa5a1e4b0772

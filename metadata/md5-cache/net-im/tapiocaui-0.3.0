@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install
+DEPEND=net-im/tapioca-coreclient net-im/tapioca-xmpp dev-libs/glib x11-libs/gtk+
+DESCRIPTION=Tapioca UI
+HOMEPAGE=http://tapioca-voip.sf.net
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=net-im/tapioca-coreclient net-im/tapioca-xmpp dev-libs/glib x11-libs/gtk+
+RESTRICT=nomirror
+SLOT=0
+SRC_URI=mirror://sourceforge/tapioca-voip/tapiocaui-0.3.0.tar.gz
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_md5_=8806bd05747e5fe9c3b26d22ecaec3e9
