@@ -1,0 +1,12 @@
+DEFINED_PHASES=install postinst prerm setup
+DEPEND=app-arch/unzip || ( virtual/httpd-cgi virtual/httpd-fastcgi ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+DESCRIPTION=Web picture gallery written in PHP with a MySQL backend
+HOMEPAGE=http://coppermine.sourceforge.net/
+IUSE=imagemagick vhosts
+KEYWORDS=~amd64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=imagemagick? ( media-gfx/imagemagick ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+SLOT=1.4.20
+SRC_URI=mirror://sourceforge/coppermine/cpg1.4.20.zip
+_eclasses_=depend.php	4400a239a11e94cd350b6b6f27d203e8	eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4	versionator	cd0bcdb170807e4a1984115e9d53a26f	webapp	6621f8b5df9f14800054a5953065efeb
+_md5_=641f7cd386f45fe6683b1755458809ee
