@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst preinst prepare setup unpack
+DEPEND=>=games-util/nforenum-4.0.0 >=games-util/grfcodec-1.0.0
+DESCRIPTION=OpenGFX data files for OpenTTD
+EAPI=2
+HOMEPAGE=http://bundles.openttdcoop.org/opengfx/
+KEYWORDS=amd64 ppc ppc64 x86
+LICENSE=GPL-2
+RDEPEND=games-misc/games-envd
+RESTRICT=test
+SLOT=0
+SRC_URI=http://ftp.snt.utwente.nl/pub/games/openttd/binaries/extra/opengfx/0.3.0/opengfx-0.3.0-source.tar.gz
+_eclasses_=base	ec46b36a6f6fd1d0b505a33e0b74e413	eutils	af81d52c25ec93fbdff71e0efb0de7b7	games	016d5de1968de77e56a90938ed6e5aba	multilib	fac675dcccf94392371a6abee62d909f	toolchain-funcs	48b38a216afb92db6314d6c3187abea3	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=cda2af220b0a99f99144cf9e923f5a97
