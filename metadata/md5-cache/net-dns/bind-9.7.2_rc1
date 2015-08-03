@@ -1,0 +1,13 @@
+DEFINED_PHASES=config configure install postinst prepare setup
+DEPEND=ssl? ( >=dev-libs/openssl-0.9.6g ) mysql? ( >=virtual/mysql-4.0 ) odbc? ( >=dev-db/unixODBC-2.2.6 ) ldap? ( net-nds/openldap ) idn? ( net-dns/idnkit ) postgres? ( dev-db/postgresql-base ) threads? ( >=sys-libs/libcap-2.1.0 ) xml? ( dev-libs/libxml2 ) geoip? ( >=dev-libs/geoip-1.4.6 ) gssapi? ( virtual/krb5 ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.14.1:1.14 >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DESCRIPTION=BIND - Berkeley Internet Name Domain - Name Server
+EAPI=3
+HOMEPAGE=http://www.isc.org/software/bind
+IUSE=ssl ipv6 doc dlz postgres berkdb mysql odbc ldap selinux idn threads resolvconf urandom sdb-ldap xml geoip gssapi
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+LICENSE=as-is
+RDEPEND=ssl? ( >=dev-libs/openssl-0.9.6g ) mysql? ( >=virtual/mysql-4.0 ) odbc? ( >=dev-db/unixODBC-2.2.6 ) ldap? ( net-nds/openldap ) idn? ( net-dns/idnkit ) postgres? ( dev-db/postgresql-base ) threads? ( >=sys-libs/libcap-2.1.0 ) xml? ( dev-libs/libxml2 ) geoip? ( >=dev-libs/geoip-1.4.6 ) gssapi? ( virtual/krb5 ) selinux? ( sec-policy/selinux-bind ) resolvconf? ( net-dns/openresolv ) sys-process/psmisc
+SLOT=0
+SRC_URI=ftp://ftp.isc.org/isc/bind9/9.7.2rc1/bind-9.7.2rc1.tar.gz sdb-ldap? ( mirror://gentoo/bind-sdb-ldap-1.1.0.tar.bz2 ) doc? ( mirror://gentoo/dyndns-samples.tbz2 ) geoip? ( http://bind-geoip.googlecode.com//files/bind-geoip-1.3-readme.txt http://bind-geoip.googlecode.com//files/bind-geoip-1.3.patch )
+_eclasses_=autotools	a9597abac7226d89ad9d010abeef6cfb	eutils	9fb270e417e0e83d64ca52586c4a79de	flag-o-matic	c9602887773166fe300444712fc7ff98	libtool	52d0e17251d04645ffaa61bfdd858944	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_md5_=1608f05eb882bdbd21c2641a74d445ba
