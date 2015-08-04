@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install postinst prepare setup test
+DEPEND=virtual/libiconv frost? ( >=dev-libs/libtomcrypt-1.17-r3[libtommath] ) >=dev-libs/poco-1.2.9 || ( >=dev-db/sqlite-3.6.15 =dev-db/sqlite-3.6.13* =dev-db/sqlite-3.6.12* =dev-db/sqlite-3.6.11* =dev-db/sqlite-3.6.6.2* ) sys-devel/make >=dev-util/cmake-2.8.12 userland_GNU? ( >=sys-apps/findutils-4.4.0 )
+DESCRIPTION=A spam-resistant message board application for Freenet
+EAPI=2
+HOMEPAGE=http://freenetproject.org/tools.html
+IUSE=frost
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=virtual/libiconv frost? ( >=dev-libs/libtomcrypt-1.17-r3[libtommath] ) >=dev-libs/poco-1.2.9 || ( >=dev-db/sqlite-3.6.15 =dev-db/sqlite-3.6.13* =dev-db/sqlite-3.6.12* =dev-db/sqlite-3.6.11* =dev-db/sqlite-3.6.6.2* )
+SLOT=0
+SRC_URI=http://distfiles.zugaina.org/fms-src-0.3.48.zip
+_eclasses_=cmake-utils	0430c386d85cec959d72640afd63ea91	eutils	9fb270e417e0e83d64ca52586c4a79de	flag-o-matic	c9602887773166fe300444712fc7ff98	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_md5_=10a7be9795e36a62dd8ae37fb39e1e54
