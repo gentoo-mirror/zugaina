@@ -1,13 +1,13 @@
-_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	flag-o-matic	c9602887773166fe300444712fc7ff98	versionator	cd0bcdb170807e4a1984115e9d53a26f	multilib	62927b3db3a589b0806255f3a002d5d3	libtool	52d0e17251d04645ffaa61bfdd858944	autotools	2264f05fbbbaaf83d34ec81e72b38ffd	eutils	9fb270e417e0e83d64ca52586c4a79de
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	autotools	2264f05fbbbaaf83d34ec81e72b38ffd	libtool	52d0e17251d04645ffaa61bfdd858944	eutils	9fb270e417e0e83d64ca52586c4a79de
 _md5_=bcf0c83055349b4a44be5a46cf320902
 SLOT=0
-DEFINED_PHASES=configure install postinst prepare setup
+DEFINED_PHASES=configure install prepare
 EAPI=4
-DEPEND=dev-libs/openssl >=dev-libs/libevent-2.0.14 nat-pmp? ( net-libs/libnatpmp ) upnp? ( <net-libs/miniupnpc-1.6 ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
-DESCRIPTION=Anonymizing overlay network for TCP
-LICENSE=BSD
-IUSE=+bufferevents doc nat-pmp tor-hardening transparent-proxy threads upnp
-SRC_URI=http://www.torproject.org/dist/tor-0.2.3.10-alpha.tar.gz
-KEYWORDS=~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
-HOMEPAGE=http://www.torproject.org/
-RDEPEND=dev-libs/openssl >=dev-libs/libevent-2.0.14 nat-pmp? ( net-libs/libnatpmp ) upnp? ( <net-libs/miniupnpc-1.6 )
+DEPEND=dev-util/pkgconfig nls? ( sys-devel/gettext ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DESCRIPTION=LiVES is a Video Editing System
+LICENSE=GPL-2
+IUSE=libvisual matroska nls ogg theora
+SRC_URI=http://www.xs4all.nl/~salsaman/lives/current/LiVES-1.4.9.tar.bz2
+KEYWORDS=~amd64 ~ppc ~x86
+HOMEPAGE=http://lives.sf.net
+RDEPEND=media-video/mplayer[jpeg,png] || ( media-gfx/imagemagick media-gfx/graphicsmagick[imagemagick] ) dev-lang/perl >=dev-libs/glib-2.14 >=x11-libs/gtk+-2.16:2 media-libs/libsdl media-libs/libv4l virtual/ffmpeg virtual/jpeg media-sound/sox virtual/cdrtools || ( dev-lang/python:2.7 dev-lang/python:2.6 ) media-plugins/frei0r-plugins media-sound/jack-audio-connection-kit >=media-video/mjpegtools-1.6.2 sys-libs/libavc1394 libvisual? ( media-libs/libvisual ) matroska? ( media-video/mkvtoolnix ) ogg? ( media-sound/ogmtools ) theora? ( media-libs/libtheora ) net-misc/youtube-dl
