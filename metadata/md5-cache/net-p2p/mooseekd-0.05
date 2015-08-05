@@ -1,0 +1,12 @@
+DEFINED_PHASES=install
+DEPEND=>=dev-cpp/libxmlpp-2.14.0 dev-libs/glib
+DESCRIPTION=File-sharing application for the Soulseek peer-to-peer network.
+HOMEPAGE=http://bmpx.beep-media-player.org
+KEYWORDS=~x86 ~amd64
+LICENSE=GPL-2
+RDEPEND=>=dev-cpp/libxmlpp-2.14.0 dev-libs/glib
+RESTRICT=nomirror
+SLOT=0
+SRC_URI=http://files.beep-media-player.org/releases/mooseekd/mooseekd-0.05.tar.bz2
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_md5_=a970eef1dafd81410b78543bdf3075fa
