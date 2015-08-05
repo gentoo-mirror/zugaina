@@ -1,0 +1,14 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	versionator	cd0bcdb170807e4a1984115e9d53a26f	multilib	62927b3db3a589b0806255f3a002d5d3	webapp	94698bf1c7a5b1acd3184e94f484017	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=d934465309e94113ea0a9d2f7c96bcf8
+SLOT=0
+DEFINED_PHASES=install postinst prerm setup unpack
+EAPI=0
+DEPEND=apache2? ( =www-servers/apache-2* ) >=app-admin/webapp-config-1.50.15
+DESCRIPTION=AWStats is short for Advanced Web Statistics.
+LICENSE=GPL-2
+IUSE=geoip apache2 vhosts
+RESTRICT=mirror
+SRC_URI=mirror://sourceforge/awstats/awstats-6.8.tar.gz
+KEYWORDS=~alpha ~amd64 ~hppa ~ppc ~sparc ~x86 ~x86-fbsd
+HOMEPAGE=http://awstats.sourceforge.net/
+RDEPEND=>=dev-lang/perl-5.6.1 >=media-libs/libpng-1.2 virtual/perl-Time-Local dev-perl/URI geoip? ( dev-perl/Geo-IP ) apache2? ( =www-servers/apache-2* ) >=app-admin/webapp-config-1.50.15
