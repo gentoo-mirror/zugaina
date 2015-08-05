@@ -1,0 +1,13 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	depend.php	9ad63283ebea79851f4521028c019da6	versionator	cd0bcdb170807e4a1984115e9d53a26f	multilib	62927b3db3a589b0806255f3a002d5d3	webapp	94698bf1c7a5b1acd3184e94f484017	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=641f7cd386f45fe6683b1755458809ee
+SLOT=1.4.20
+DEFINED_PHASES=install postinst prerm setup
+EAPI=0
+DEPEND=app-arch/unzip || ( virtual/httpd-cgi virtual/httpd-fastcgi ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+DESCRIPTION=Web picture gallery written in PHP with a MySQL backend
+LICENSE=GPL-2
+IUSE=imagemagick vhosts
+SRC_URI=mirror://sourceforge/coppermine/cpg1.4.20.zip
+KEYWORDS=~amd64 ~sparc ~x86
+HOMEPAGE=http://coppermine.sourceforge.net/
+RDEPEND=imagemagick? ( media-gfx/imagemagick ) virtual/httpd-php >=app-admin/webapp-config-1.50.15

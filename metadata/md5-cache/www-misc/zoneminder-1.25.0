@@ -1,0 +1,13 @@
+_eclasses_=autotools	2264f05fbbbaaf83d34ec81e72b38ffd	toolchain-funcs	42408102d713fbad60ca21349865edb4	flag-o-matic	c9602887773166fe300444712fc7ff98	depend.php	9ad63283ebea79851f4521028c019da6	multilib	62927b3db3a589b0806255f3a002d5d3	scons-utils	988e24b9e2e4642189b4e97c03e5ae71	libtool	52d0e17251d04645ffaa61bfdd858944	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=e10fd3738753cdc42f39eb58504aeac3
+SLOT=0
+DEFINED_PHASES=compile install postinst setup unpack
+EAPI=0
+DEPEND=app-admin/sudo dev-libs/libpcre virtual/jpeg net-libs/gnutls >=dev-lang/perl-5.6.0 virtual/perl-Archive-Tar dev-perl/Archive-Zip dev-perl/DateManip dev-perl/DBD-mysql dev-perl/DBI dev-perl/Device-SerialPort dev-perl/libwww-perl dev-perl/MIME-Lite dev-perl/MIME-tools dev-perl/PHP-Serialization virtual/perl-Getopt-Long virtual/perl-libnet virtual/perl-Module-Load virtual/perl-Sys-Syslog virtual/perl-Time-HiRes mmap? ( dev-perl/Sys-Mmap ) =www-servers/apache-2* virtual/httpd-php !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-util/scons
+DESCRIPTION=ZoneMinder allows you to capture, analyse, record and monitor any cameras attached to your system.
+LICENSE=GPL-2
+IUSE=debug ffmpeg mmap
+SRC_URI=http://www2.zoneminder.com/downloads/ZoneMinder-1.25.0.tar.gz http://www.zoneminder.com/downloads/ZoneMinder-1.25.0.tar.gz
+KEYWORDS=~amd64 ~x86
+HOMEPAGE=http://www.zoneminder.com/
+RDEPEND=dev-perl/DBD-mysql ffmpeg? ( >=media-video/ffmpeg-0.5-r1 ) media-libs/netpbm =www-servers/apache-2* virtual/httpd-php

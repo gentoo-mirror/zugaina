@@ -1,0 +1,13 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	depend.php	9ad63283ebea79851f4521028c019da6	multilib	62927b3db3a589b0806255f3a002d5d3	webapp	94698bf1c7a5b1acd3184e94f484017	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=64a098ce90b33c056dcb3633b3c7b20b
+SLOT=0.4
+DEFINED_PHASES=install postinst prepare prerm setup
+EAPI=2
+DEPEND=|| ( virtual/httpd-cgi virtual/httpd-fastcgi ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
+DESCRIPTION=A browser-based multilingual IMAP client with an application-like user interface
+LICENSE=GPL-2 BSD PHP-2.02 PHP-3 MIT public-domain
+IUSE=ldap mysql postgres ssl spell vhosts
+SRC_URI=mirror://sourceforge/roundcubemail/roundcubemail-0.4.tar.gz
+KEYWORDS=amd64 arm ppc ppc64 ~sparc x86
+HOMEPAGE=http://roundcube.net
+RDEPEND=dev-lang/php[crypt,iconv,json,ldap?,pcre,postgres?,session,spl,ssl?,unicode] !postgres? ( !mysql? ( dev-lang/php[sqlite] ) ) spell? ( dev-lang/php[curl,spell] ) dev-php5/pecl-fileinfo dev-php/PEAR-PEAR virtual/httpd-php >=app-admin/webapp-config-1.50.15

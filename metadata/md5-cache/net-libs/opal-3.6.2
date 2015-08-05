@@ -1,0 +1,13 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	flag-o-matic	c9602887773166fe300444712fc7ff98	multilib	62927b3db3a589b0806255f3a002d5d3	libtool	52d0e17251d04645ffaa61bfdd858944	autotools	2264f05fbbbaaf83d34ec81e72b38ffd	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=274f675d1303152dc5a79d715efae4f0
+SLOT=0
+DEFINED_PHASES=compile configure install postinst prepare setup
+EAPI=2
+DEPEND=>=net-libs/ptlib-2.0.0[debug=,audio?,dns?,dtmf?,ipv6?,ldap?,ssl?,video?,vxml?,wav?,xml?] >=media-libs/speex-1.2_beta fax? ( net-libs/ptlib[asn] ) ivr? ( net-libs/ptlib[xml,vxml] ) java? ( virtual/jdk ) plugins? ( media-sound/gsm capi? ( net-dialup/capi4k-utils ) fax? ( media-libs/spandsp ) ffmpeg? ( >=media-video/ffmpeg-0.4.7[encode] ) ixj? ( sys-kernel/linux-headers ) theora? ( media-libs/libtheora ) x264? ( >=media-video/ffmpeg-0.4.7 media-libs/x264 ) ) srtp? ( net-libs/libsrtp ) dev-util/pkgconfig >=sys-devel/gcc-3 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DESCRIPTION=C++ class library normalising numerous telephony protocols
+LICENSE=MPL-1.0
+IUSE=+audio capi debug dns doc dtmf examples fax ffmpeg g711plc h224 +h323 iax ipv6 ivr ixj java ldap lid +plugins rfc4175 +sip srtp ssl stats theora +video vpb vxml wav x264 x264-static xml
+SRC_URI=mirror://sourceforge/opalvoip/opal-3.6.2.tar.bz2 doc? ( mirror://sourceforge/opalvoip/opal-3.6.2-htmldoc.tar.bz2 )
+KEYWORDS=~ppc ~x86 ~amd64
+HOMEPAGE=http://www.opalvoip.org/
+RDEPEND=>=net-libs/ptlib-2.0.0[debug=,audio?,dns?,dtmf?,ipv6?,ldap?,ssl?,video?,vxml?,wav?,xml?] >=media-libs/speex-1.2_beta fax? ( net-libs/ptlib[asn] ) ivr? ( net-libs/ptlib[xml,vxml] ) java? ( virtual/jdk ) plugins? ( media-sound/gsm capi? ( net-dialup/capi4k-utils ) fax? ( media-libs/spandsp ) ffmpeg? ( >=media-video/ffmpeg-0.4.7[encode] ) ixj? ( sys-kernel/linux-headers ) theora? ( media-libs/libtheora ) x264? ( >=media-video/ffmpeg-0.4.7 media-libs/x264 ) ) srtp? ( net-libs/libsrtp )

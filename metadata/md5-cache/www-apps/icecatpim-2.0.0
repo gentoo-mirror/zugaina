@@ -1,0 +1,13 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	versionator	cd0bcdb170807e4a1984115e9d53a26f	multilib	62927b3db3a589b0806255f3a002d5d3	webapp	94698bf1c7a5b1acd3184e94f484017	depend.apache	1a38534d3f755d1ab1d92ce120bd7dbd	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=70393f5ce96a524ed0d94104215bfeab
+SLOT=2.0.0
+DEFINED_PHASES=install postinst prepare prerm setup
+EAPI=2
+DEPEND=>=app-admin/webapp-config-1.50.15
+DESCRIPTION=Product Information Management (PIM) system
+LICENSE=GPL-3
+IUSE=vhosts
+SRC_URI=mirror://sourceforge/icecatpim/IcecatPIM%20v.2/Gentoo/PIMinstall-2.0.0-gentoo.tar.gz
+KEYWORDS=~amd64 ~x86
+HOMEPAGE=http://sourceforge.net/projects/icecatpim/
+RDEPEND=virtual/httpd-cgi >=dev-lang/perl-5.8.8 www-apache/mod_perl dev-perl/Algorithm-CheckDigits perl-core/Compress-Raw-Bzip2 perl-core/Compress-Raw-Zlib dev-perl/Data-Serializer dev-perl/File-Stat dev-perl/GD dev-perl/GD-Graph3d dev-perl/HTML-FromText dev-perl/HTML-Parser virtual/perl-IO virtual/perl-IO-Compress dev-perl/log-dispatch virtual/perl-MIME-Base64 dev-perl/MIME-Types dev-perl/SOAP-Lite dev-perl/Search-Tools dev-perl/Spreadsheet-ParseExcel dev-perl/Spreadsheet-WriteExcel dev-perl/Spreadsheet-XLSX dev-perl/String-Escape dev-perl/Text-CSV dev-perl/Text-Diff dev-perl/Text-Levenshtein virtual/perl-Time-HiRes virtual/perl-Time-Piece dev-perl/Unicode-Map8 dev-perl/Unicode-String dev-perl/WebService-Validator-HTML-W3C dev-perl/XML-LibXML dev-perl/XML-SAX dev-perl/XML-Simple dev-perl/XML-XPath dev-perl/libwww-perl >=app-admin/webapp-config-1.50.15

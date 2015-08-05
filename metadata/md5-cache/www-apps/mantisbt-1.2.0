@@ -1,0 +1,13 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	depend.php	9ad63283ebea79851f4521028c019da6	multilib	62927b3db3a589b0806255f3a002d5d3	eutils	9fb270e417e0e83d64ca52586c4a79de	webapp	94698bf1c7a5b1acd3184e94f484017
+_md5_=45f7fd8d6ee046f1f3bff38f7a4938c0
+SLOT=1.2.0
+DEFINED_PHASES=install postinst prerm setup unpack
+EAPI=0
+DEPEND=>=app-admin/webapp-config-1.50.15
+DESCRIPTION=PHP/MySQL/Web based bugtracking system
+LICENSE=GPL-2
+IUSE=vhosts
+SRC_URI=mirror://sourceforge/mantisbt/mantisbt-1.2.0.tar.gz
+KEYWORDS=~amd64 ~ppc ~x86
+HOMEPAGE=http://www.mantisbt.org/
+RDEPEND=virtual/httpd-php virtual/httpd-cgi dev-php/adodb >=app-admin/webapp-config-1.50.15
