@@ -1,0 +1,11 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	cvs	a4cb8da1bb586b224ade5b54f1d2fda0	libtool	52d0e17251d04645ffaa61bfdd858944	autotools	2264f05fbbbaaf83d34ec81e72b38ffd	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=3067efb4973f6938bd8d291edd3b3d51
+SLOT=0
+DEFINED_PHASES=compile install unpack
+EAPI=0
+DEPEND=doc? ( app-doc/doxygen virtual/tetex ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/cvs
+DESCRIPTION=Open Source video codec
+LICENSE=MPL-1.1
+IUSE=mmx debug doc
+KEYWORDS=-*
+HOMEPAGE=http://dirac.sourceforge.net/
