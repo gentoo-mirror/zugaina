@@ -7,7 +7,7 @@ DEPEND=tcpd? ( sys-apps/tcp-wrappers ) >=dev-libs/openssl-0.9.8k !<sys-devel/get
 DESCRIPTION=TLS/SSL - Port Wrapper
 LICENSE=GPL-2
 IUSE=ipv6 selinux tcpd ssl
-SRC_URI=http://www.stunnel.org/download/stunnel/src/stunnel-4.30.tar.gz
+SRC_URI=http://www.stunnel.org/download/stunnel/src/stunnel-4.31.tar.gz
 KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sparc x86
 HOMEPAGE=http://stunnel.mirt.net/
 RDEPEND=tcpd? ( sys-apps/tcp-wrappers ) >=dev-libs/openssl-0.9.8k selinux? ( sec-policy/selinux-stunnel )
