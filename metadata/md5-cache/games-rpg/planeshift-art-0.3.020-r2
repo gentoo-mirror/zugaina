@@ -1,12 +1,11 @@
-_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	base	87f7447ccfc06fd0729ff4684e11e0d6	games	1ad3205dbf62a2c98249f2f59b0a2d39	user	f54e098dd38ba1c0847a13e685b87747	eutils	9fb270e417e0e83d64ca52586c4a79de
-_md5_=be01135b06ee276e4c3411310a9f5178
-SLOT=0
 DEFINED_PHASES=compile install postinst preinst setup unpack
-EAPI=0
 DESCRIPTION=Virtual fantasy world MMORPG
-LICENSE=PlaneShift
-IUSE=nograss
-SRC_URI=http://dev.gentooexperimental.org/~loux/distfiles/art-0.3.020.tar.bz2 http://dev.gentooexperimental.org/~loux/distfiles/data-0.3.020.tar.bz2 http://dev.gentooexperimental.org/~loux/distfiles/complete_hydlaa_without_grass_by_Hassadria.zip
-KEYWORDS=~amd64 ~x86
 HOMEPAGE=http://www.planeshift.it/
+IUSE=nograss
+KEYWORDS=~amd64 ~x86
+LICENSE=PlaneShift
 RDEPEND=>=games-rpg/planeshift-0.3.020 games-misc/games-envd
+SLOT=0
+SRC_URI=http://dev.gentooexperimental.org/~loux/distfiles/art-0.3.020.tar.bz2 http://dev.gentooexperimental.org/~loux/distfiles/data-0.3.020.tar.bz2 http://dev.gentooexperimental.org/~loux/distfiles/complete_hydlaa_without_grass_by_Hassadria.zip
+_eclasses_=base	87f7447ccfc06fd0729ff4684e11e0d6	eutils	9fb270e417e0e83d64ca52586c4a79de	games	1ad3205dbf62a2c98249f2f59b0a2d39	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4	user	f54e098dd38ba1c0847a13e685b87747
+_md5_=be01135b06ee276e4c3411310a9f5178

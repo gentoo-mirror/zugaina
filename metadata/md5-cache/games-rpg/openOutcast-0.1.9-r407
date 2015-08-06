@@ -1,12 +1,11 @@
-_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	base	87f7447ccfc06fd0729ff4684e11e0d6	games	1ad3205dbf62a2c98249f2f59b0a2d39	user	f54e098dd38ba1c0847a13e685b87747	eutils	9fb270e417e0e83d64ca52586c4a79de
-_md5_=150905c870f97e541577e0e6d9801cc
-SLOT=0
 DEFINED_PHASES=compile install postinst preinst setup unpack
-EAPI=0
 DESCRIPTION=Virtual fantasy world MMORPG
-LICENSE=|| ( GPL-2 OpenOutcast )
-IUSE=maxoptimization debug
-SRC_URI=http://dev.gentooexperimental.org/~loux/distfiles/openOutcast-0.1.9-r407.tar.bz2
-KEYWORDS=~x86 ~amd64
 HOMEPAGE=http://www.openoutcast.org/
+IUSE=maxoptimization debug
+KEYWORDS=~x86 ~amd64
+LICENSE=|| ( GPL-2 OpenOutcast )
 RDEPEND=net-misc/curl >=media-libs/cal3d-0.11 >=dev-games/crystalspace-ps-1.1-r26888 >=dev-games/cel-ps-1.1-r2766 games-misc/games-envd
+SLOT=0
+SRC_URI=http://dev.gentooexperimental.org/~loux/distfiles/openOutcast-0.1.9-r407.tar.bz2
+_eclasses_=base	87f7447ccfc06fd0729ff4684e11e0d6	eutils	9fb270e417e0e83d64ca52586c4a79de	games	1ad3205dbf62a2c98249f2f59b0a2d39	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4	user	f54e098dd38ba1c0847a13e685b87747
+_md5_=0150905c870f97e541577e0e6d9801cc
