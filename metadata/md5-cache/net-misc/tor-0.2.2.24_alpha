@@ -6,7 +6,7 @@ EAPI=3
 DEPEND=dev-libs/openssl >=dev-libs/libevent-2.0 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
 DESCRIPTION=Anonymizing overlay network for TCP
 LICENSE=BSD
-SRC_URI=http://www.torproject.org/dist/tor-0.2.2.29-beta.tar.gz
+SRC_URI=http://www.torproject.org/dist/tor-0.2.2.24-alpha.tar.gz
 KEYWORDS=~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
 HOMEPAGE=http://www.torproject.org/
 RDEPEND=dev-libs/openssl >=dev-libs/libevent-2.0 net-proxy/tsocks[tordns]
