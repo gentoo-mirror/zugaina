@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=opengl? ( media-libs/alsa-lib media-libs/libsdl media-libs/openal virtual/opengl || ( ( x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/libXext ) virtual/x11 ) ) !dedicated? ( !opengl? ( media-libs/alsa-lib media-libs/libsdl media-libs/openal virtual/opengl || ( ( x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/libXext ) virtual/x11 ) ) ) app-arch/unzip
+DESCRIPTION=Team-based aliens vs humans FPS with buildable structures
+HOMEPAGE=http://tremulous.net/
+IUSE=dedicated opengl
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2 CCPL-Attribution-ShareAlike-2.5
+RDEPEND=opengl? ( media-libs/alsa-lib media-libs/libsdl media-libs/openal virtual/opengl || ( ( x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/libXext ) virtual/x11 ) ) !dedicated? ( !opengl? ( media-libs/alsa-lib media-libs/libsdl media-libs/openal virtual/opengl || ( ( x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/libXext ) virtual/x11 ) ) ) games-misc/games-envd
+RESTRICT=nomirror
+SLOT=0
+SRC_URI=mirror://sourceforge/tremulous/tremulous-1.1.0.zip http://0day.icculus.org/mirrors/tremulous/tremulous-1.1.0.zip ftp://ftp.wireplay.co.uk/pub/quake3arena/mods/tremulous/tremulous-1.1.0.zip
+_eclasses_=base	ec46b36a6f6fd1d0b505a33e0b74e413	eutils	af81d52c25ec93fbdff71e0efb0de7b7	games	016d5de1968de77e56a90938ed6e5aba	multilib	fac675dcccf94392371a6abee62d909f	toolchain-funcs	48b38a216afb92db6314d6c3187abea3	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=53516025aeac077f718e606a925fa70b

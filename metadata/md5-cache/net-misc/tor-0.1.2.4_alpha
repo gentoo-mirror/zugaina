@@ -1,12 +1,12 @@
-DEFINED_PHASES=install postinst setup unpack
-DEPEND=dev-libs/openssl dev-libs/libevent
-DESCRIPTION=Anonymizing overlay network for TCP
-HOMEPAGE=http://tor.eff.org
-KEYWORDS=amd64 ppc ppc64 sparc x86
-LICENSE=BSD
-RDEPEND=net-proxy/tsocks
-RESTRICT=nomirror
-SLOT=0
-SRC_URI=http://tor.eff.org/dist/tor-0.1.2.4-alpha.tar.gz
-_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	eutils	9fb270e417e0e83d64ca52586c4a79de
 _md5_=9729f3d4c58cc7ab82a1015f464efe0c
+SLOT=0
+DEFINED_PHASES=install
+EAPI=0
+DEPEND==x11-libs/gtk+-2*
+DESCRIPTION=Packet generator tool for ethernet
+LICENSE=GPL-2
+SRC_URI=mirror://sourceforge/packeth/packETH-1.6.tar.gz
+KEYWORDS=~amd64 ~x86
+HOMEPAGE=http://packeth.sourceforge.net/
+RDEPEND==x11-libs/gtk+-2*
