@@ -1,13 +1,13 @@
-_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	eutils	9fb270e417e0e83d64ca52586c4a79de
-_md5_=d04c8878de32b7d5714cc54b7e1cb18f
-SLOT=0
 DEFINED_PHASES=configure install postinst prepare setup
-EAPI=2
-DEPEND=dev-libs/openssl >=dev-libs/libevent-1.2 doc? ( app-text/asciidoc )
+DEPEND=dev-libs/openssl >=dev-libs/libevent-1.2
 DESCRIPTION=Anonymizing overlay network for TCP
-LICENSE=BSD
-IUSE=debug doc
-SRC_URI=http://www.torproject.org/dist/tor-0.2.2.17-alpha.tar.gz
-KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+EAPI=2
 HOMEPAGE=http://www.torproject.org/
-RDEPEND=dev-libs/openssl >=dev-libs/libevent-1.2 doc? ( app-text/asciidoc ) net-proxy/tsocks
+IUSE=debug
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+LICENSE=BSD
+RDEPEND=dev-libs/openssl >=dev-libs/libevent-1.2 net-proxy/tsocks
+SLOT=0
+SRC_URI=http://www.torproject.org/dist/tor-0.2.2.6-alpha.tar.gz
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_md5_=d04c8878de32b7d5714cc54b7e1cb18f

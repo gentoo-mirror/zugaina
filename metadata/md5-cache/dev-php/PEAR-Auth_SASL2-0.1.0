@@ -1,12 +1,11 @@
-_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	php-pear-r1	6199074ba0005674c2291a5a8d0274e2	multilib	62927b3db3a589b0806255f3a002d5d3
-_md5_=2f116a88d79f4a1682301a213773ec28
-SLOT=0
 DEFINED_PHASES=install setup
-EAPI=0
 DEPEND=dev-lang/php >=dev-php/pear-1.8.1
 DESCRIPTION=Abstraction of various SASL mechanism responses
-LICENSE=BSD
-SRC_URI=http://pear.php.net/get/Auth_SASL2-0.1.0.tgz
-KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
 HOMEPAGE=http://pear.php.net/Auth_SASL2
+KEYWORDS=~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+LICENSE=BSD
 RDEPEND=dev-lang/php >=dev-php/pear-1.8.1
+SLOT=0
+SRC_URI=http://pear.php.net/get/Auth_SASL2-0.1.0.tgz
+_eclasses_=multilib	62927b3db3a589b0806255f3a002d5d3	php-pear-r1	6199074ba0005674c2291a5a8d0274e2	toolchain-funcs	42408102d713fbad60ca21349865edb4
+_md5_=2f116a88d79f4a1682301a213773ec28
