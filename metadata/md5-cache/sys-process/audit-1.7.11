@@ -1,11 +1,14 @@
-_eclasses_=toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	base	84d9f879f57a8316ff02be0373a3d6f9	games	9e5e9ee0b325a8a10823f9b385ca2036	user	906f3c8eb3a2350a4f1191a89baa3e46	eutils	351a78113be5b393c09a2c948701ad36
+_eclasses_=python	6d7be3e54573292f012e3cc433d8297	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	autotools	8056957fdccf2b3cd6e282a4b4551d1a	libtool	7f78cd7d403808a350c9ae23f5821fb4	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=14d8aae4a3e91856c2c4ab38de1426fa
 SLOT=0
-DEFINED_PHASES=compile install postinst preinst setup unpack
+DEFINED_PHASES=compile install postinst postrm unpack
 EAPI=0
-DESCRIPTION=Invasion - Battle of Survival is a real-time strategy game using the Stratagus game engine
+DEPEND=>=dev-lang/python-2.4 ldap? ( net-nds/openldap ) dev-lang/swig >=sys-kernel/linux-headers-2.6.23 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DESCRIPTION=Userspace utilities for storing and processing auditing records
 LICENSE=GPL-2
-SRC_URI=http://bos.seul.org/files/bos_2_0.tar.gz http://dev.gentoo.org/~genstef/files/bos.png
-KEYWORDS=~x86 ~amd64
-HOMEPAGE=http://bos.seul.org/
-RDEPEND==games-engines/stratagus-2.2* games-misc/games-envd
+IUSE=ldap
+RESTRICT=test
+SRC_URI=http://people.redhat.com/sgrubb/audit/audit-1.7.11.tar.gz
+KEYWORDS=~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86
+HOMEPAGE=http://people.redhat.com/sgrubb/audit/
+RDEPEND=>=dev-lang/python-2.4 ldap? ( net-nds/openldap )
