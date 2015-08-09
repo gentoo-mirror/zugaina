@@ -1,13 +1,12 @@
-_eclasses_=toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	python	6d7be3e54573292f012e3cc433d8297	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	confutils	18995f74ac4ffafb7ad853dfe133f209	webapp	2442891c368d310c1d3fe77d9c77fe5b	eutils	351a78113be5b393c09a2c948701ad36
-_md5_=6ffc5971b788a9c0d4d11925ade9d73c
-SLOT=0
 DEFINED_PHASES=install postinst postrm prerm setup unpack
-EAPI=0
 DEPEND=>=app-admin/webapp-config-1.50.15
 DESCRIPTION=ViewVC, a web interface to CVS and Subversion
-LICENSE=viewcvs
-IUSE=cvs cvsgraph enscript highlight mod_python mysql subversion vhosts
-SRC_URI=http://viewvc.tigris.org/files/documents/3330/43677/viewvc-1.0.6.tar.gz
-KEYWORDS=~amd64 ~ppc ~sparc ~x86
 HOMEPAGE=http://viewvc.org/
+IUSE=cvs cvsgraph enscript highlight mod_python mysql subversion vhosts
+KEYWORDS=~amd64 ~ppc ~sparc ~x86
+LICENSE=viewcvs
 RDEPEND=cvs? ( >=dev-lang/python-1.5.2 app-text/rcs ) subversion? ( >=dev-lang/python-2.0 >=dev-util/subversion-1.2.0 ) mod_python? ( www-apache/mod_python ) !mod_python? ( virtual/httpd-cgi ) cvsgraph? ( >=dev-util/cvsgraph-1.5.0 ) enscript? ( app-text/enscript ) highlight? ( >=app-text/highlight-2.2.10 ) mysql? ( >=dev-python/mysql-python-0.9.0 ) >=app-admin/webapp-config-1.50.15
+SLOT=0
+SRC_URI=http://viewvc.tigris.org/files/documents/3330/43677/viewvc-1.0.6.tar.gz
+_eclasses_=confutils	18995f74ac4ffafb7ad853dfe133f209	eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	python	06d7be3e54573292f012e3cc433d8297	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	webapp	2442891c368d310c1d3fe77d9c77fe5b
+_md5_=6ffc5971b788a9c0d4d11925ade9d73c
