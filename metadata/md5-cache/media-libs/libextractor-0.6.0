@@ -1,12 +1,13 @@
+_eclasses_=multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4	libtool	52d0e17251d04645ffaa61bfdd858944
+_md5_=6ff5fb720692aee564cbc555c3eef8e8
+SLOT=0
 DEFINED_PHASES=compile install
+EAPI=0
 DEPEND=>=sys-devel/libtool-1.4.1 >=dev-libs/glib-2.0.0 media-libs/libmpeg2 nls? ( virtual/libintl ) gtk? ( >=x11-libs/gtk+-2.6.10 ) zlib? ( sys-libs/zlib ) vorbis? ( >=media-libs/libvorbis-1.0_beta4 )
 DESCRIPTION=A simple library for keyword extraction
-HOMEPAGE=http://www.gnunet.org/libextractor/
-IUSE=gtk nls vorbis zlib
-KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=LGPL-2.1
+IUSE=gtk nls vorbis zlib
 RESTRICT=test
-SLOT=0
 SRC_URI=mirror://gnu/libextractor/libextractor-0.6.0.tar.gz
-_eclasses_=libtool	52d0e17251d04645ffaa61bfdd858944	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
-_md5_=6ff5fb720692aee564cbc555c3eef8e8
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
+HOMEPAGE=http://www.gnunet.org/libextractor/

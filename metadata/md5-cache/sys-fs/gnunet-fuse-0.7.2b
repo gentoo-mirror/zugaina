@@ -1,11 +1,12 @@
+_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	multilib	62927b3db3a589b0806255f3a002d5d3	eutils	9fb270e417e0e83d64ca52586c4a79de
+_md5_=e7fef94e524a554dbc7d0d0e4c55214e
+SLOT=0
 DEFINED_PHASES=compile install
+EAPI=0
 DEPEND=>=sys-libs/glibc-2.3.3 >=sys-fs/fuse-2.6.1 =net-p2p/gnunet-0.7.2b
 DESCRIPTION=Allows you to mount directories shared over GNUnet as Linux file-systems
-HOMEPAGE=http://www.gnunet.org
-KEYWORDS=~x86 ~amd64
 LICENSE=GPL
-RDEPEND=>=sys-fs/fuse-2.6.1
-SLOT=0
 SRC_URI=http://gnunet.org/download/gnunet-fuse-0.7.2b.tar.bz2
-_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
-_md5_=e7fef94e524a554dbc7d0d0e4c55214e
+KEYWORDS=~x86 ~amd64
+HOMEPAGE=http://www.gnunet.org
+RDEPEND=>=sys-fs/fuse-2.6.1
