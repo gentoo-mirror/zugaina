@@ -8,7 +8,7 @@ DESCRIPTION=The Onion Router - Anonymizing overlay network for TCP
 LICENSE=BSD
 IUSE=static
 RESTRICT=nomirror
-SRC_URI=http://tor.eff.org/dist/tor-0.1.1.20.tar.gz
+SRC_URI=http://tor.eff.org/dist/tor-0.1.1.19-rc.tar.gz
 KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
 HOMEPAGE=http://tor.eff.org/
 RDEPEND=!static? ( net-proxy/tsocks >=dev-libs/openssl-0.9.6 dev-libs/libevent )
