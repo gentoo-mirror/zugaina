@@ -1,12 +1,11 @@
-_eclasses_=toolchain-funcs	42408102d713fbad60ca21349865edb4	versionator	cd0bcdb170807e4a1984115e9d53a26f	multilib	62927b3db3a589b0806255f3a002d5d3	eutils	9fb270e417e0e83d64ca52586c4a79de	flag-o-matic	c9602887773166fe300444712fc7ff98
-_md5_=29fa1eaf4ca5491ae968d27bba9ff782
-SLOT=0
 DEFINED_PHASES=compile install setup unpack
-EAPI=0
 DEPEND=net-misc/curl >=dev-libs/libevent-2.0 dev-libs/protobuf net-misc/tokyotyrant media-libs/opencv dev-libs/icu app-text/docbook2X
 DESCRIPTION=An Open Decentralized Platform for Collaborative Search, Filtering and content Curation
-LICENSE=AGPL3
-SRC_URI=mirror://sourceforge/seeks/hippy/seeks-0.4.0-RC2.tar.gz
-KEYWORDS=~x86 ~amd64
 HOMEPAGE=http://www.seeks-project.info/
+KEYWORDS=~x86 ~amd64
+LICENSE=AGPL3
 RDEPEND=net-misc/curl >=dev-libs/libevent-2.0 dev-libs/protobuf net-misc/tokyotyrant media-libs/opencv dev-libs/icu
+SLOT=0
+SRC_URI=mirror://sourceforge/seeks/hippy/seeks-0.4.0-RC2.tar.gz
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	flag-o-matic	c9602887773166fe300444712fc7ff98	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4	versionator	cd0bcdb170807e4a1984115e9d53a26f
+_md5_=29fa1eaf4ca5491ae968d27bba9ff782
