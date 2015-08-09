@@ -1,11 +1,12 @@
+_eclasses_=toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	flag-o-matic	2090c5a622458303e6bf68837ac6b96	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	cvs	cfd95af1a79753a520366f0aaa99809b	libtool	7f78cd7d403808a350c9ae23f5821fb4	eutils	351a78113be5b393c09a2c948701ad36
+_md5_=d2399b2c78b4a303b9999c80da7ef998
+SLOT=0
 DEFINED_PHASES=compile install postinst unpack
+EAPI=0
 DEPEND=app-arch/unzip >=x11-libs/gtk+-2.7.4 >=x11-libs/cairo-0.6.0 >=media-libs/gstreamer-0.9.1 >=sys-devel/gettext-0.14.1 >=gnome-base/libglade-2.5.0 >=dev-util/pkgconfig-0.9.0 esd? ( >=media-sound/esound-0.2.30 ) oggvorbis? ( >=media-libs/libvorbis-1.0 ) alsa? ( >=media-libs/alsa-lib-1.0.9_rc2 ) gnome? ( >=gnome-base/gconf-2.6.0 ) mp3? ( media-libs/id3lib ) nls? ( dev-util/intltool ) dev-vcs/cvs
 DESCRIPTION=Beep Media Player
-HOMEPAGE=http://www.sosdg.org/~larne/w/BMP_Homepage
+LICENSE=GPL-2
 IUSE=nls gnome mp3 oggvorbis alsa oss esd mmx old-eq
 KEYWORDS=~amd64 ~ppc ~sparc ~x86 ~hppa ~mips ~ppc64 ~alpha ~ia64
-LICENSE=GPL-2
+HOMEPAGE=http://www.sosdg.org/~larne/w/BMP_Homepage
 RDEPEND=app-arch/unzip >=x11-libs/gtk+-2.7.4 >=x11-libs/cairo-0.6.0 >=media-libs/gstreamer-0.9.1 >=sys-devel/gettext-0.14.1 >=gnome-base/libglade-2.5.0 >=dev-util/pkgconfig-0.9.0 esd? ( >=media-sound/esound-0.2.30 ) oggvorbis? ( >=media-libs/libvorbis-1.0 ) alsa? ( >=media-libs/alsa-lib-1.0.9_rc2 ) gnome? ( >=gnome-base/gconf-2.6.0 ) mp3? ( media-libs/id3lib )
-SLOT=0
-_eclasses_=cvs	a4cb8da1bb586b224ade5b54f1d2fda0	eutils	9fb270e417e0e83d64ca52586c4a79de	flag-o-matic	c9602887773166fe300444712fc7ff98	libtool	52d0e17251d04645ffaa61bfdd858944	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4
-_md5_=d2399b2c78b4a303b9999c80da7ef998

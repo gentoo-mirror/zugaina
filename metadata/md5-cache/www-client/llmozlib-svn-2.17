@@ -1,0 +1,10 @@
+_eclasses_=toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	flag-o-matic	2090c5a622458303e6bf68837ac6b96	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	subversion	d11b897c0c78e23413f0af0959ec6b92	libtool	7f78cd7d403808a350c9ae23f5821fb4	fdo-mime	92d07846ea8ea54172f8c0112a47ae3d	autotools	8056957fdccf2b3cd6e282a4b4551d1a	eutils	351a78113be5b393c09a2c948701ad36
+_md5_=1341a9a1e2e3df5ea2d19e48e5798397
+SLOT=0
+DEFINED_PHASES=compile install preinst unpack
+EAPI=0
+DEPEND=dev-util/cvs =sys-devel/gcc-3.4* sys-apps/gawk >=dev-lang/perl-5.4 app-arch/unzip app-arch/zip >=dev-libs/libIDL-0.8.0 x11-libs/gtk+ !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/subversion net-misc/rsync
+DESCRIPTION=Linden Labs Mozilla Library (customized for secondlife)
+LICENSE=BSD
+KEYWORDS=~amd64 ~x86
+HOMEPAGE=http://wiki.secondlife.com/wiki/LLMozLib2

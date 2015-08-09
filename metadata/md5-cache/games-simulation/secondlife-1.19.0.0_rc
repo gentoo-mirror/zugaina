@@ -1,13 +1,14 @@
+_eclasses_=toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	base	84d9f879f57a8316ff02be0373a3d6f9	games	9e5e9ee0b325a8a10823f9b385ca2036	user	906f3c8eb3a2350a4f1191a89baa3e46	eutils	351a78113be5b393c09a2c948701ad36
+_md5_=62798e386e9b78ad88e4517bea1f4ef7
+SLOT=0
 DEFINED_PHASES=compile install postinst preinst setup unpack
+EAPI=0
 DEPEND=>=x11-libs/gtk+-2 =dev-libs/apr-1* =dev-libs/apr-util-1* dev-libs/boost net-misc/curl dev-libs/openssl media-libs/freetype media-libs/jpeg media-libs/libsdl media-libs/mesa media-libs/libogg media-libs/libvorbis x86? ( fmod? ( =media-libs/fmod-3.75* ) ) =sys-libs/db-4.2* dev-libs/expat sys-libs/zlib >=dev-libs/xmlrpc-epi-0.51 dev-libs/elfio >=media-libs/openjpeg-1.3 media-fonts/kochi-substitute dev-util/google-perftools gstreamer? ( =media-libs/gstreamer-0.10* ) net-dns/c-ares >=dev-util/scons-0.97 dev-util/pkgconfig sys-devel/flex sys-devel/bison <sys-devel/gcc-4.2.0
 DESCRIPTION=A 3D MMORPG virtual world entirely built and owned by its residents
-HOMEPAGE=http://secondlife.com/
-IUSE=fmod gstreamer elfio
-KEYWORDS=~amd64 ~x86 ~ppc
 LICENSE=GPL-2
-RDEPEND=>=x11-libs/gtk+-2 =dev-libs/apr-1* =dev-libs/apr-util-1* dev-libs/boost net-misc/curl dev-libs/openssl media-libs/freetype media-libs/jpeg media-libs/libsdl media-libs/mesa media-libs/libogg media-libs/libvorbis x86? ( fmod? ( =media-libs/fmod-3.75* ) ) =sys-libs/db-4.2* dev-libs/expat sys-libs/zlib >=dev-libs/xmlrpc-epi-0.51 dev-libs/elfio >=media-libs/openjpeg-1.3 media-fonts/kochi-substitute dev-util/google-perftools gstreamer? ( =media-libs/gstreamer-0.10* ) net-dns/c-ares games-misc/games-envd
+IUSE=fmod gstreamer elfio
 RESTRICT=mirror
-SLOT=0
 SRC_URI=http://secondlife.com/developers/opensource/downloads/2008/02/slviewer-src-Branch_1-19-0-Viewer-r79209.tar.gz http://secondlife.com/developers/opensource/downloads/2008/02/slviewer-artwork-Branch_1-19-0-Viewer-r79209.zip http://distfiles.zugaina.org/secondlife-fonts.tar.gz
-_eclasses_=base	87f7447ccfc06fd0729ff4684e11e0d6	eutils	9fb270e417e0e83d64ca52586c4a79de	games	1ad3205dbf62a2c98249f2f59b0a2d39	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4	user	f54e098dd38ba1c0847a13e685b87747
-_md5_=62798e386e9b78ad88e4517bea1f4ef7
+KEYWORDS=~amd64 ~x86 ~ppc
+HOMEPAGE=http://secondlife.com/
+RDEPEND=>=x11-libs/gtk+-2 =dev-libs/apr-1* =dev-libs/apr-util-1* dev-libs/boost net-misc/curl dev-libs/openssl media-libs/freetype media-libs/jpeg media-libs/libsdl media-libs/mesa media-libs/libogg media-libs/libvorbis x86? ( fmod? ( =media-libs/fmod-3.75* ) ) =sys-libs/db-4.2* dev-libs/expat sys-libs/zlib >=dev-libs/xmlrpc-epi-0.51 dev-libs/elfio >=media-libs/openjpeg-1.3 media-fonts/kochi-substitute dev-util/google-perftools gstreamer? ( =media-libs/gstreamer-0.10* ) net-dns/c-ares games-misc/games-envd
