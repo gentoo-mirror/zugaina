@@ -3,11 +3,11 @@ _md5_=d04c8878de32b7d5714cc54b7e1cb18f
 SLOT=0
 DEFINED_PHASES=configure install postinst prepare setup
 EAPI=2
-DEPEND=dev-libs/openssl >=dev-libs/libevent-1.2
+DEPEND=dev-libs/openssl >=dev-libs/libevent-1.2 doc? ( app-text/asciidoc )
 DESCRIPTION=Anonymizing overlay network for TCP
 LICENSE=BSD
-IUSE=debug
-SRC_URI=http://www.torproject.org/dist/tor-0.2.2.5-alpha.tar.gz
+IUSE=debug doc
+SRC_URI=http://www.torproject.org/dist/tor-0.2.2.13-alpha.tar.gz
 KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
 HOMEPAGE=http://www.torproject.org/
-RDEPEND=dev-libs/openssl >=dev-libs/libevent-1.2 net-proxy/tsocks
+RDEPEND=dev-libs/openssl >=dev-libs/libevent-1.2 doc? ( app-text/asciidoc ) net-proxy/tsocks
