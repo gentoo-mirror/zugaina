@@ -7,7 +7,7 @@ DEPEND=dev-libs/openssl >=dev-libs/libevent-1.2
 DESCRIPTION=Anonymizing overlay network for TCP
 LICENSE=BSD
 IUSE=debug
-SRC_URI=http://tor.eff.org/dist/tor-0.2.0.23-rc.tar.gz
+SRC_URI=http://tor.eff.org/dist/tor-0.2.0.28-rc.tar.gz
 KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
 HOMEPAGE=http://tor.eff.org
 RDEPEND=dev-libs/openssl >=dev-libs/libevent-1.2 net-proxy/tsocks

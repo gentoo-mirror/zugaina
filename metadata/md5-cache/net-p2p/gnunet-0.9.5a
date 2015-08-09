@@ -3,12 +3,12 @@ _md5_=5d15ae0616dcf1995cb840947b08bbd7
 SLOT=0
 DEFINED_PHASES=compile install postinst preinst prepare setup
 EAPI=2
-DEPEND=>=dev-libs/libgcrypt-1.2.0 >=media-libs/libextractor-0.6.1 >=dev-libs/gmp-4.0.0 sys-libs/zlib net-misc/curl sys-apps/sed mysql? ( >=virtual/mysql-5.1 ) sqlite? ( >=dev-db/sqlite-3.0.8 ) nls? ( sys-devel/gettext ) >=net-libs/libmicrohttpd-0.9.18 dev-libs/libunistring >=sci-mathematics/glpk-4.45 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DEPEND=>=dev-libs/libgcrypt-1.2.0 >=media-libs/libextractor-0.6.1 >=dev-libs/gmp-4.0.0 sys-libs/zlib net-misc/curl sys-apps/sed mysql? ( >=virtual/mysql-4.0 ) sqlite? ( >=dev-db/sqlite-3.0.8 ) nls? ( sys-devel/gettext ) >=net-libs/libmicrohttpd-0.4.6 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
 DESCRIPTION=GNUnet is an anonymous, distributed, reputation based network.
 LICENSE=GPL-2
-IUSE=mysql nls sqlite postgres
+IUSE=mysql nls sqlite
 RESTRICT=test
-SRC_URI=http://ftp.gnu.org/gnu/gnunet/gnunet-0.9.5a.tar.gz
+SRC_URI=http://ftp.gnu.org/gnu/gnunet/gnunet-0.9.0.tar.gz
 KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
 HOMEPAGE=http://gnunet.org/
-RDEPEND=>=dev-libs/libgcrypt-1.2.0 >=media-libs/libextractor-0.6.1 >=dev-libs/gmp-4.0.0 sys-libs/zlib net-misc/curl sys-apps/sed mysql? ( >=virtual/mysql-5.1 ) sqlite? ( >=dev-db/sqlite-3.0.8 ) nls? ( sys-devel/gettext ) >=net-libs/libmicrohttpd-0.9.18 dev-libs/libunistring >=sci-mathematics/glpk-4.45
+RDEPEND=>=dev-libs/libgcrypt-1.2.0 >=media-libs/libextractor-0.6.1 >=dev-libs/gmp-4.0.0 sys-libs/zlib net-misc/curl sys-apps/sed mysql? ( >=virtual/mysql-4.0 ) sqlite? ( >=dev-db/sqlite-3.0.8 ) nls? ( sys-devel/gettext ) >=net-libs/libmicrohttpd-0.4.6
