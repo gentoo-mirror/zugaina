@@ -1,12 +1,12 @@
-DEFINED_PHASES=install
-DEPEND=>=dev-perl/gtk2-perl-1.121 dev-perl/libwww-perl dev-perl/Archive-Zip virtual/perl-Archive-Tar dev-perl/XML-Simple
-DESCRIPTION=Collections management
-HOMEPAGE=http://www.c-sait.net/gcstar/
-KEYWORDS=~x86 ~amd64
+DEFINED_PHASES=compile install postinst postrm
+DEPEND=>=sys-libs/ncurses-5.2 emacs? ( virtual/emacs ) xemacs? ( !emacs? ( virtual/xemacs app-xemacs/fsf-compat ) )
+DESCRIPTION=Universal typing tutor
+HOMEPAGE=http://www.gnu.org/software/gtypist/
+IUSE=nls emacs xemacs
+KEYWORDS=~x86 ~amd64 ~ppc
 LICENSE=GPL-2
-RDEPEND=>=dev-perl/gtk2-perl-1.121 dev-perl/libwww-perl dev-perl/Archive-Zip virtual/perl-Archive-Tar dev-perl/XML-Simple
-RESTRICT=nomirror
+RDEPEND=>=sys-libs/ncurses-5.2 emacs? ( virtual/emacs ) xemacs? ( !emacs? ( virtual/xemacs app-xemacs/fsf-compat ) )
 SLOT=0
-SRC_URI=http://download.gna.org/gcstar/gcstar-0.5.0.tar.gz
-_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+SRC_URI=mirror://gnu/gtypist/gtypist-2.8.2.tar.gz
+_eclasses_=elisp-common	73c48c11ad6a6494eda0d0cca848c8fa	eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=106b09a72912bd3a176f38f4dd145686
