@@ -1,12 +1,12 @@
-DEFINED_PHASES=compile install postinst setup unpack
-DEPEND=dev-libs/openssl >=dev-libs/libevent-1.2
+DEFINED_PHASES=install postinst setup unpack
+DEPEND=dev-libs/openssl dev-libs/libevent
 DESCRIPTION=Anonymizing overlay network for TCP
 HOMEPAGE=http://tor.eff.org
-IUSE=debug
-KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd
+KEYWORDS=amd64 ppc ppc64 sparc x86
 LICENSE=BSD
-RDEPEND=dev-libs/openssl >=dev-libs/libevent-1.2 net-proxy/tsocks
+RDEPEND=net-proxy/tsocks
+RESTRICT=nomirror
 SLOT=0
-SRC_URI=http://tor.eff.org/dist/tor-0.2.1.7-alpha.tar.gz
+SRC_URI=http://tor.eff.org/dist/tor-0.1.1.23.tar.gz
 _eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=006c4aca913cf0139b8efe0c2d5be715
