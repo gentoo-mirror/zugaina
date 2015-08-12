@@ -1,9 +1,13 @@
 DEFINED_PHASES=compile install postinst
-DESCRIPTION=SSLTunnel is a client/server program to create a PPP connection over a SSL/TLS session.
-HOMEPAGE=http://ssltunnel.sourceforge.net/
-KEYWORDS=~x86 ~ppc ~sparc ~amd64
+DEPEND=>=dev-libs/openssl-0.9.6 dev-libs/libevent
+DESCRIPTION=The Onion Router - Anonymizing overlay network for TCP
+HOMEPAGE=http://tor.eff.org/
+IUSE=static
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=BSD
+RDEPEND=!static? ( net-proxy/tsocks >=dev-libs/openssl-0.9.6 dev-libs/libevent )
+RESTRICT=nomirror
 SLOT=0
-SRC_URI=mirror://sourceforge/ssltunnel/ssltunnel-1.15.tar.gz
-_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+SRC_URI=http://tor.eff.org/dist/tor-0.1.1.18-rc.tar.gz
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	flag-o-matic	02090c5a622458303e6bf68837ac6b96	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=a390810128d5b52eda6ad7678fc33414
