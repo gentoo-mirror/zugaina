@@ -1,12 +1,12 @@
-DEFINED_PHASES=compile install
-DEPEND=ewf? ( app-forensics/libewf ) fuse? ( sys-fs/fuse ) ncurses? ( sys-libs/ncurses ) python? ( dev-lang/python ) readline? ( sys-libs/readline ) s3? ( net-misc/curl dev-libs/expat ) sys-libs/zlib dev-libs/openssl !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
-DESCRIPTION=Library that implements the AFF image standard
-HOMEPAGE=http://www.afflib.org/
-IUSE=ewf fuse ncurses python qemu readline s3 threads
-KEYWORDS=~x86 ~amd64
-LICENSE=BSD-4
-RDEPEND=ewf? ( app-forensics/libewf ) fuse? ( sys-fs/fuse ) ncurses? ( sys-libs/ncurses ) python? ( dev-lang/python ) readline? ( sys-libs/readline ) s3? ( net-misc/curl dev-libs/expat ) sys-libs/zlib dev-libs/openssl
+DEFINED_PHASES=install
+DEPEND=dev-lang/perl virtual/perl-Archive-Tar dev-perl/Archive-Zip perl-core/Compress-Raw-Zlib dev-perl/gtk2-perl dev-perl/HTML-Parser dev-perl/libwww-perl dev-perl/URI dev-perl/XML-LibXML dev-perl/XML-Parser dev-perl/XML-Simple virtual/perl-Archive-Tar perl-core/Compress-Raw-Zlib perl-core/Time-Piece virtual/perl-File-Spec virtual/perl-File-Temp virtual/perl-libnet dev-perl/DateTime-Format-Strptime mp3? ( dev-perl/MP3-Info dev-perl/MP3-Tag ) spell? ( dev-perl/gtk2-spell ) tellico? ( dev-perl/Archive-Zip virtual/perl-Digest-MD5 virtual/perl-MIME-Base64 ) vorbis? ( dev-perl/Ogg-Vorbis-Header-PurePerl )
+DESCRIPTION=Collections management.
+HOMEPAGE=http://www.gcstar.org/
+IUSE=mp3 spell tellico vorbis linguas_ar linguas_bg linguas_ca linguas_cs linguas_de linguas_es linguas_fr linguas_id linguas_it linguas_pl linguas_pt linguas_ro linguas_ru linguas_sr linguas_sv linguas_tr
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=dev-lang/perl virtual/perl-Archive-Tar dev-perl/Archive-Zip perl-core/Compress-Raw-Zlib dev-perl/gtk2-perl dev-perl/HTML-Parser dev-perl/libwww-perl dev-perl/URI dev-perl/XML-LibXML dev-perl/XML-Parser dev-perl/XML-Simple virtual/perl-Archive-Tar perl-core/Compress-Raw-Zlib perl-core/Time-Piece virtual/perl-File-Spec virtual/perl-File-Temp virtual/perl-libnet dev-perl/DateTime-Format-Strptime mp3? ( dev-perl/MP3-Info dev-perl/MP3-Tag ) spell? ( dev-perl/gtk2-spell ) tellico? ( dev-perl/Archive-Zip virtual/perl-Digest-MD5 virtual/perl-MIME-Base64 ) vorbis? ( dev-perl/Ogg-Vorbis-Header-PurePerl )
 SLOT=0
-SRC_URI=http://www.afflib.org/downloads/afflib-3.3.4.tar.gz
-_eclasses_=autotools	8056957fdccf2b3cd6e282a4b4551d1a	eutils	351a78113be5b393c09a2c948701ad36	libtool	7f78cd7d403808a350c9ae23f5821fb4	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+SRC_URI=http://download.gna.org/gcstar/gcstar-1.5.0.tar.gz
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=8b4823ddd5df72acdcdfefaf20e1cd33
