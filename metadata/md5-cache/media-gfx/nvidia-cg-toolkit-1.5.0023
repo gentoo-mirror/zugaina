@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install
 DEPEND=virtual/glut
 DESCRIPTION=nvidia's c graphics compiler toolkit
+EAPI=0
 HOMEPAGE=http://developer.nvidia.com/object/cg_toolkit.html
 KEYWORDS=~amd64 x86
 LICENSE=NVIDIA

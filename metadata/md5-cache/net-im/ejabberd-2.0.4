@@ -1,12 +1,13 @@
-DEFINED_PHASES=install
-DEPEND=>=dev-cpp/libxmlpp-2.14.0 dev-libs/glib
-DESCRIPTION=File-sharing application for the Soulseek peer-to-peer network.
-HOMEPAGE=http://bmpx.beep-media-player.org
-KEYWORDS=~x86 ~amd64
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=net-im/jabber-base-0.01 >=dev-libs/expat-1.95 >=dev-lang/erlang-11.2.5 odbc? ( dev-db/unixODBC ) ldap? ( =net-nds/openldap-2* ) ssl? ( >=dev-libs/openssl-0.9.8e ) zlib? ( sys-libs/zlib )
+DESCRIPTION=The Erlang Jabber Daemon
+EAPI=0
+HOMEPAGE=http://www.ejabberd.im/
+IUSE=debug mod_irc mod_muc mod_pubsub ldap odbc pam ssl web zlib
+KEYWORDS=~amd64 ~ppc ~x86
 LICENSE=GPL-2
-RDEPEND=>=dev-cpp/libxmlpp-2.14.0 dev-libs/glib
-RESTRICT=nomirror
+RDEPEND=>=net-im/jabber-base-0.01 >=dev-libs/expat-1.95 >=dev-lang/erlang-11.2.5 odbc? ( dev-db/unixODBC ) ldap? ( =net-nds/openldap-2* ) ssl? ( >=dev-libs/openssl-0.9.8e ) zlib? ( sys-libs/zlib )
 SLOT=0
-SRC_URI=http://files.beep-media-player.org/releases/mooseekd/mooseekd-0.05.tar.bz2
+SRC_URI=http://www.process-one.net/downloads/ejabberd/2.0.4/ejabberd-2.0.4.tar.gz
 _eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=32571b5afff8a843942dc85bfe66d24f

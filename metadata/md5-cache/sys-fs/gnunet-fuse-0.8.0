@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install
 DEPEND=>=sys-libs/glibc-2.3.3 >=sys-fs/fuse-2.6.1 =net-p2p/gnunet-0.8.0
 DESCRIPTION=Allows you to mount directories shared over GNUnet as Linux file-systems
+EAPI=0
 HOMEPAGE=http://www.gnunet.org
 KEYWORDS=~x86 ~amd64
 LICENSE=GPL

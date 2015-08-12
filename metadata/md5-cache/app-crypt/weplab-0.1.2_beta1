@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install unpack
 DEPEND=net-libs/libpcap
 DESCRIPTION=A tool to analyze the Wired Equivalent Protocol (WEP) encryption security on wireless networks.
+EAPI=0
 HOMEPAGE=http://weplab.sourceforge.net/
 KEYWORDS=~x86
 LICENSE=GPL-2

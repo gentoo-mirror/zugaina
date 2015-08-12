@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DEPEND=dev-vcs/subversion net-misc/rsync
 DESCRIPTION=Virtual fantasy world MMORPG
+EAPI=0
 HOMEPAGE=http://www.planeshift.it/
 IUSE=server static debug maxoptimization debug tcmalloc
 KEYWORDS=~x86 ~amd64

@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install preinst
 DEPEND=dev-libs/judy
 DESCRIPTION=Teredo IPv6 tunneling
+EAPI=0
 HOMEPAGE=http://www.remlab.net/miredo/
 KEYWORDS=~x86 ~amd64
 LICENSE=GPL-2

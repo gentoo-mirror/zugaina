@@ -1,6 +1,7 @@
 DEFINED_PHASES=install postinst unpack
 DEPEND=app-arch/unzip
 DESCRIPTION=Sk@le Tracker - FastTracker 2 clone
+EAPI=0
 HOMEPAGE=http://www.skale.org/
 IUSE=doc
 KEYWORDS=amd64 ~x86

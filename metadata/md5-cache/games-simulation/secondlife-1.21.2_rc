@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DEPEND=>=x11-libs/gtk+-2 =dev-libs/apr-1* =dev-libs/apr-util-1* dev-libs/boost >=net-misc/curl-7.15.4 dev-libs/openssl media-libs/freetype media-libs/jpeg media-libs/libsdl media-libs/mesa media-libs/libogg media-libs/libvorbis fmod? ( x86? ( =media-libs/fmod-3.75* ) ) =sys-libs/db-4.2* dev-libs/expat sys-libs/zlib >=dev-libs/xmlrpc-epi-0.51-r1 elfio? ( dev-libs/elfio ) >=media-libs/openjpeg-1.1.1 net-dns/c-ares x11-libs/pango net-libs/llmozlib2 gstreamer? ( >=media-libs/gst-plugins-base-0.10 ) >=dev-util/cmake-2.4.8 >=dev-util/scons-0.97 dev-util/pkgconfig sys-devel/flex sys-devel/bison
 DESCRIPTION=A 3D MMORPG virtual world entirely built and owned by its residents
+EAPI=0
 HOMEPAGE=http://secondlife.com/
 IUSE=vivox
 KEYWORDS=~amd64 ~x86

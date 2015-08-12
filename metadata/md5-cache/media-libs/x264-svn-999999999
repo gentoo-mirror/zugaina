@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install postinst preinst unpack
 DEPEND=amd64? ( dev-lang/yasm ) x86? ( dev-lang/nasm ) x86-fbsd? ( dev-lang/nasm ) dev-vcs/subversion net-misc/rsync
 DESCRIPTION=A free library for encoding X264/AVC streams.
+EAPI=0
 HOMEPAGE=http://developers.videolan.org/x264.html
 IUSE=debug threads mp4
 KEYWORDS=-*

@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DEPEND=>=x11-libs/gtk+-2.4.0 >=gnome-base/librsvg-2.5
 DESCRIPTION=A GUI for Go, Amazons and Othello. Allows to play against computer players or other humans.
+EAPI=0
 HOMEPAGE=http://home.gna.org/quarry/index.html
 KEYWORDS=~x86 ~ppc ~sparc ~amd64
 LICENSE=GPL-2

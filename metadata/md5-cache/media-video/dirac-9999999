@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install unpack
 DEPEND=doc? ( app-doc/doxygen virtual/tetex ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/cvs
 DESCRIPTION=Open Source video codec
+EAPI=0
 HOMEPAGE=http://dirac.sourceforge.net/
 IUSE=mmx debug doc
 KEYWORDS=-*

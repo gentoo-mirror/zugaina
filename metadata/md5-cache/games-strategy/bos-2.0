@@ -1,5 +1,6 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DESCRIPTION=Invasion - Battle of Survival is a real-time strategy game using the Stratagus game engine
+EAPI=0
 HOMEPAGE=http://bos.seul.org/
 KEYWORDS=~x86 ~amd64
 LICENSE=GPL-2

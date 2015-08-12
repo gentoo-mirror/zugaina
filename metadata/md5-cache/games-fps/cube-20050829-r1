@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DEPEND=virtual/opengl virtual/glu media-libs/libsdl media-libs/sdl-mixer media-libs/sdl-image sys-libs/zlib media-libs/libpng app-arch/unzip >=sys-apps/sed-4
 DESCRIPTION=Landscape-style engine that pretends to be an indoor first person shooter engine
+EAPI=0
 HOMEPAGE=http://wouter.fov120.com/cube/
 KEYWORDS=hppa ppc x86 ~amd64
 LICENSE=ZLIB

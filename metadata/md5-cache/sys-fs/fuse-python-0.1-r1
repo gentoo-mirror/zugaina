@@ -1,5 +1,6 @@
 DEFINED_PHASES=compile install unpack
 DESCRIPTION=Python FUSE bindings
+EAPI=0
 HOMEPAGE=http://www.inf.bme.hu/~mszeredi/avfs/
 KEYWORDS=~x86 ~ppc ~sparc ~mips ~alpha ~arm ~hppa ~amd64 ~ia64
 LICENSE=GPL-2

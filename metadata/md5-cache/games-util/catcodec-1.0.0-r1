@@ -1,5 +1,6 @@
 DEFINED_PHASES=install
 DESCRIPTION=Decode and encodes sample catalog for OpenTTD
+EAPI=0
 HOMEPAGE=http://www.openttd.org/
 KEYWORDS=~amd64 ~ppc ~sparc ~x86
 LICENSE=GPL-2

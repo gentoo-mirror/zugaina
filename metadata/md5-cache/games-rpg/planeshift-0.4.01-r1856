@@ -1,5 +1,6 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DESCRIPTION=Virtual fantasy world MMORPG
+EAPI=0
 HOMEPAGE=http://www.planeshift.it/
 IUSE=server static debug maxoptimization debug nochatbubbles tcmalloc
 KEYWORDS=~x86 ~amd64

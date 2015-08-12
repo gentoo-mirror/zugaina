@@ -1,5 +1,6 @@
 DEFINED_PHASES=compile install unpack
 DESCRIPTION=An open-source JPEG 2000 codec written in C
+EAPI=0
 HOMEPAGE=http://www.openjpeg.org/
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD-2

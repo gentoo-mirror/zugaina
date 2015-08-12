@@ -1,6 +1,7 @@
 DEFINED_PHASES=install postinst prerm setup
 DEPEND=dev-lang/php >=app-admin/webapp-config-1.50.15
 DESCRIPTION=TestLink enables easily to create and manage Test cases as well as organize them into Test plans.
+EAPI=0
 HOMEPAGE=http://testlink.org
 IUSE=mysql postgre bugzilla mantis vhosts
 KEYWORDS=~alpha ~ppc ~sparc ~x86 ~amd64

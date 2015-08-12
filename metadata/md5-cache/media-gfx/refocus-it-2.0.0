@@ -1,6 +1,7 @@
 DEFINED_PHASES=install
 DEPEND=>=x11-libs/gtk+-2.4.4 >=media-gfx/gimp-2.2.0
 DESCRIPTION=Iterative refocus GIMP plug-in.
+EAPI=0
 HOMEPAGE=http://refocus-it.sourceforge.net/
 KEYWORDS=~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~mips
 LICENSE=GPL-2

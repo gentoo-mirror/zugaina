@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install setup
 DEPEND=>=virtual/jdk-1.5 app-arch/unzip dev-java/java-config
 DESCRIPTION=Jetty is an full-featured web and applicaction server implemented entirely in Java.
+EAPI=0
 HOMEPAGE=http://www.mortbay.org/jetty-6/
 KEYWORDS=~amd64 ~x86
 LICENSE=Apache-2.0

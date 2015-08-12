@@ -1,6 +1,7 @@
 DEFINED_PHASES=install unpack
 DEPEND=!dev-libs/xmlrpc-c
 DESCRIPTION=An implementation of the xmlrpc protocol in C
+EAPI=0
 HOMEPAGE=http://xmlrpc-epi.sourceforge.net/
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD

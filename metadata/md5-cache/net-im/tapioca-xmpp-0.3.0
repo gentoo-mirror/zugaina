@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install
 DEPEND=net-im/tapioca-coreclient sys-apps/dbus
 DESCRIPTION=Tapioca XMPP protocol
+EAPI=0
 HOMEPAGE=http://tapioca-voip.sf.net
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2

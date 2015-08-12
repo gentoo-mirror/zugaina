@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install setup unpack
 DEPEND=net-misc/curl >=dev-libs/libevent-2.0 dev-libs/protobuf net-misc/tokyotyrant media-libs/opencv dev-libs/icu app-text/docbook2X
 DESCRIPTION=An Open Decentralized Platform for Collaborative Search, Filtering and content Curation
+EAPI=0
 HOMEPAGE=http://www.seeks-project.info/
 KEYWORDS=~x86 ~amd64
 LICENSE=AGPL3

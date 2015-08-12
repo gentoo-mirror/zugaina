@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install postinst unpack
 DEPEND=games-misc/fortune-mod
 DESCRIPTION=set of fortunes in french
+EAPI=0
 HOMEPAGE=http://www.fortunes-fr.org/
 KEYWORDS=~x86 ~sparc ~mips amd64
 LICENSE=GPL-2

@@ -1,12 +1,15 @@
-DEFINED_PHASES=compile install postinst unpack
-DEPEND=>=net-im/jabber-base-0.01 >=dev-libs/expat-1.95 >=dev-lang/erlang-11.2.5 odbc? ( dev-db/unixODBC ) ldap? ( =net-nds/openldap-2* ) ssl? ( >=dev-libs/openssl-0.9.8e ) zlib? ( sys-libs/zlib )
-DESCRIPTION=The Erlang Jabber Daemon
-HOMEPAGE=http://www.ejabberd.im/
-IUSE=debug mod_irc mod_muc mod_pubsub ldap odbc pam ssl web zlib
-KEYWORDS=~amd64 ~ppc ~x86
+DEFINED_PHASES=compile install postinst setup unpack
+DEPEND=>=x11-libs/gtk+-2.0 >=dev-libs/glib-2.0 nas? ( >=media-libs/nas-1.4.1-r1 ) sys-devel/gettext media-libs/libao >=media-libs/audiofile-0.2.0 perl? ( >=dev-lang/perl-5.8.2-r1 !<dev-perl/ExtUtils-MakeMaker-6.17 ) spell? ( >=app-text/gtkspell-2.0.2 ) dev-libs/nss =net-im/linphone-0.12.2 >=media-libs/libj2k-0.0.8 gnutls? ( net-libs/gnutls ) krb4? ( app-crypt/mit-krb5 ) !mips? ( !ia64? ( evo? ( mail-client/evolution ) ) silc? ( >=net-im/silc-toolkit-0.9.12-r2 ) )
+DESCRIPTION=GTK All-In-One Instant Messenging and Internet Calling solution
+EAPI=0
+HOMEPAGE=http://www.phonegaim.com
+IUSE=nls perl spell nas debug crypt cjk gnutls silc evo krb4
+KEYWORDS=~x86 ~amd64
 LICENSE=GPL-2
-RDEPEND=>=net-im/jabber-base-0.01 >=dev-libs/expat-1.95 >=dev-lang/erlang-11.2.5 odbc? ( dev-db/unixODBC ) ldap? ( =net-nds/openldap-2* ) ssl? ( >=dev-libs/openssl-0.9.8e ) zlib? ( sys-libs/zlib )
+PDEPEND=crypt? ( >=x11-plugins/gaim-encryption-2.27 )
+RDEPEND=>=x11-libs/gtk+-2.0 >=dev-libs/glib-2.0 nas? ( >=media-libs/nas-1.4.1-r1 ) sys-devel/gettext media-libs/libao >=media-libs/audiofile-0.2.0 perl? ( >=dev-lang/perl-5.8.2-r1 !<dev-perl/ExtUtils-MakeMaker-6.17 ) spell? ( >=app-text/gtkspell-2.0.2 ) dev-libs/nss =net-im/linphone-0.12.2 >=media-libs/libj2k-0.0.8 gnutls? ( net-libs/gnutls ) krb4? ( app-crypt/mit-krb5 ) !mips? ( !ia64? ( evo? ( mail-client/evolution ) ) silc? ( >=net-im/silc-toolkit-0.9.12-r2 ) )
+RESTRICT=nomirror
 SLOT=0
-SRC_URI=http://www.process-one.net/downloads/ejabberd/2.1.2/ejabberd-2.1.2.tar.gz
+SRC_URI=http://simon.morlat.free.fr/download/0.12.2/source/linphone-0.12.2.tar.gz http://distfiles.zugaina.org/phonegaim_1.0.2-1.0.0.50.linspire0.13.tar.gz
 _eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=a151d016a20bb393834ac7b872078b0c

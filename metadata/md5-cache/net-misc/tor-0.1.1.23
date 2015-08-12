@@ -1,6 +1,7 @@
 DEFINED_PHASES=install postinst setup unpack
 DEPEND=dev-libs/openssl dev-libs/libevent
 DESCRIPTION=Anonymizing overlay network for TCP
+EAPI=0
 HOMEPAGE=http://tor.eff.org
 KEYWORDS=amd64 ppc ppc64 sparc x86
 LICENSE=BSD

@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install
 DEPEND=sys-libs/libunwind !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
 DESCRIPTION=Google profiling tools.
+EAPI=0
 HOMEPAGE=http://goog-perftools.sourceforge.net/
 IUSE=doc
 KEYWORDS=~x86 ~amd64

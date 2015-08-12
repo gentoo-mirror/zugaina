@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DEPEND=app-admin/sudo dev-libs/libpcre virtual/jpeg net-libs/gnutls >=dev-lang/perl-5.6.0 virtual/perl-Archive-Tar dev-perl/Archive-Zip dev-perl/DateManip dev-perl/DBD-mysql dev-perl/DBI dev-perl/Device-SerialPort dev-perl/libwww-perl dev-perl/MIME-Lite dev-perl/MIME-tools dev-perl/PHP-Serialization virtual/perl-Getopt-Long virtual/perl-libnet virtual/perl-Module-Load virtual/perl-Sys-Syslog virtual/perl-Time-HiRes mmap? ( dev-perl/Sys-Mmap ) =www-servers/apache-2* virtual/httpd-php !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/subversion net-misc/rsync dev-util/scons
 DESCRIPTION=ZoneMinder allows you to capture, analyse, record and monitor any cameras attached to your system.
+EAPI=0
 HOMEPAGE=http://www.zoneminder.com/
 IUSE=debug ffmpeg mmap
 LICENSE=GPL-2

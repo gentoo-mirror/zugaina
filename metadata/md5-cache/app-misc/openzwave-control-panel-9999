@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install preinst unpack
 DEPEND=dev-libs/open-zwave dev-vcs/subversion net-misc/rsync
 DESCRIPTION=An open-source interface to Z-Wave networks.
+EAPI=0
 HOMEPAGE=http://openzwave-control-panel.googlecode.com
 KEYWORDS=~x86 ~amd64
 LICENSE=GPL-2

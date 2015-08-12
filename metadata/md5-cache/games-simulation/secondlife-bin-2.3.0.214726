@@ -1,5 +1,6 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DESCRIPTION=The Second Life (an online, 3D virtual world) viewer
+EAPI=0
 HOMEPAGE=http://secondlife.com/
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2-with-Linden-Lab-FLOSS-exception

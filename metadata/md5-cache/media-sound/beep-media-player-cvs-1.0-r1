@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install postinst unpack
 DEPEND=app-arch/unzip >=x11-libs/gtk+-2.4 >=x11-libs/pango-1.2 >=gnome-base/libglade-2.3.1 >=dev-util/pkgconfig-0.9.0 esd? ( >=media-sound/esound-0.2.30 ) oggvorbis? ( >=media-libs/libvorbis-1.0 ) alsa? ( >=media-libs/alsa-lib-1.0.9_rc2 ) gnome? ( >=gnome-base/gconf-2.6.0 ) mp3? ( media-libs/id3lib ) nls? ( dev-util/intltool ) dev-vcs/cvs
 DESCRIPTION=Beep Media Player
+EAPI=0
 HOMEPAGE=http://www.sosdg.org/~larne/w/BMP_Homepage
 IUSE=nls gnome mp3 oggvorbis alsa oss esd mmx old-eq
 KEYWORDS=~amd64 ~ppc ~sparc ~x86 ~hppa ~mips ~ppc64 ~alpha ~ia64

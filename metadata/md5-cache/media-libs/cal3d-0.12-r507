@@ -1,5 +1,6 @@
 DEFINED_PHASES=compile install unpack
 DESCRIPTION=Cal3D is a skeletal based character animation library
+EAPI=0
 HOMEPAGE=http://home.gna.org/cal3d
 IUSE=16bit-indices debug
 KEYWORDS=~amd64 ~ia64 ppc ~x86 ~x86-fbsd

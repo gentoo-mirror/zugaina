@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install preinst unpack
 DEPEND=>=sys-devel/binutils-2.16.1 >=dev-libs/nss-3.11.8 >=dev-libs/nspr-4.6.8 dev-util/cvs dev-vcs/subversion net-misc/rsync
 DESCRIPTION=LLMozLib2
+EAPI=0
 HOMEPAGE=http://wiki.secondlife.com/wiki/LLMozLib2
 LICENSE=|| ( MPL-1.1 GPL-2 LGPL-2.1 )
 RDEPEND=>=sys-devel/binutils-2.16.1 >=dev-libs/nss-3.11.8 >=dev-libs/nspr-4.6.8

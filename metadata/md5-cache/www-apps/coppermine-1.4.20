@@ -1,6 +1,7 @@
 DEFINED_PHASES=install postinst prerm setup
 DEPEND=app-arch/unzip || ( virtual/httpd-cgi virtual/httpd-fastcgi ) virtual/httpd-php >=app-admin/webapp-config-1.50.15
 DESCRIPTION=Web picture gallery written in PHP with a MySQL backend
+EAPI=0
 HOMEPAGE=http://coppermine.sourceforge.net/
 IUSE=imagemagick vhosts
 KEYWORDS=~amd64 ~sparc ~x86

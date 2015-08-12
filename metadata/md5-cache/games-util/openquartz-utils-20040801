@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DEPEND=>=sys-apps/sed-4
 DESCRIPTION=Utils for PAK creation
+EAPI=0
 HOMEPAGE=http://openquartz.sourceforge.net/
 IUSE=doc
 KEYWORDS=~x86 ~amd64

@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install
 DEPEND=virtual/opengl virtual/glu tcmalloc? ( >=dev-util/google-perftools-0.91 ) cegui? ( >=dev-games/cegui-0.5 ) ode? ( dev-games/ode ) sdl? ( media-libs/libsdl ) vorbis? ( media-libs/libogg media-libs/libvorbis ) alsa? ( media-libs/alsa-lib ) mng? ( media-libs/libmng ) media-libs/jpeg x11-libs/libXaw x11-libs/libXxf86vm media-gfx/nvidia-cg-toolkit >=media-libs/cal3d-0.12 >=media-libs/freetype-2.1 media-libs/libpng media-libs/openal media-libs/freealut media-libs/speex 3ds? ( media-libs/lib3ds ) dev-util/ftjam python? ( dev-lang/swig )
 DESCRIPTION=Portable 3D Game Development Kit written in C++
+EAPI=0
 HOMEPAGE=http://crystal.sourceforge.net/
 IUSE=3ds alsa cegui mng ode sdl vorbis static maxoptimization doc debug tcmalloc python
 KEYWORDS=~x86 ~amd64

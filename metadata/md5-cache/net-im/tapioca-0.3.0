@@ -1,6 +1,7 @@
 DEFINED_PHASES=-
 DEPEND=net-im/tapioca-coreclient net-im/tapioca-xmpp net-im/tapiocaui
 DESCRIPTION=Tapioca VOIP and IM framework and UI
+EAPI=0
 HOMEPAGE=http://tapioca-voip.sf.net
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2

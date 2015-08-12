@@ -1,5 +1,6 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DESCRIPTION=Trackmania clone
+EAPI=0
 HOMEPAGE=http://maniadrive.raydium.org
 KEYWORDS=~x86 ~amd64
 LICENSE=GPL-2

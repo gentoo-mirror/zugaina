@@ -1,5 +1,6 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DESCRIPTION=Spring - Modification - NOTA 1.56
+EAPI=0
 HOMEPAGE=http://spring.jobjol.nl/show_file.php?id=1988
 KEYWORDS=~amd64 ~x86
 LICENSE=CCPL-Attribution-ShareAlike-NonCommercial-3.0

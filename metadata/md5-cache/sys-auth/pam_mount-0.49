@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install
 DEPEND=>=sys-libs/pam-0.72 dev-libs/openssl >=sys-libs/libhx-1.25 dev-libs/libxml2 dev-util/pkgconfig
 DESCRIPTION=A PAM module that can mount volumes for a user session
+EAPI=0
 HOMEPAGE=http://pam-mount.sourceforge.net
 IUSE=crypt
 KEYWORDS=~amd64 ~ppc ~x86

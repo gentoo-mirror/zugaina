@@ -1,5 +1,6 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DESCRIPTION=Virtual fantasy world MMORPG
+EAPI=0
 HOMEPAGE=http://www.openoutcast.org/
 IUSE=maxoptimization debug
 KEYWORDS=~x86 ~amd64

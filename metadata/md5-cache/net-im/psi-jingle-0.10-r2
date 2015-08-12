@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install unpack
 DEPEND=>=app-crypt/qca-1.0-r2 >=x11-libs/qt-3.3.1 dev-vcs/darcs net-misc/rsync
 DESCRIPTION=QT 3.x Jabber Client, with Licq-like interface and voice support (Jingle)
+EAPI=0
 HOMEPAGE=http://psi.affinix.com
 IUSE=ssl crypt
 KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86

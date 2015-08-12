@@ -1,6 +1,7 @@
 DEFINED_PHASES=compile install preinst unpack
 DEPEND=dev-vcs/subversion net-misc/rsync !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
 DESCRIPTION=An open-source multi-platform crash reporting system
+EAPI=0
 HOMEPAGE=http://code.google.com/p/google-breakpad/
 KEYWORDS=~amd64 ~x86
 LICENSE=BSD

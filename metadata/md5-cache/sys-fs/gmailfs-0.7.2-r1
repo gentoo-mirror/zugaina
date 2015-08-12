@@ -1,5 +1,6 @@
 DEFINED_PHASES=install postinst unpack
 DESCRIPTION=GmailFS provides a mountable Linux filesystem which uses your Gmail account as its storage medium.
+EAPI=0
 HOMEPAGE=http://richard.jones.name/google-hacks/gmail-filesystem/gmail-filesystem.html
 KEYWORDS=~x86 ~ppc ~sparc ~mips ~alpha ~arm ~hppa ~amd64 ~ia64
 LICENSE=GPL-2

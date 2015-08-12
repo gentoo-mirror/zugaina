@@ -1,5 +1,6 @@
 DEFINED_PHASES=compile install postinst
 DESCRIPTION=ICQ transport for wpjabber / jabberd
+EAPI=0
 HOMEPAGE=http://jit.jabberstudio.org/
 KEYWORDS=x86 ~sparc ~ppc hppa
 LICENSE=GPL-2

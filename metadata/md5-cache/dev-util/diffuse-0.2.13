@@ -1,5 +1,6 @@
 DEFINED_PHASES=install
 DESCRIPTION=Diffuse is a graphical tool for merging and comparing text files.
+EAPI=0
 HOMEPAGE=http://diffuse.sourceforge.net/
 KEYWORDS=amd64 ~ppc x86
 LICENSE=GPL-2

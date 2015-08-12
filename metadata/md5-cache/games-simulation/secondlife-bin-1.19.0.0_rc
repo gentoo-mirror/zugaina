@@ -1,5 +1,6 @@
 DEFINED_PHASES=compile install postinst preinst setup unpack
 DESCRIPTION=A 3D MMORPG virtual world entirely built and owned by its residents
+EAPI=0
 HOMEPAGE=http://secondlife.com/
 KEYWORDS=~amd64 ~x86
 LICENSE=as-is
