@@ -1,12 +1,11 @@
-DEFINED_PHASES=compile install unpack
-DEPEND=>=media-video/mplayer-1.0_rc2 >=media-gfx/imagemagick-5.5.6 >=dev-lang/perl-5.8.0-r12 >=x11-libs/gtk+-2.2.1 media-libs/libsdl >=media-video/ffmpeg-0.4.8 >=media-libs/jpeg-6b-r3 >=media-sound/sox-12.17.3-r3 virtual/cdrtools theora? ( media-libs/libtheora ) >=dev-lang/python-2.3.4 matroska? ( media-video/mkvtoolnix media-libs/libmatroska ) ogg? ( media-sound/ogmtools ) >=media-video/mjpegtools-1.6.2 libvisual? ( media-libs/libvisual ) media-sound/jack-audio-connection-kit sys-libs/libavc1394
-DESCRIPTION=Linux Video Editing System
-HOMEPAGE=http://lives.sf.net
-IUSE=matroska ogg theora libvisual nls
-KEYWORDS=~x86 ~ppc ~amd64
+DEFINED_PHASES=compile install
+DEPEND=>=x11-libs/gtk+-2 dev-util/pkgconfig x11-base/xorg-server x11-libs/libXt x11-libs/libXv x11-proto/xf86driproto x11-proto/xf86vidmodeproto
+DESCRIPTION=NVIDIA Linux X11 Settings Utility
+HOMEPAGE=http://www.nvidia.com/
+KEYWORDS=-* ~amd64 ~x86 ~x86-fbsd
 LICENSE=GPL-2
-RDEPEND=>=media-video/mplayer-1.0_rc2 >=media-gfx/imagemagick-5.5.6 >=dev-lang/perl-5.8.0-r12 >=x11-libs/gtk+-2.2.1 media-libs/libsdl >=media-video/ffmpeg-0.4.8 >=media-libs/jpeg-6b-r3 >=media-sound/sox-12.17.3-r3 virtual/cdrtools theora? ( media-libs/libtheora ) >=dev-lang/python-2.3.4 matroska? ( media-video/mkvtoolnix media-libs/libmatroska ) ogg? ( media-sound/ogmtools ) >=media-video/mjpegtools-1.6.2 libvisual? ( media-libs/libvisual ) media-sound/jack-audio-connection-kit sys-libs/libavc1394
+RDEPEND=>=x11-libs/gtk+-2 x11-base/xorg-server x11-libs/libXt x11-drivers/nvidia-drivers
 SLOT=0
-SRC_URI=http://www.xs4all.nl/%7Esalsaman/lives/current/LiVES-1.0.0-pre2.tar.bz2
-_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	flag-o-matic	02090c5a622458303e6bf68837ac6b96	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+SRC_URI=ftp://download.nvidia.com/XFree86/nvidia-settings/nvidia-settings-180.18.tar.gz
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=1c35e71bd4d2b0a500492e359c26f7b0
