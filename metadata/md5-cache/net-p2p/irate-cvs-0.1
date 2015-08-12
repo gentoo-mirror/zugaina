@@ -1,10 +1,11 @@
-DEFINED_PHASES=compile install setup unpack
-DEPEND=sys-devel/gcc dev-vcs/cvs
-DESCRIPTION=irate
-HOMEPAGE=http://irate.sf.net
+DEFINED_PHASES=install postinst
+DEPEND=virtual/jre
+DESCRIPTION=I2P is an anonymous network, exposing a simple layer that applications can use to anonymously and securely send messages to each other.
+HOMEPAGE=http://www.i2p.net/
 KEYWORDS=~x86 ~amd64
 LICENSE=GPL-2
-RDEPEND=sys-devel/gcc
+RDEPEND=virtual/jre
 SLOT=0
-_eclasses_=cvs	cfd95af1a79753a520366f0aaa99809b	eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+SRC_URI=http://mirror.i2p2.de/i2pheadless_0.7.tar.bz2
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=ce88645fe966857e0622ce11bfaf26fc
