@@ -1,11 +1,14 @@
-DEFINED_PHASES=compile install preinst setup unpack
-DEPEND=sys-devel/gcc sys-apps/which dev-vcs/subversion net-misc/rsync
-DESCRIPTION=iRATE radio is a collaborative filtering system for music. You rate the tracks it downloads and the server uses your ratings and other people's to guess what you'll like. (SVN version)
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=gtk? ( >=x11-libs/wxGTK-2.4.2 )
+DESCRIPTION=MUTE File Sharing is a peer-to-peer network that provides easy search-and-download functionality while also protecting your privacy.
 EAPI=0
-HOMEPAGE=http://irate.sf.net
+HOMEPAGE=http://mute-net.sourceforge.net/
+IUSE=gtk
 KEYWORDS=~x86 ~amd64
 LICENSE=GPL-2
-RDEPEND=sys-devel/gcc sys-apps/which
+RDEPEND=gtk? ( >=x11-libs/wxGTK-2.4.2 )
+RESTRICT=nomirror
 SLOT=0
-_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	subversion	d11b897c0c78e23413f0af0959ec6b92	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+SRC_URI=mirror://sourceforge/mute-net/MUTE_fileSharing-0.5_UnixSource.tar.gz
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=90f844e9fb164d31398b817a64f471b5
