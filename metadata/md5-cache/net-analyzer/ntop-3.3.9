@@ -1,12 +1,14 @@
-DEFINED_PHASES=compile install
-DEPEND=>=x11-libs/gtk+-2 dev-util/pkgconfig x11-base/xorg-server x11-libs/libXt x11-libs/libXv x11-proto/xf86driproto x11-proto/xf86vidmodeproto
-DESCRIPTION=NVIDIA Linux X11 Settings Utility
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=app-text/ghostscript-gpl >=net-print/cups-1.1.14 !amd64? ( sys-libs/glibc >=dev-libs/popt-1.6 >=media-libs/tiff-3.4 >=media-libs/libpng-1.0.9 ) amd64? ( >=app-emulation/emul-linux-x86-bjdeps-0.1 app-emulation/emul-linux-x86-compat app-emulation/emul-linux-x86-baselibs ) cnijtools? ( !amd64? ( >=gnome-base/libglade-0.6 >=dev-libs/libxml-1.8 >=dev-libs/libxml2-2.6.0 >=dev-libs/popt-1.4 >=x11-libs/gtk+-2.6.0 >=sys-devel/automake-1.9.5 >=sys-devel/autoconf-2.59 ) amd64? ( >=app-emulation/emul-linux-x86-bjdeps-0.2 app-emulation/emul-linux-x86-gtklibs ) )
+DESCRIPTION=Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series).
 EAPI=0
-HOMEPAGE=http://www.nvidia.com/
-KEYWORDS=-* ~amd64 ~x86 ~x86-fbsd
-LICENSE=GPL-2
-RDEPEND=>=x11-libs/gtk+-2 x11-base/xorg-server x11-libs/libXt x11-drivers/nvidia-drivers
+HOMEPAGE=http://support-sg.canon-asia.com/contents/SG/EN/0100160603.html
+IUSE=amd64 cnijtools ip1900 ip3600 ip4600 mp190 mp240 mp540 mp630
+KEYWORDS=~x86 ~amd64
+LICENSE=as-is
+RDEPEND=app-text/ghostscript-gpl >=net-print/cups-1.1.14 !amd64? ( sys-libs/glibc >=dev-libs/popt-1.6 >=media-libs/tiff-3.4 >=media-libs/libpng-1.0.9 ) amd64? ( >=app-emulation/emul-linux-x86-bjdeps-0.1 app-emulation/emul-linux-x86-compat app-emulation/emul-linux-x86-baselibs ) cnijtools? ( !amd64? ( >=gnome-base/libglade-0.6 >=dev-libs/libxml-1.8 >=dev-libs/libxml2-2.6.0 >=dev-libs/popt-1.4 >=x11-libs/gtk+-2.6.0 >=sys-devel/automake-1.9.5 >=sys-devel/autoconf-2.59 ) amd64? ( >=app-emulation/emul-linux-x86-bjdeps-0.2 app-emulation/emul-linux-x86-gtklibs ) )
+RESTRICT=mirror
 SLOT=0
-SRC_URI=ftp://download.nvidia.com/XFree86/nvidia-settings/nvidia-settings-180.18.tar.gz
-_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+SRC_URI=http://gdlp01.c-wss.com/gds/6/0100001606/01/cnijfilter-common-3.00-1.tar.gz
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	flag-o-matic	02090c5a622458303e6bf68837ac6b96	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=1b01d45012a49e0cd61c218004dd5012
