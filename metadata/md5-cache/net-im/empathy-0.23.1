@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst postrm preinst setup unpack
+DEPEND=>=dev-libs/dbus-glib-0.51 >=dev-libs/glib-2.14.0 >=x11-libs/gtk+-2.12.0 >=gnome-base/gconf-2 >=gnome-base/libglade-2 >=gnome-base/gnome-panel-2.10 >=net-libs/libtelepathy-0.3.1 >=net-libs/telepathy-glib-0.7.3 >=net-im/telepathy-mission-control-4.55 dev-libs/libxml2 >=gnome-base/gnome-vfs-2 >=gnome-extra/evolution-data-server-1.2 spell? ( app-text/aspell app-text/iso-codes ) python? ( >=dev-lang/python-2.4.4-r5 >=dev-python/pygtk-2 ) >=dev-util/intltool-0.35.0 >=dev-util/pkgconfig-0.16 test? ( >=dev-libs/check-0.9.4 ) dev-libs/libxslt virtual/python >=sys-apps/sed-4
+DESCRIPTION=Telepathy client and library using GTK+
+HOMEPAGE=http://live.gnome.org/Empathy
+IUSE=python spell test debug
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-libs/dbus-glib-0.51 >=dev-libs/glib-2.14.0 >=x11-libs/gtk+-2.12.0 >=gnome-base/gconf-2 >=gnome-base/libglade-2 >=gnome-base/gnome-panel-2.10 >=net-libs/libtelepathy-0.3.1 >=net-libs/telepathy-glib-0.7.3 >=net-im/telepathy-mission-control-4.55 dev-libs/libxml2 >=gnome-base/gnome-vfs-2 >=gnome-extra/evolution-data-server-1.2 spell? ( app-text/aspell app-text/iso-codes ) python? ( >=dev-lang/python-2.4.4-r5 >=dev-python/pygtk-2 )
+SLOT=0
+SRC_URI=http://ftp.gnome.org/pub/GNOME/sources/empathy/0.23/empathy-0.23.1.tar.bz2
+_eclasses_=eutils	af81d52c25ec93fbdff71e0efb0de7b7	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	9637c29fc715b17a6328f24251129557	gnome2-utils	f658eba3cc594a21cf6eef4af47daa90	libtool	b9b3340e3a19510f0d9f05cfccbf209f	multilib	fac675dcccf94392371a6abee62d909f	toolchain-funcs	48b38a216afb92db6314d6c3187abea3	versionator	a8a3963967d6140be9a14b08bb8f047f
+_md5_=c84fc0de4e0a07a6ef6f1076a1c3584f
