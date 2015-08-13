@@ -1,12 +1,13 @@
-DEFINED_PHASES=compile install unpack
-DEPEND=>=app-crypt/qca-1.0-r2 >=x11-libs/qt-3.3.1 dev-vcs/darcs net-misc/rsync
-DESCRIPTION=QT 3.x Jabber Client, with Licq-like interface and voice support (Jingle)
+DEFINED_PHASES=compile install postinst unpack
+DEPEND=>=net-im/jabber-base-0.01 >=dev-libs/expat-1.95 >=dev-lang/erlang-11.2.5 odbc? ( dev-db/unixODBC ) ldap? ( =net-nds/openldap-2* ) ssl? ( >=dev-libs/openssl-0.9.8e ) zlib? ( sys-libs/zlib )
+DESCRIPTION=The Erlang Jabber Daemon
 EAPI=0
-HOMEPAGE=http://psi.affinix.com
-IUSE=ssl crypt
-KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
+HOMEPAGE=http://www.ejabberd.im/
+IUSE=debug mod_irc mod_muc mod_pubsub ldap odbc pam ssl web zlib
+KEYWORDS=~amd64 ~ppc ~x86
 LICENSE=GPL-2
-RDEPEND=ssl? ( >=app-crypt/qca-tls-1.0-r2 ) crypt? ( >=app-crypt/gnupg-1.2.2 ) dev-libs/expat media-libs/speex net-libs/ortp
+RDEPEND=>=net-im/jabber-base-0.01 >=dev-libs/expat-1.95 >=dev-lang/erlang-11.2.5 odbc? ( dev-db/unixODBC ) ldap? ( =net-nds/openldap-2* ) ssl? ( >=dev-libs/openssl-0.9.8e ) zlib? ( sys-libs/zlib )
 SLOT=0
-_eclasses_=darcs	4cd4e599f4aac32e177c825081e3e6df	eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+SRC_URI=http://www.process-one.net/downloads/ejabberd/2.1.2/ejabberd-2.1.2.tar.gz
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=7b1d4e3844bbc6ffdc06babf9bb44862

@@ -1,11 +1,12 @@
-DEFINED_PHASES=compile install preinst unpack
-DEPEND=net-im/tapioca-coreclient-svn sys-apps/dbus dev-vcs/subversion net-misc/rsync
-DESCRIPTION=Tapioca XMPP protocol
+DEFINED_PHASES=compile install unpack
+DEPEND=>=app-crypt/qca-1.0-r2 >=x11-libs/qt-3.3.1 dev-vcs/darcs net-misc/rsync
+DESCRIPTION=QT 3.x Jabber Client, with Licq-like interface and voice support (Jingle)
 EAPI=0
-HOMEPAGE=http://tapioca-voip.sf.net
-KEYWORDS=~amd64 ~x86
+HOMEPAGE=http://psi.affinix.com
+IUSE=ssl crypt
+KEYWORDS=~amd64 ~hppa ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-2
-RDEPEND=net-im/tapioca-coreclient-svn sys-apps/dbus
+RDEPEND=ssl? ( >=app-crypt/qca-tls-1.0-r2 ) crypt? ( >=app-crypt/gnupg-1.2.2 ) dev-libs/expat media-libs/speex net-libs/ortp
 SLOT=0
-_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	subversion	d11b897c0c78e23413f0af0959ec6b92	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+_eclasses_=darcs	4cd4e599f4aac32e177c825081e3e6df	eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=29b65d5e18a4d4f00bd4038387cc5d6c
