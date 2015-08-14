@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile install postinst setup unpack
-DEPEND=virtual/libc >=dev-libs/libpcre-4.2-r1 virtual/libpcap flexresp2? ( dev-libs/libdnet ) react? ( ~net-libs/libnet-1.0.2a ) postgres? ( || ( dev-db/postgresql dev-db/libpq ) ) mysql? ( virtual/mysql ) prelude? ( >=dev-libs/libprelude-0.9.0 ) odbc? ( dev-db/unixODBC ) >=sys-devel/libtool-1.4 inline? ( ~net-libs/libnet-1.0.2a net-firewall/iptables ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
-DESCRIPTION=Libpcap-based packet sniffer/logger/lightweight IDS
+DEFINED_PHASES=compile install postinst postrm setup unpack
+DEPEND=app-text/ghostscript-gpl >=net-print/cups-1.1.14 !amd64? ( sys-libs/glibc >=dev-libs/popt-1.6 >=media-libs/tiff-3.4 >=media-libs/libpng-1.0.9 ) amd64? ( >=app-emulation/emul-linux-x86-bjdeps-0.1 app-emulation/emul-linux-x86-compat app-emulation/emul-linux-x86-baselibs ) cnijtools? ( !amd64? ( >=gnome-base/libglade-0.6 >=dev-libs/libxml-1.8 >=dev-libs/libxml2-2.6.0 >=dev-libs/popt-1.4 >=x11-libs/gtk+-2.6.0 >=sys-devel/automake-1.9.5 >=sys-devel/autoconf-2.59 ) amd64? ( >=app-emulation/emul-linux-x86-bjdeps-0.2 app-emulation/emul-linux-x86-gtklibs ) )
+DESCRIPTION=Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series).
 EAPI=0
-HOMEPAGE=http://www.snort.org/
-IUSE=postgres mysql selinux odbc prelude inline dynamicplugin timestats perfprofiling linux-smp-stats flexresp2 sguil gre
-KEYWORDS=~alpha ~amd64 ~ppc ~ppc64 -sparc ~x86
-LICENSE=GPL-2
-RDEPEND=virtual/libc >=dev-libs/libpcre-4.2-r1 virtual/libpcap flexresp2? ( dev-libs/libdnet ) react? ( ~net-libs/libnet-1.0.2a ) postgres? ( || ( dev-db/postgresql dev-db/libpq ) ) mysql? ( virtual/mysql ) prelude? ( >=dev-libs/libprelude-0.9.0 ) odbc? ( dev-db/unixODBC ) >=sys-devel/libtool-1.4 inline? ( ~net-libs/libnet-1.0.2a net-firewall/iptables ) dev-lang/perl selinux? ( sec-policy/selinux-snort )
+HOMEPAGE=http://support-sg.canon-asia.com/contents/SG/EN/0100160603.html
+IUSE=amd64 cnijtools ip1900 ip3600 ip4600 mp190 mp240 mp540 mp630
+KEYWORDS=~x86 ~amd64
+LICENSE=as-is
+RDEPEND=app-text/ghostscript-gpl >=net-print/cups-1.1.14 !amd64? ( sys-libs/glibc >=dev-libs/popt-1.6 >=media-libs/tiff-3.4 >=media-libs/libpng-1.0.9 ) amd64? ( >=app-emulation/emul-linux-x86-bjdeps-0.1 app-emulation/emul-linux-x86-compat app-emulation/emul-linux-x86-baselibs ) cnijtools? ( !amd64? ( >=gnome-base/libglade-0.6 >=dev-libs/libxml-1.8 >=dev-libs/libxml2-2.6.0 >=dev-libs/popt-1.4 >=x11-libs/gtk+-2.6.0 >=sys-devel/automake-1.9.5 >=sys-devel/autoconf-2.59 ) amd64? ( >=app-emulation/emul-linux-x86-bjdeps-0.2 app-emulation/emul-linux-x86-gtklibs ) )
+RESTRICT=mirror
 SLOT=0
-SRC_URI=http://www.snort.org/dl/current/snort-2.8.2.2.tar.gz http://www.snort.org/pub-bin/downloads.cgi/Download/comm_rules/Community-Rules-2.4.tar.gz http://www.snort.org/pub-bin/downloads.cgi/Download/vrt_pr/snortrules-pr-2.4.tar.gz
-_eclasses_=autotools	8056957fdccf2b3cd6e282a4b4551d1a	eutils	351a78113be5b393c09a2c948701ad36	libtool	7f78cd7d403808a350c9ae23f5821fb4	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+SRC_URI=http://gdlp01.c-wss.com/gds/6/0100001606/01/cnijfilter-common-3.00-1.tar.gz
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	flag-o-matic	02090c5a622458303e6bf68837ac6b96	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=d934465309e94113ea0a9d2f7c96bcf8
