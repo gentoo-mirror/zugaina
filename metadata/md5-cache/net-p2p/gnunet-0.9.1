@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile install postinst preinst prepare setup
-DEPEND=>=dev-libs/libgcrypt-1.2.0 =media-libs/libextractor-0.5.23 >=dev-libs/gmp-4.0.0 gnome-base/libglade sys-libs/zlib net-misc/curl gtk? ( >=x11-libs/gtk+-2.6.10 ) sys-apps/sed >=dev-scheme/guile-1.8.0 mysql? ( >=virtual/mysql-4.0 ) sqlite? ( >=dev-db/sqlite-3.0.8 ) nls? ( sys-devel/gettext ) smtp? ( net-libs/libesmtp ) http? ( net-libs/libmicrohttpd ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DEPEND=>=dev-libs/libgcrypt-1.2.0 >=media-libs/libextractor-0.6.1 >=dev-libs/gmp-4.0.0 sys-libs/zlib net-misc/curl sys-apps/sed mysql? ( >=virtual/mysql-4.0 ) sqlite? ( >=dev-db/sqlite-3.0.8 ) nls? ( sys-devel/gettext ) >=net-libs/libmicrohttpd-0.4.6 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
 DESCRIPTION=GNUnet is an anonymous, distributed, reputation based network.
 EAPI=2
 HOMEPAGE=http://gnunet.org/
-IUSE=http mysql smtp +sqlite nls gtk
+IUSE=mysql nls sqlite
 KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
 LICENSE=GPL-2
-RDEPEND=>=dev-libs/libgcrypt-1.2.0 =media-libs/libextractor-0.5.23 >=dev-libs/gmp-4.0.0 gnome-base/libglade sys-libs/zlib net-misc/curl gtk? ( >=x11-libs/gtk+-2.6.10 ) sys-apps/sed >=dev-scheme/guile-1.8.0 mysql? ( >=virtual/mysql-4.0 ) sqlite? ( >=dev-db/sqlite-3.0.8 ) nls? ( sys-devel/gettext ) smtp? ( net-libs/libesmtp ) http? ( net-libs/libmicrohttpd )
+RDEPEND=>=dev-libs/libgcrypt-1.2.0 >=media-libs/libextractor-0.6.1 >=dev-libs/gmp-4.0.0 sys-libs/zlib net-misc/curl sys-apps/sed mysql? ( >=virtual/mysql-4.0 ) sqlite? ( >=dev-db/sqlite-3.0.8 ) nls? ( sys-devel/gettext ) >=net-libs/libmicrohttpd-0.4.6
 RESTRICT=test
 SLOT=0
-SRC_URI=http://gnunet.org/download/GNUnet-0.8.1b.tar.gz
+SRC_URI=http://ftp.gnu.org/gnu/gnunet/gnunet-0.9.1.tar.gz
 _eclasses_=autotools	8056957fdccf2b3cd6e282a4b4551d1a	eutils	351a78113be5b393c09a2c948701ad36	libtool	7f78cd7d403808a350c9ae23f5821fb4	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=d9709e5c0b8ce21fce5379806541df60
