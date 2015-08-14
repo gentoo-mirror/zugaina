@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install setup
+DEPEND=>=media-libs/gstreamer-0.10.4 >=media-libs/gst-plugins-base-0.10.5 >=media-libs/gst-plugins-good-0.10.2-r1 dev-libs/farsight-darcs media-plugins/gst-plugins-farsight sys-apps/dbus
+DESCRIPTION=Tapioca framework for VOIP and IM
+EAPI=0
+HOMEPAGE=http://tapioca-voip.sf.net
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=media-libs/gstreamer-0.10.4 >=media-libs/gst-plugins-base-0.10.5 >=media-libs/gst-plugins-good-0.10.2-r1 dev-libs/farsight-darcs media-plugins/gst-plugins-farsight sys-apps/dbus
+RESTRICT=nomirror
+SLOT=0
+SRC_URI=mirror://sourceforge/tapioca-voip/tapioca-0.3.0.tar.gz
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+_md5_=8835947707df6b31138dc3b8b2e2b43f
