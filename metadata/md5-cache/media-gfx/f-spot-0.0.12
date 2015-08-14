@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile install postinst postrm preinst unpack
+DEPEND=>=dev-lang/mono-1.0.6 >=dev-dotnet/gtk-sharp-1.9.2 media-libs/libexif =dev-db/sqlite-2.8* media-libs/lcms >=media-libs/libgphoto2-2.1.4 >=sys-apps/sed-4
+DESCRIPTION=An application designed to provide personal photo management to the GNOME desktop. Features include import, export, printing and advanced sorting of digital images.
+HOMEPAGE=http://gnome.org/projects/f-spot/
+IUSE=debug
+KEYWORDS=~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/mono-1.0.6 >=dev-dotnet/gtk-sharp-1.9.2 media-libs/libexif =dev-db/sqlite-2.8* media-libs/lcms >=media-libs/libgphoto2-2.1.4
+RESTRICT=nomirror
+SLOT=0
+SRC_URI=http://ftp.gnome.org/pub/gnome/sources/f-spot/0.0/f-spot-0.0.12.tar.bz2
+_eclasses_=eutils	af81d52c25ec93fbdff71e0efb0de7b7	fdo-mime	0acfe1a88fd8751a1d5dc671168219fa	gnome.org	8fef8f967214f56e08fa92d61163d891	gnome2	9637c29fc715b17a6328f24251129557	gnome2-utils	f658eba3cc594a21cf6eef4af47daa90	libtool	b9b3340e3a19510f0d9f05cfccbf209f	mono	203a4295c06155d318bdff9c6b2d5e1c	multilib	fac675dcccf94392371a6abee62d909f	toolchain-funcs	48b38a216afb92db6314d6c3187abea3	versionator	a8a3963967d6140be9a14b08bb8f047f
+_md5_=bb828bd2a562bdb57e734b00624e51ba
