@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile install postinst setup unpack
-DEPEND=tcpd? ( sys-apps/tcp-wrappers ) >=dev-libs/openssl-0.9.8k !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 ssl? ( dev-libs/openssl )
-DESCRIPTION=TLS/SSL - Port Wrapper
+DEFINED_PHASES=compile install postinst
+DEPEND=!media-sound/xmms2-git !clientonly? ( >=dev-db/sqlite-3.3.4 aac? ( >=media-libs/faad2-2.0 ) alsa? ( media-libs/alsa-lib ) ao? ( media-libs/libao ) avahi? ( net-dns/avahi ) cdda? ( >=media-libs/libdiscid-0.1.1 >=media-sound/cdparanoia-3.9.8 ) curl? ( >=net-misc/curl-7.15.1 !=net-misc/curl-7.16.1 !=net-misc/curl-7.16.2 ) flac? ( media-libs/flac ) gnome? ( gnome-base/gnome-vfs ) jack? ( >=media-sound/jack-audio-connection-kit-0.101.1 ) mms? ( media-video/ffmpeg >=media-libs/libmms-0.3 ) modplug? ( media-libs/libmodplug ) mp3? ( media-sound/madplay ) mp4? ( media-video/ffmpeg ) musepack? ( media-libs/libmpcdec ) ofa? ( media-libs/libofa ) rss? ( dev-libs/libxml2 ) samba? ( net-fs/samba ) sid? ( media-sound/sidplay media-libs/resid ) speex? ( media-libs/speex ) vorbis? ( media-libs/libvorbis ) xml? ( dev-libs/libxml2 ) xspf? ( dev-libs/libxml2 ) ) >=dev-lang/python-2.4.3 >=dev-libs/glib-2.12.9 cpp? ( >=dev-libs/boost-1.32 >=sys-devel/gcc-3.4 ) fam? ( app-admin/gamin ) perl? ( >=dev-lang/perl-5.8.8 ) python? ( >=dev-python/pyrex-0.9.5.1 ) ruby? ( >=dev-lang/ruby-1.8.5 )
+DESCRIPTION=X(cross)platform Music Multiplexing System. The new generation of the XMMS player.
 EAPI=0
-HOMEPAGE=http://stunnel.mirt.net/
-IUSE=ipv6 selinux tcpd ssl
-KEYWORDS=~alpha amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sparc x86
-LICENSE=GPL-2
-RDEPEND=tcpd? ( sys-apps/tcp-wrappers ) >=dev-libs/openssl-0.9.8k selinux? ( sec-policy/selinux-stunnel )
+HOMEPAGE=http://xmms2.xmms.org
+IUSE=aac alsa ao asx avahi avcodec cdda clientonly coreaudio curl cpp daap diskwrite eq fam flac gnome jack lastfm mms modplug mp3 mp4 musepack nophonehome ofa oss perl python rss ruby samba shout sid speex vorbis wma xml xspf
+KEYWORDS=~x86 ~amd64 ~sparc
+LICENSE=GPL-2 LGPL-2.1
+RDEPEND=!media-sound/xmms2-git !clientonly? ( >=dev-db/sqlite-3.3.4 aac? ( >=media-libs/faad2-2.0 ) alsa? ( media-libs/alsa-lib ) ao? ( media-libs/libao ) avahi? ( net-dns/avahi ) cdda? ( >=media-libs/libdiscid-0.1.1 >=media-sound/cdparanoia-3.9.8 ) curl? ( >=net-misc/curl-7.15.1 !=net-misc/curl-7.16.1 !=net-misc/curl-7.16.2 ) flac? ( media-libs/flac ) gnome? ( gnome-base/gnome-vfs ) jack? ( >=media-sound/jack-audio-connection-kit-0.101.1 ) mms? ( media-video/ffmpeg >=media-libs/libmms-0.3 ) modplug? ( media-libs/libmodplug ) mp3? ( media-sound/madplay ) mp4? ( media-video/ffmpeg ) musepack? ( media-libs/libmpcdec ) ofa? ( media-libs/libofa ) rss? ( dev-libs/libxml2 ) samba? ( net-fs/samba ) sid? ( media-sound/sidplay media-libs/resid ) speex? ( media-libs/speex ) vorbis? ( media-libs/libvorbis ) xml? ( dev-libs/libxml2 ) xspf? ( dev-libs/libxml2 ) ) >=dev-lang/python-2.4.3 >=dev-libs/glib-2.12.9 cpp? ( >=dev-libs/boost-1.32 >=sys-devel/gcc-3.4 ) fam? ( app-admin/gamin ) perl? ( >=dev-lang/perl-5.8.8 ) python? ( >=dev-python/pyrex-0.9.5.1 ) ruby? ( >=dev-lang/ruby-1.8.5 )
+RESTRICT=nomirror
 SLOT=0
-SRC_URI=http://www.stunnel.org/download/stunnel/src/stunnel-4.31.tar.gz
-_eclasses_=autotools	8056957fdccf2b3cd6e282a4b4551d1a	eutils	351a78113be5b393c09a2c948701ad36	libtool	7f78cd7d403808a350c9ae23f5821fb4	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	ssl-cert	e90a74de57c48ea6c058b1cb3a735907	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+SRC_URI=mirror://sourceforge/xmms2/xmms2-0.4DrKosmos.tar.bz2
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=6ed8357b5734fb461e8de44dbb400e24
