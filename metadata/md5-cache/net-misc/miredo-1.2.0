@@ -4,7 +4,7 @@ EAPI=0
 HOMEPAGE=http://wejp.homelinux.org/wejp/xmms2/
 KEYWORDS=~amd64 ~ppc ~sparc x86 ~hppa ~mips ~ppc64 ~alpha ~ia64
 LICENSE=GPL-2
-RDEPEND=>=x11-libs/gtk+-2.6 =media-sound/xmms2-0508051220
+RDEPEND=>=x11-libs/gtk+-2.6 =media-sound/xmms2-0.1_pre2
 RESTRICT=nomirror
 SLOT=0
 SRC_URI=http://wejp.homelinux.org/wejp/xmms2/gxmms2-0.4.2.tar.gz
