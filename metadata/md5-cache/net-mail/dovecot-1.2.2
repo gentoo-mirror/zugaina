@@ -1,0 +1,13 @@
+DEFINED_PHASES=compile configure install setup unpack
+DEPEND=berkdb? ( sys-libs/db ) caps? ( sys-libs/libcap ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) lucene? ( dev-cpp/clucene ) mysql? ( virtual/mysql ) pam? ( virtual/pam ) postgres? ( virtual/postgresql-base ) sqlite? ( dev-db/sqlite ) ssl? ( dev-libs/openssl ) vpopmail? ( net-mail/vpopmail )
+DESCRIPTION=An IMAP and POP3 server written with security primarily in mind
+EAPI=2
+HOMEPAGE=http://www.dovecot.org/
+IUSE=berkdb bzip2 caps cydir dbox doc kerberos ldap lucene maildir managesieve mbox mysql pam postgres sieve sqlite ssl suid vpopmail zlib
+KEYWORDS=~amd64 ~x86
+LICENSE=LGPL-2.1
+RDEPEND=berkdb? ( sys-libs/db ) caps? ( sys-libs/libcap ) kerberos? ( virtual/krb5 ) ldap? ( net-nds/openldap ) lucene? ( dev-cpp/clucene ) mysql? ( virtual/mysql ) pam? ( virtual/pam ) postgres? ( virtual/postgresql-base ) sqlite? ( dev-db/sqlite ) ssl? ( dev-libs/openssl ) vpopmail? ( net-mail/vpopmail )
+SLOT=0
+SRC_URI=http://dovecot.org/releases/1.2/dovecot-1.2.2.tar.gz sieve? ( http://www.rename-it.nl/dovecot/1.2/dovecot-1.2-sieve-0.1.9.tar.gz ) managesieve? ( http://www.rename-it.nl/dovecot/1.2/dovecot-1.2.2-managesieve-0.11.7.diff.gz http://www.rename-it.nl/dovecot/1.2/dovecot-1.2-managesieve-0.11.7.tar.gz )
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	versionator	99ae9d758cbe7cfed19170e7d48f5a9c
+_md5_=405a81f5c4987de1f72f0861535a98a0

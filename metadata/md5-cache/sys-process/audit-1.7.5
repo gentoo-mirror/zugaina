@@ -1,13 +1,14 @@
-DEFINED_PHASES=compile install postinst setup
-DEPEND=pcre? ( dev-libs/libpcre )
-DESCRIPTION=A TCP/HTTP reverse proxy for high availability environments
+DEFINED_PHASES=compile install postinst postrm unpack
+DEPEND=>=dev-lang/python-2.4 ldap? ( net-nds/openldap ) dev-lang/swig >=sys-kernel/linux-headers-2.6.23 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DESCRIPTION=Userspace utilities for storing and processing auditing records
 EAPI=0
-HOMEPAGE=http://haproxy.1wt.eu
-IUSE=pcre
-KEYWORDS=~amd64 ~ppc ~x86
-LICENSE=GPL-2 LGPL-2.1
-RDEPEND=pcre? ( dev-libs/libpcre )
+HOMEPAGE=http://people.redhat.com/sgrubb/audit/
+IUSE=ldap
+KEYWORDS=~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-lang/python-2.4 ldap? ( net-nds/openldap )
+RESTRICT=test
 SLOT=0
-SRC_URI=http://haproxy.1wt.eu/download/1.3/src/haproxy-1.3.23.tar.gz
-_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	versionator	99ae9d758cbe7cfed19170e7d48f5a9c
+SRC_URI=http://people.redhat.com/sgrubb/audit/audit-1.7.5.tar.gz
+_eclasses_=autotools	8056957fdccf2b3cd6e282a4b4551d1a	libtool	7f78cd7d403808a350c9ae23f5821fb4	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	python	06d7be3e54573292f012e3cc433d8297	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=23c56cb25770139355a16ce585c53819
