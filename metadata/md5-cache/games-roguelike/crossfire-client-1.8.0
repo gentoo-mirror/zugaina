@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DEPEND=x11-base/xorg-x11 alsa? ( media-libs/alsa-lib ) gtk? ( =x11-libs/gtk+-1.2* dev-libs/glib sdl? ( media-libs/libsdl media-libs/sdl-image ) ) media-libs/libpng sys-libs/zlib
+DESCRIPTION=Client for the nethack-style but more in the line of UO
+HOMEPAGE=http://crossfire.real-time.com/
+IUSE=alsa gtk sdl
+KEYWORDS=ppc x86
+LICENSE=GPL-2
+RDEPEND=x11-base/xorg-x11 alsa? ( media-libs/alsa-lib ) gtk? ( =x11-libs/gtk+-1.2* dev-libs/glib sdl? ( media-libs/libsdl media-libs/sdl-image ) ) media-libs/libpng sys-libs/zlib games-misc/games-envd
+SLOT=0
+SRC_URI=mirror://sourceforge/crossfire/crossfire-client-1.8.0.tar.gz
+_eclasses_=base	ec46b36a6f6fd1d0b505a33e0b74e413	eutils	af81d52c25ec93fbdff71e0efb0de7b7	games	016d5de1968de77e56a90938ed6e5aba	multilib	fac675dcccf94392371a6abee62d909f	toolchain-funcs	48b38a216afb92db6314d6c3187abea3	user	d0a4d0735a6c0183d707ca919bd72f28
+_md5_=70acf4672fc51e69553ff39aba53359d
