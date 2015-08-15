@@ -1,9 +1,0 @@
-DEFINED_PHASES=install
-DESCRIPTION=IP over ICMP.
-HOMEPAGE=http://thomer.com/icmptx/
-KEYWORDS=~amd64 ~x86 ~ppc
-LICENSE=as-is
-RESTRICT=nomirror
-SLOT=0
-SRC_URI=http://thomer.com/icmptx/icmptx-0.01.tar.gz
-_md5_=f2948f5cfbde80324062bd4cbc2a5576
