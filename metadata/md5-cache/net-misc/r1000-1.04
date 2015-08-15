@@ -1,0 +1,9 @@
+DEFINED_PHASES=compile install postinst setup
+DEPEND=sys-kernel/linux-headers
+DESCRIPTION=Drivers for Realtek 8168 8169 8101 8111 based PCI-E/PCI Ethernet Cards
+HOMEPAGE=http://www.realtek.com.tw/
+KEYWORDS=amd64 ~ppc ppc64 ~sparc x86
+SLOT=0
+SRC_URI=ftp://61.56.86.122/cn/nic/r1000_v1.04.tgz ftp://210.51.181.211/cn/nic/r1000_v1.04.tgz ftp://152.104.238.194/cn/nic/r1000_v1.04.tgz
+_eclasses_=eutils	9fb270e417e0e83d64ca52586c4a79de	linux-info	8cbc678e083c23e4ad546ca6509cf304	multilib	62927b3db3a589b0806255f3a002d5d3	toolchain-funcs	42408102d713fbad60ca21349865edb4	versionator	cd0bcdb170807e4a1984115e9d53a26f
+_md5_=9441238004bc4be23453362bbbf1e5a7
