@@ -1,11 +1,13 @@
-DEFINED_PHASES=compile install postinst preinst setup unpack
-DESCRIPTION=Invasion - Battle of Survival is a real-time strategy game using the Stratagus game engine
+DEFINED_PHASES=install postinst postrm
+DEPEND=nls? ( sys-devel/gettext )
+DESCRIPTION=A utility to find various forms of lint on a filesystem
 EAPI=0
-HOMEPAGE=http://bos.seul.org/
-KEYWORDS=~x86 ~amd64
+HOMEPAGE=http://www.pixelbeat.org/fslint/
+IUSE=nls
+KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND==games-engines/stratagus-2.2* games-misc/games-envd
+RDEPEND=>=dev-python/pygtk-2.0
 SLOT=0
-SRC_URI=http://bos.seul.org/files/bos_2_0.tar.gz http://dev.gentoo.org/~genstef/files/bos.png
-_eclasses_=base	84d9f879f57a8316ff02be0373a3d6f9	eutils	351a78113be5b393c09a2c948701ad36	games	9c0a2dd4a6a25b6b7851fa01019cc809	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	user	906f3c8eb3a2350a4f1191a89baa3e46
+SRC_URI=http://www.pixelbeat.org/fslint/fslint-2.26.tar.gz
+_eclasses_=eutils	351a78113be5b393c09a2c948701ad36	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	python	06d7be3e54573292f012e3cc433d8297	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=6c0974549ece0d52315469b1228845e4
