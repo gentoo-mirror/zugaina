@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install postinst preinst setup unpack
+DESCRIPTION=A 3D MMORPG virtual world entirely built and owned by its residents
+EAPI=0
+HOMEPAGE=http://secondlife.com/
+KEYWORDS=~amd64 ~x86
+LICENSE=as-is
+RDEPEND=sys-libs/glibc media-fonts/kochi-substitute x86? ( x11-libs/libX11 x11-libs/libXau x11-libs/libXdmcp x11-libs/libXext dev-libs/libgcrypt dev-libs/libgpg-error dev-libs/openssl media-libs/freetype media-libs/libogg media-libs/libsdl media-libs/libvorbis net-libs/gnutls net-misc/curl sys-libs/zlib virtual/glu virtual/opengl ) amd64? ( app-emulation/emul-linux-x86-sdl app-emulation/emul-linux-x86-gtklibs ) games-misc/games-envd
+RESTRICT=mirror strip
+SLOT=0
+SRC_URI=http://release-candidate-secondlife-com.s3.amazonaws.com/SecondLife_i686_1_19_1_2_RELEASECANDIDATE.tar.bz2
+_eclasses_=base	84d9f879f57a8316ff02be0373a3d6f9	eutils	351a78113be5b393c09a2c948701ad36	games	9c0a2dd4a6a25b6b7851fa01019cc809	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361	user	906f3c8eb3a2350a4f1191a89baa3e46
+_md5_=67b0643bd97ec2b32377cb8e3dcffb72
