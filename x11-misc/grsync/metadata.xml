@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
-<pkgmetadata>
-<herd>x11-misc</herd>
-<maintainer>
-  <email>ycarus@zugaina.org</email>
-  <description>This ebuild come from http://gentoo.zugaina.org/</description>
-</maintainer>
-</pkgmetadata>
