@@ -10,5 +10,5 @@ RDEPEND=ssl? ( >=dev-libs/openssl-0.9.6g ) mysql? ( >=virtual/mysql-4.0 ) odbc? 
 REQUIRED_USE=postgres? ( dlz ) berkdb? ( dlz ) mysql? ( dlz !threads ) odbc? ( dlz ) ldap? ( dlz ) sdb-ldap? ( dlz ) gost? ( ssl )
 SLOT=0
 SRC_URI=ftp://ftp.isc.org/isc/bind9/9.9.0rc4/bind-9.9.0rc4.tar.gz doc? ( mirror://gentoo/dyndns-samples.tbz2 ) sdb-ldap? ( http://ftp.disconnected-by-peer.at/pub/bind-sdb-ldap-1.1.0-fc14.patch.bz2 )
-_eclasses_=autotools	8056957fdccf2b3cd6e282a4b4551d1a	eutils	351a78113be5b393c09a2c948701ad36	flag-o-matic	02090c5a622458303e6bf68837ac6b96	libtool	7f78cd7d403808a350c9ae23f5821fb4	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
+_eclasses_=autotools	8056957fdccf2b3cd6e282a4b4551d1a	eutils	351a78113be5b393c09a2c948701ad36	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	libtool	7f78cd7d403808a350c9ae23f5821fb4	multilib	df4e4d5cfd3d137d0c248e1991c0e4d6	toolchain-funcs	4b8d3388c0a6e798504e20ba30b49361
 _md5_=cf15a52458a73363f0bc0e3bb895519b
