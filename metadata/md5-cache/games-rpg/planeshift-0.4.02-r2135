@@ -9,5 +9,5 @@ RDEPEND=net-misc/curl >=media-libs/cal3d-0.12 >=dev-games/crystalspace-ps-1.4 se
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://dev.gentooexperimental.org/~loux/distfiles/planeshift-0.4.02-r2135.tar.bz2 http://loux.thefuture.free.fr/distfiles/planeshift-0.4.02-r2135.tar.bz2
-_eclasses_=base	3fe4f8980633fd7bc69e9887209ba2fe	eutils	f813d23e417656bf3917483643165d5a	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	games	4dae170e58f773c484e07d18ef441804	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85	user	906f3c8eb3a2350a4f1191a89baa3e46
+_eclasses_=base	3fe4f8980633fd7bc69e9887209ba2fe	eutils	f20548a2f7b0128068388cd2ec26708a	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	games	4dae170e58f773c484e07d18ef441804	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85	user	906f3c8eb3a2350a4f1191a89baa3e46
 _md5_=73027517f8976ed3035bc946380b358a
