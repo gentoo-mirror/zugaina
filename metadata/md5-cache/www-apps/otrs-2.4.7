@@ -9,5 +9,6 @@ LICENSE=AGPL-3
 RDEPEND=virtual/mta >=dev-lang/perl-5.8.8 dev-perl/Authen-SASL dev-perl/Crypt-PasswdMD5 dev-perl/DBI dev-perl/Date-Pcalc dev-perl/IO-stringy dev-perl/MIME-tools dev-perl/MailTools dev-perl/Net-DNS dev-perl/Mail-POP3Client dev-perl/TimeDate dev-perl/XML-Parser dev-perl/libwww-perl dev-perl/LWP-UserAgent-Determined dev-perl/PDF-API2 >=virtual/perl-CGI-3.33 virtual/perl-Digest-MD5 virtual/perl-MIME-Base64 virtual/perl-libnet apache2? ( www-servers/apache:2 mod_perl? ( =www-apache/libapreq2-2* www-apache/mod_perl ) fastcgi? ( || ( www-apache/mod_fcgid www-apache/mod_fastcgi ) ) ) fastcgi? ( dev-perl/FCGI ) gd? ( dev-perl/GD dev-perl/GDTextUtil dev-perl/GDGraph ) ldap? ( dev-perl/perl-ldap ) mysql? ( >=dev-perl/DBD-mysql-3.0005 ) postgres? ( dev-perl/DBD-Pg ) cjk? ( dev-perl/Encode-HanExtra ) >=app-admin/webapp-config-1.50.15
 SLOT=2.4.7
 SRC_URI=ftp://ftp.otrs.org/pub/otrs/otrs-2.4.7.tar.bz2
+_eclass_exported_funcs=pkg_prerm:webapp pkg_postinst:- pkg_setup:- src_prepare:- src_install:-
 _eclasses_=confutils	18995f74ac4ffafb7ad853dfe133f209	eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85	webapp	42c6ef7af496b228f9854b3c81e4b226
 _md5_=cdf39ffc7a8c4aa7ed228f3d2afae76c

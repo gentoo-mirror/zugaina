@@ -6,8 +6,8 @@ app-editors/vile 9.7: VI Like Emacs -- yet another full-featured vi clone
 app-forensics/afflib 3.3.4 3.6.2: Library that implements the AFF image standard
 app-forensics/chkrootkit 0.49: a tool to locally check for signs of a rootkit
 app-forensics/libewf 20090209 20090606 20100805: Implementation of the EWF (SMART and EnCase) image format
-app-misc/domogik 0.2.0_alpha1 0.2.0_beta1 0.2.0 9999: A free home automation solution
-app-misc/domoweb 0.2.0_beta4 0.2.1 9999: A free home automation solution. Web interface of Domogik.
+app-misc/domogik 0.2.0_alpha1 0.2.0_beta1 0.2.0 9999: 
+app-misc/domoweb 0.2.0_beta4 0.2.1 9999: 
 app-misc/fslint 2.26 2.28 2.40 2.42: A utility to find and clean various forms of lint on a filesystem.
 app-misc/gcstar 0.2 0.3 0.4.1 0.5.0 1.0.0 1.1.1 1.3.0 1.3.2 1.4.0 1.4.1 1.4.2 1.4.3 1.5.0_beta1 1.5.0: Collections management.
 app-misc/gtypist 2.8.2 2.8.3: Universal typing tutor
@@ -27,7 +27,7 @@ dev-games/cel-ps 1.4-r3472: Portable 3D Game Development Kit written in C++
 dev-games/crystalspace-ps 1.4-r30039 1.4-r30463 1.4-r30564 1.4-r30956 1.4-r31532 1.4-r31648: Portable 3D Game Development Kit written in C++
 dev-games/flatzebra 0.1.5: A generic game engine for 2D double-buffering animation
 dev-games/irrlicht 1.8.0_pre4161: open source high performance realtime 3D engine written in C++
-dev-games/simgear 3.0.0: Development library for simulation games
+dev-games/simgear 3.0.0: 
 dev-libs/boost-coroutine 2009.12.01-r2: The Boost.Coroutine library contains a family of class templates that wrap function objects in coroutines.
 dev-libs/farsight-darcs 0.1 0.1-r1: FarSight is an audio/video conferencing framework specifically designed for Instant Messengers.
 dev-libs/jrtplib 3.5.1: JRTPLIB is an object-oriented RTP library written in C++.
@@ -39,27 +39,27 @@ dev-libs/ucommon 4.1.7: Portable C++ runtime for threads and sockets
 dev-libs/xapian 0.9.6: Xapian Probabilistic Information Retrieval library
 dev-libs/xmlrpc-epi 0.51 0.51-r2: An implementation of the xmlrpc protocol in C
 dev-lisp/slisp 2.2 2.3: A lisp interpreter
-dev-perl/Algorithm-CheckDigits 1.0.0: Perl extension to generate and test check digits
-dev-perl/Apache-AuthenNIS 0.13: mod_perl NIS Authentication module
-dev-perl/Apache2-AuthenNIS 0.15: mod_perl NIS Authentication module
-dev-perl/Crypt-OpenSSL-DSA 0.13: Crypt::OpenSSL::DSA module for perl
-dev-perl/Data-Transformer 0.04: Traverse a data structure, altering it in place
-dev-perl/Encoding-FixLatin 1.02: takes mixed encoding input and produces UTF-8 output
-dev-perl/File-Stat 0.01: OOP Interface for Perl's built-in stat() functions
-dev-perl/Net-DNS-SEC 0.16: Perl Net::DNS::SEC - Perl DNSSEC Resolver Module
-dev-perl/Net-NIS 0.43: Interface to Sun's Network Information Service
-dev-perl/RTSP-Lite 0.1: A lightweight RTSP implementation
-dev-perl/Rose-Object 0.859: A generic object base class. It provides very little functionality, but a healthy dose of convention.
-dev-perl/Rose-ObjectX-CAF 0.03: Class::Accessor::Fast compatability for Rose::Object
-dev-perl/Search-Query 0.18: polyglot query parsing
-dev-perl/Search-Tools 0.57: high-performance tools for building search applications
-dev-perl/Spreadsheet-ParseExcel-Simple 1.04: A simple interface to Excel data
-dev-perl/Spreadsheet-XLSX 0.13: Perl extension for readinf MS Excel 2007 files
-dev-perl/String-Escape 2010.002: Backslash escapes, quoted phrase, word elision, etc.
-dev-perl/Sys-Mmap 0.14: uses mmap to map in a file as a Perl variable
-dev-perl/Text-CSV-Separator 0.20: Determine the field separator of a CSV file
-dev-perl/WebService-Validator-HTML-W3C 0.26: Access the W3Cs online HTML validator
-dev-perl/XML-SAX-Base 1.02: Perl extension to generate and test check digits
+dev-perl/Algorithm-CheckDigits 1.0.0: 
+dev-perl/Apache-AuthenNIS 0.13: 
+dev-perl/Apache2-AuthenNIS 0.15: 
+dev-perl/Crypt-OpenSSL-DSA 0.13: 
+dev-perl/Data-Transformer 0.04: 
+dev-perl/Encoding-FixLatin 1.02: 
+dev-perl/File-Stat 0.01: 
+dev-perl/Net-DNS-SEC 0.16: 
+dev-perl/Net-NIS 0.43: 
+dev-perl/RTSP-Lite 0.1: 
+dev-perl/Rose-Object 0.859: 
+dev-perl/Rose-ObjectX-CAF 0.03: 
+dev-perl/Search-Query 0.18: 
+dev-perl/Search-Tools 0.57: 
+dev-perl/Spreadsheet-ParseExcel-Simple 1.04: 
+dev-perl/Spreadsheet-XLSX 0.13: 
+dev-perl/String-Escape 2010.002: 
+dev-perl/Sys-Mmap 0.14: 
+dev-perl/Text-CSV-Separator 0.20: 
+dev-perl/WebService-Validator-HTML-W3C 0.26: 
+dev-perl/XML-SAX-Base 1.02: 
 dev-php/PEAR-Auth_SASL2 0.1.0: Abstraction of various SASL mechanism responses
 dev-php/PEAR-Net_Sieve 1.2.1: Provides an API to talk to the timsieved server that comes with Cyrus IMAPd
 dev-php/PEAR-XML_RPC2 1.1.1: PHP5 only implementation of the XML-RPC protocol.
@@ -87,8 +87,8 @@ games-rpg/openOutcast 0.1.9-r384 0.1.9-r385 0.1.9-r398 0.1.9-r407 0.1.9-r412: Vi
 games-rpg/planeshift 0.4.01-r1856 0.4.01-r1888 0.4.01-r1919 0.4.01-r1933 0.4.01-r1940 0.4.01-r1970 0.4.01-r1995 0.4.01-r2040 0.4.01-r2081 0.4.02-r2135 0.4.02-r2197 0.4.02-r2374 0.4.03-r2582 0.4.03-r2663: Virtual fantasy world MMORPG
 games-rpg/planeshift-art 0.3.018 0.3.018-r1 0.3.019 0.3.019-r1 0.3.020-r1 0.3.020-r2 0.4.00-r1: Virtual fantasy world MMORPG
 games-rpg/planeshift-svn 0.9.99: Virtual fantasy world MMORPG
-games-simulation/flightgear 3.0.0: Open Source Flight Simulator
-games-simulation/flightgear-data 3.0.0: FlightGear data files
+games-simulation/flightgear 3.0.0: 
+games-simulation/flightgear-data 3.0.0: 
 games-simulation/opencity 0.0.6_pre1 0.0.6.1 0.0.6.2: OpenCity is a full 3D city simulator game project.
 games-simulation/secondlife-bin 1.18.5.3 1.19.0.0_rc 1.19.0.4 1.19.0.5 1.19.1.0_rc 1.19.1.1_rc 1.19.1.2_rc 1.19.1.4_rc 1.19.1.4 1.20.15 1.20.16 2.3.0.214726 2.4.0.216393: The Second Life (an online, 3D virtual world) viewer
 games-sports/etw 3.2: Arcade-style soccer game
@@ -131,11 +131,11 @@ media-sound/scmpc 0.2.2: A multithreaded MPD client for Audioscrobbler
 media-sound/skale 0.80a 0.81: Sk@le Tracker - FastTracker 2 clone
 media-sound/xmms2 0.4 0.6: X(cross)platform Music Multiplexing System
 media-tv/linuxtv-dvb-apps 9999: small utils for DVB to scan, zap, view signal strength, ...
-media-tv/w_scan 20130331: Scan for DVB-C/DVB-T/DVB-S channels without prior knowledge of frequencies and modulations
+media-tv/w_scan 20130331: 
 media-tv/xdtv 999999999999: TV viewer with support for AVI recording and plugins
 media-video/dirac 9999999: Open Source video codec
 media-video/image2mpeg 1.02: convert digital photos (and any other images) into MPEG video streams with transitions between the images
-media-video/kdenlive 0.9.6: A non-linear video editing suite for KDE
+media-video/kdenlive 0.9.6: 
 media-video/lives 0.9.8.11 0.9.9.3 0.9.9.5 0.9.9.8 1.0.0_pre1 1.0.0_pre2 1.0.0 1.2.0 1.2.1 1.3.3 1.4.9: LiVES is a Video Editing System
 media-video/mandvd 2.4: This is a program to simply create DVD Video
 media-video/motion 3.2.12: Motion is a video motion detector with tracking-support for webcams.

@@ -7,4 +7,5 @@ LICENSE=GPL-2
 RESTRICT=nomirror
 SLOT=0
 SRC_URI=http://files.beep-media-player.org/releases/moodriver/moodriver-0.09.tar.gz
+_eclass_exported_funcs=src_install:-
 _md5_=3fb0099a276beec3fd25f05fdbeecce7

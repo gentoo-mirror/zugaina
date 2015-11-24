@@ -9,5 +9,6 @@ LICENSE=GPL-2
 RDEPEND=ffmpeg? ( virtual/ffmpeg[vdpau?] ) dv? ( >=media-libs/libdv-0.104 ) xml? ( >=dev-libs/libxml2-2.5 ) vorbis? ( >=media-libs/libvorbis-1.1.2 ) sdl? ( >=media-libs/libsdl-1.2.10 >=media-libs/sdl-image-1.2.4 ) libsamplerate? ( >=media-libs/libsamplerate-0.1.2 ) jack? ( media-sound/jack-audio-connection-kit media-libs/ladspa-sdk >=dev-libs/libxml2-2.5 ) frei0r? ( media-plugins/frei0r-plugins ) gtk? ( x11-libs/gtk+:2 x11-libs/pango ) quicktime? ( media-libs/libquicktime ) xine? ( >=media-libs/xine-lib-1.1.2_pre20060328-r7 ) qt4? ( x11-libs/qt-gui:4 ) !media-libs/mlt++ lua? ( >=dev-lang/lua-5.1.4-r4 ) ruby? ( dev-lang/ruby ) python? ( || ( =dev-lang/python-2.7* =dev-lang/python-2.6* ) )
 SLOT=0
 SRC_URI=mirror://sourceforge/mlt/mlt-0.7.0.tar.gz
+_eclass_exported_funcs=pkg_postrm:- pkg_postinst:- pkg_setup:- src_prepare:- src_configure:- src_install:-
 _eclasses_=eutils	f20548a2f7b0128068388cd2ec26708a	multilib	3972ca401cf7dbb430df9995f5d8d580	python	0c2c16ea4f9074d3248bd4365d03890c	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=7943aee382137522e45f9ca6b56eafc8

@@ -8,4 +8,5 @@ RDEPEND=sys-libs/readline
 RESTRICT=nomirror
 SLOT=0
 SRC_URI=http://savannah.nongnu.org/download/microdc/microdc-0.11.0.tar.gz
+_eclass_exported_funcs=src_compile:- src_install:-
 _md5_=de01ea16f1d6b7bd52af9ef792e4bd06

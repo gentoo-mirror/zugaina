@@ -9,5 +9,6 @@ LICENSE=LGPL-2.1
 RESTRICT=test
 SLOT=0
 SRC_URI=mirror://gnu/libextractor/libextractor-0.5.23.tar.gz
+_eclass_exported_funcs=src_compile:- src_install:-
 _eclasses_=libtool	b75230758539a7da029e24afdb693960	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=b59de26803127c8137bfb53b625e1ab7

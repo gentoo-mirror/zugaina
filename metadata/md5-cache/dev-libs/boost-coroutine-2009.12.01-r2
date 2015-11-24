@@ -8,5 +8,6 @@ LICENSE=BSD
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://www.boostpro.com/vault/index.php?action=downloadfile&filename=boost-coroutine-2009-12-01.tar.gz&directory=Concurrent%20Programming -> boost-coroutine-2009.12.01.tar.gz
+_eclass_exported_funcs=src_prepare:- src_install:-
 _eclasses_=autotools	07e71b3b5690738ef7e8bc097077e00c	eutils	f20548a2f7b0128068388cd2ec26708a	libtool	b75230758539a7da029e24afdb693960	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=1271c1164171b6251d4d1e890a0c06b0

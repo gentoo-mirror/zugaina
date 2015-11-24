@@ -8,4 +8,5 @@ LICENSE=GPL-2
 RDEPEND=x11-libs/libXtst x11-libs/libXmu x11-libs/libXaw x11-libs/Xaw3d
 SLOT=0
 SRC_URI=http://homepage3.nifty.com/tsato/xvkbd/xvkbd-3.0.tar.gz
+_eclass_exported_funcs=src_compile:- src_install:-
 _md5_=0b95735b1ffff85a66833ea0348e3119

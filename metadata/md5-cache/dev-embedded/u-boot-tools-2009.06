@@ -6,4 +6,5 @@ KEYWORDS=~amd64 arm ~x86
 LICENSE=GPL-2
 SLOT=0
 SRC_URI=ftp://ftp.denx.de/pub/u-boot/u-boot-2009.06.tar.bz2
+_eclass_exported_funcs=src_compile:- src_install:-
 _md5_=1acb43407573299cea152a6946e30646

@@ -9,4 +9,5 @@ LICENSE=GPL-2
 RDEPEND=>=x11-libs/cairo-1.2.0
 SLOT=0
 SRC_URI=http://cairographics.org/snapshots/cairomm-1.1.10.tar.gz
+_eclass_exported_funcs=src_compile:- src_install:-
 _md5_=2f8cf4d5b865be2ee9276ecb3548ba1f
