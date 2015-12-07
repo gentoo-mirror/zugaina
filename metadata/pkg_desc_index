@@ -135,7 +135,6 @@ media-tv/w_scan 20130331: Scan for DVB-C/DVB-T/DVB-S channels without prior know
 media-tv/xdtv 999999999999: TV viewer with support for AVI recording and plugins
 media-video/dirac 9999999: Open Source video codec
 media-video/image2mpeg 1.02: convert digital photos (and any other images) into MPEG video streams with transitions between the images
-media-video/kdenlive 0.9.6: A non-linear video editing suite for KDE
 media-video/lives 0.9.8.11 0.9.9.3 0.9.9.5 0.9.9.8 1.0.0_pre1 1.0.0_pre2 1.0.0 1.2.0 1.2.1 1.3.3 1.4.9: LiVES is a Video Editing System
 media-video/mandvd 2.4: This is a program to simply create DVD Video
 media-video/motion 3.2.12: Motion is a video motion detector with tracking-support for webcams.
