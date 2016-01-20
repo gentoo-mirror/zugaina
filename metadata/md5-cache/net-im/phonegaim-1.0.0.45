@@ -12,5 +12,5 @@ RESTRICT=nomirror
 SLOT=0
 SRC_URI=http://software.linspire.com/emptypool//lindowsos/pool/main/g/gaim/gaim_0.79-1.0.0.45.lindows0.5.tar.gz http://simon.morlat.free.fr/download/0.12.2/source/linphone-0.12.2.tar.gz
 _eclass_exported_funcs=pkg_postinst:- pkg_setup:- src_unpack:- src_compile:- src_install:-
-_eclasses_=eutils	d9bd2ddd85a58e470b49ca997e255a4c	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_eclasses_=eutils	7332d4dd366dcd51c0014dde21f21897	flag-o-matic	85dc1eac3c64d8141374490ed64122e5	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=8b9a21474e50a10c6a411fe0d1c161aa
