@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND==media-libs/gstreamer-0.10* =media-plugins/gst-plugins-farsight-0.10* >=sys-devel/autoconf-2.59 >=sys-devel/automake-1.5 >=dev-libs/glib-2.0 >=dev-util/gtk-doc-1.4 sofia-sip? ( net-libs/sofia-sip ) gnet? ( net-libs/gnet ) jingle? ( dev-libs/libjingle-tapioca-svn )
 SLOT=0
 _eclass_exported_funcs=src_unpack:darcs src_compile:- src_install:-
-_eclasses_=darcs	25bcb4c9bede09580ffa4891aa70234d	eutils	7332d4dd366dcd51c0014dde21f21897	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
+_eclasses_=darcs	25bcb4c9bede09580ffa4891aa70234d	eutils	8982475656ba7ade9b3201397efbd612	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	7a212e5e01adfa4805c9978366e6ee85
 _md5_=876afd70006a8ffc93c06b79ba30fc40
