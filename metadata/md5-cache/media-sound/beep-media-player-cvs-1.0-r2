@@ -9,5 +9,5 @@ LICENSE=GPL-2
 RDEPEND=app-arch/unzip >=x11-libs/gtk+-2.4 >=x11-libs/pango-1.2 >=sys-devel/gettext-0.14.1 >=gnome-base/libglade-2.5.0 >=dev-util/pkgconfig-0.9.0 esd? ( >=media-sound/esound-0.2.30 ) oggvorbis? ( >=media-libs/libvorbis-1.0 ) alsa? ( >=media-libs/alsa-lib-1.0.9_rc2 ) gnome? ( >=gnome-base/gconf-2.6.0 ) mp3? ( media-libs/id3lib )
 SLOT=0
 _eclass_exported_funcs=pkg_postinst:- src_unpack:cvs src_compile:- src_install:-
-_eclasses_=cvs	e94c89c58918dff87fa3db1e817c25be	eutils	9d81603248f2ba3ec59124320d123e5e	flag-o-matic	d270fa247153df66074f795fa42dba3e	libtool	4890219c51da247200223277f993e054	multilib	3972ca401cf7dbb430df9995f5d8d580	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_eclasses_=cvs	e94c89c58918dff87fa3db1e817c25be	eutils	9d81603248f2ba3ec59124320d123e5e	flag-o-matic	d270fa247153df66074f795fa42dba3e	libtool	4890219c51da247200223277f993e054	multilib	23ae8c186171e6476af098d2a50d0ee0	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
 _md5_=2511368cf76e5737480695b455e25330
