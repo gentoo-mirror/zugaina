@@ -185,7 +185,7 @@ net-misc/pglinux 1.5_beta: A lightweight IP blocker to stop rogue connections
 net-misc/r1000 1.04: Drivers for Realtek 8168 8169 8101 8111 based PCI-E/PCI Ethernet Cards
 net-misc/ssltunnel 1.15: SSLTunnel is a client/server program to create a PPP connection over a SSL/TLS session.
 net-misc/strongswan 4.2.3: Open Source implementation of IPsec for the Linux operating system.
-net-misc/stunnel 4.30 4.31 4.48: TLS/SSL - Port Wrapper
+net-misc/stunnel 4.48: TLS/SSL - Port Wrapper
 net-misc/tor 0.1.1.15_rc 0.1.1.16_rc 0.1.1.18_rc 0.1.1.19_rc 0.1.1.20 0.1.1.21 0.1.1.22 0.1.1.23 0.1.2.1_alpha 0.1.2.3_alpha 0.1.2.4_alpha 0.2.0.6_alpha 0.2.0.7_alpha 0.2.0.21_rc 0.2.0.23_rc 0.2.0.25_rc 0.2.0.26_rc 0.2.0.28_rc 0.2.1.2_alpha 0.2.1.6_alpha 0.2.1.7_alpha 0.2.1.9_alpha 0.2.1.13_alpha 0.2.1.14_rc 0.2.1.15_rc 0.2.1.16_rc 0.2.1.17_rc 0.2.2.5_alpha 0.2.2.6_alpha 0.2.2.7_alpha 0.2.2.8_alpha 0.2.2.9_alpha 0.2.2.10_alpha 0.2.2.11_alpha 0.2.2.12_alpha 0.2.2.13_alpha 0.2.2.14_alpha 0.2.2.15_alpha 0.2.2.17_alpha 0.2.2.18_alpha 0.2.2.19_alpha 0.2.2.22_alpha 0.2.2.24_alpha 0.2.2.29_beta 0.2.3.6_alpha 0.2.3.7_alpha 0.2.3.8_alpha 0.2.3.9_alpha 0.2.3.10_alpha 0.2.3.11_alpha 0.2.3.12_alpha 0.2.3.13_alpha 0.2.3.14_alpha 0.2.3.15_alpha 0.2.3.16_alpha 0.2.3.17_beta 0.2.3.18_rc: Anonymizing overlay network for TCP
 net-misc/yacy 1.01.20111207.9000: YaCy - p2p based distributed web-search engine
 net-misc/youtube-dl 2009.05.23 2010.01.19: A small command-line program to download videos from YouTube.
