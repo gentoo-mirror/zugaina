@@ -11,5 +11,5 @@ REQUIRED_USE=postgres? ( dlz ) berkdb? ( dlz ) mysql? ( dlz !threads ) odbc? ( d
 SLOT=0
 SRC_URI=ftp://ftp.isc.org/isc/bind9/9.9.0rc2/bind-9.9.0rc2.tar.gz doc? ( mirror://gentoo/dyndns-samples.tbz2 ) sdb-ldap? ( http://ftp.disconnected-by-peer.at/pub/bind-sdb-ldap-1.1.0-fc14.patch.bz2 )
 _eclass_exported_funcs=pkg_postinst:- pkg_setup:- src_prepare:- src_configure:- src_install:-
-_eclasses_=autotools	07e71b3b5690738ef7e8bc097077e00c	eutils	792f83d5ec9536cb5ccef375469d8bde	flag-o-matic	d270fa247153df66074f795fa42dba3e	libtool	4890219c51da247200223277f993e054	multilib	23ae8c186171e6476af098d2a50d0ee0	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
+_eclasses_=autotools	07e71b3b5690738ef7e8bc097077e00c	eutils	792f83d5ec9536cb5ccef375469d8bde	flag-o-matic	d270fa247153df66074f795fa42dba3e	libtool	4890219c51da247200223277f993e054	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	d513d423d449877e49d99af3f7af7acb
 _md5_=cf15a52458a73363f0bc0e3bb895519b
