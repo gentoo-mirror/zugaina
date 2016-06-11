@@ -218,7 +218,6 @@ net-wireless/hotspotter 0.4: Automatic wireless client penetration
 net-wireless/kismet 2008.05.1: IEEE 802.11 wireless LAN sniffer
 net-wireless/ndiswrapper-cvs 0.1: Wrapper for using Windows drivers for some wireless cards
 net-wireless/wifi-radar 1.9.4: WiFi Radar is a Python/PyGTK2 utility for managing WiFi profiles.
-net-www/awstats 6.8: AWStats is short for Advanced Web Statistics.
 sci-electronics/adms 2.3.0: A code generator that converts electrical compact device models specified in high-level description language into ready-to-compile c code for the API of spice simulators.
 sci-electronics/qucs 9999: Quite Universal Circuit Simulator is a Qt based circuit simulator
 sci-geosciences/gpsman 6.3.1 6.4: A graphical GPS data manager that supports several devices.
