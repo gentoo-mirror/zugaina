@@ -10,5 +10,5 @@ RDEPEND=>=sys-libs/pam-0.72 dev-libs/openssl >=sys-libs/libhx-1.25 dev-libs/libx
 SLOT=0
 SRC_URI=mirror://sourceforge/pam-mount/pam_mount-0.49.tar.lzma
 _eclass_exported_funcs=src_compile:- src_install:-
-_eclasses_=multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	77f907363e91028a361ce5a3e9e7ed1e
+_eclasses_=multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	e886935aae2b45a545665444ab0667cf
 _md5_=e0931ab98a19f47fc1b836d0432d1cca
