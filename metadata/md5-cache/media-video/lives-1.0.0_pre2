@@ -10,5 +10,5 @@ RDEPEND=>=media-video/mplayer-1.0_rc2 >=media-gfx/imagemagick-5.5.6 >=dev-lang/p
 SLOT=0
 SRC_URI=http://www.xs4all.nl/%7Esalsaman/lives/current/LiVES-1.0.0-pre2.tar.bz2
 _eclass_exported_funcs=src_unpack:- src_compile:- src_install:-
-_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	flag-o-matic	df9add8bc729ce892cd54769ba937d77	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	e886935aae2b45a545665444ab0667cf
+_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	flag-o-matic	8632fcd33a047954f007dee9a137bdcc	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	e886935aae2b45a545665444ab0667cf
 _md5_=ee15799b9b37d3409074b4a0d96708d1
