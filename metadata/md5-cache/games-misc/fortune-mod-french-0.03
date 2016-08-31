@@ -9,5 +9,5 @@ RDEPEND=games-misc/fortune-mod
 SLOT=0
 SRC_URI=http://distfiles.zugaina.org/fortunes-fr-0.02.tar.gz http://gnu.free.fr/chapitres/unix/gcu.tgz http://gnu.free.fr/chapitres/unix/gge.tgz http://gnu.free.fr/chapitres/unix/glp.tgz http://gnu.free.fr/chapitres/unix/gmp.tgz http://gnu.free.fr/chapitres/unix/gnu.tgz http://gnu.free.fr/chapitres/unix/npc.tgz
 _eclass_exported_funcs=pkg_postinst:- src_compile:- src_install:-
-_eclasses_=eutils	792f83d5ec9536cb5ccef375469d8bde	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
+_eclasses_=eutils	b83a2420b796f7c6eff682679d08fe25	multilib	d062ae4ba2fc40a19c11de2ad89b6616	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
 _md5_=9fd34f9565a2eb8d5d80fa949d50ea31
