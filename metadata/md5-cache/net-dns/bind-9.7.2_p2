@@ -10,5 +10,5 @@ RDEPEND=ssl? ( >=dev-libs/openssl-0.9.6g ) mysql? ( >=virtual/mysql-4.0 ) odbc? 
 SLOT=0
 SRC_URI=ftp://ftp.isc.org/isc/bind9/9.7.2-P2/bind-9.7.2-P2.tar.gz sdb-ldap? ( mirror://gentoo/bind-sdb-ldap-1.1.0.tar.bz2 ) doc? ( mirror://gentoo/dyndns-samples.tbz2 ) geoip? ( http://bind-geoip.googlecode.com//files/bind-geoip-1.3-readme.txt http://bind-geoip.googlecode.com//files/bind-geoip-1.3.patch )
 _eclass_exported_funcs=pkg_postinst:- pkg_setup:- src_prepare:- src_configure:- src_install:-
-_eclasses_=autotools	07e71b3b5690738ef7e8bc097077e00c	eutils	b83a2420b796f7c6eff682679d08fe25	flag-o-matic	8632fcd33a047954f007dee9a137bdcc	libtool	4890219c51da247200223277f993e054	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	6198c04daba0e1307bd844df7d37f423
+_eclasses_=autotools	07e71b3b5690738ef7e8bc097077e00c	eutils	b83a2420b796f7c6eff682679d08fe25	flag-o-matic	8632fcd33a047954f007dee9a137bdcc	libtool	4890219c51da247200223277f993e054	multilib	165fc17c38d1b11dac2008280dab6e80	toolchain-funcs	1b1da0c45c555989dc5d832b54880783
 _md5_=1608f05eb882bdbd21c2641a74d445ba
