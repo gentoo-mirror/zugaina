@@ -222,7 +222,6 @@ sci-electronics/adms 2.3.0: A code generator that converts electrical compact de
 sci-electronics/qucs 9999: Quite Universal Circuit Simulator is a Qt based circuit simulator
 sci-geosciences/gpsman 6.3.1 6.4: A graphical GPS data manager that supports several devices.
 sci-geosciences/wfrog 9999: A weather station software for the web, ftp and more. Highly extensible, however easy to use.
-sci-libs/dcmtk 3.6.1_pre20121102: The DICOM Toolkit
 sci-libs/gpsmanshp 1.2: A Tcl package to read and write shapefiles.
 sys-apps/fakeroot-ng 0.15: A utility to run commands with fake root privileges
 sys-apps/mindi 2.0.5 2.0.6 2.0.7 2.0.7.5 2.1.7: A program that creates emergency boot disks/CDs using your kernel, tools and modules
