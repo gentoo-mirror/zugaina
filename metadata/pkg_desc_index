@@ -8,7 +8,6 @@ app-forensics/chkrootkit 0.49: a tool to locally check for signs of a rootkit
 app-forensics/libewf 20090209 20090606 20100805: Implementation of the EWF (SMART and EnCase) image format
 app-misc/domogik 0.2.0_alpha1 0.2.0_beta1 0.2.0 9999: A free home automation solution
 app-misc/domoweb 0.2.0_beta4 0.2.1 9999: A free home automation solution. Web interface of Domogik.
-app-misc/fslint 2.26 2.28 2.40 2.42: A utility to find and clean various forms of lint on a filesystem.
 app-misc/gcstar 0.2 0.3 0.4.1 0.5.0 1.0.0 1.1.1 1.3.0 1.3.2 1.4.0 1.4.1 1.4.2 1.4.3 1.5.0_beta1 1.5.0: Collections management.
 app-misc/gtypist 2.8.2 2.8.3: Universal typing tutor
 app-misc/openzwave-control-panel 9999: An open-source interface to Z-Wave networks.
@@ -115,7 +114,6 @@ media-gfx/sweethome3d-bin 2.2 2.5: Sweet Home 3D is a free interior design appli
 media-libs/cal3d 0.12-r493 0.12-r507: Cal3D is a skeletal based character animation library
 media-libs/libextractor 0.5.22 0.5.23 0.6.0: A simple library for keyword extraction
 media-libs/mediastreamer 2.6.0: Mediastreaming library for telephony application
-media-libs/mlt 0.7.0: An open source multimedia framework, designed and developed for television broadcasting
 media-libs/openjpeg 1.1.1-r1 1.1.1-r2 1.1.1-r3 1.1.1-r4 1.3: An open-source JPEG 2000 codec written in C
 media-libs/x264-svn 999999999: A free library for encoding X264/AVC streams.
 media-sound/abcm2ps 5.9.10: A program to convert abc files to Postscript files
@@ -129,7 +127,6 @@ media-sound/mpg123 1.4.3 1.7.0: a realtime MPEG 1.0/2.0/2.5 audio player for lay
 media-sound/pymusique-svn 0.3: The fair interface to the iTunes Music Store
 media-sound/scmpc 0.2.2: A multithreaded MPD client for Audioscrobbler
 media-sound/skale 0.80a 0.81: Sk@le Tracker - FastTracker 2 clone
-media-sound/xmms2 0.4 0.6: X(cross)platform Music Multiplexing System
 media-tv/linuxtv-dvb-apps 9999: small utils for DVB to scan, zap, view signal strength, ...
 media-tv/w_scan 20130331: Scan for DVB-C/DVB-T/DVB-S channels without prior knowledge of frequencies and modulations
 media-tv/xdtv 999999999999: TV viewer with support for AVI recording and plugins
@@ -158,9 +155,6 @@ net-im/jit 1.1.6-r4: ICQ transport for wpjabber / jabberd
 net-im/phonegaim 1.0.0.45 1.0.0.50: GTK All-In-One Instant Messenging and Internet Calling solution
 net-im/prosody 0.9.0_beta1 0.9.0_rc2: Prosody is a flexible communications server for Jabber/XMPP written in Lua.
 net-im/psi-jingle 0.10-r1 0.10-r2: QT 3.x Jabber Client, with Licq-like interface and voice support (Jingle)
-net-im/pyaim-t 0.7c: AIM transport for Jabber
-net-im/pyicq-t 0.7: ICQ transport for Jabber
-net-im/pymsn-t 0.11a: MSN transport for Jabber
 net-im/tapioca 0.3.0: Tapioca VOIP and IM framework and UI
 net-im/tapioca-coreclient 0.3.0: Tapioca framework for VOIP and IM
 net-im/tapioca-coreclient-svn 0.3: Tapioca framework for VOIP and IM
@@ -221,19 +215,16 @@ net-wireless/wifi-radar 1.9.4: WiFi Radar is a Python/PyGTK2 utility for managin
 sci-electronics/adms 2.3.0: A code generator that converts electrical compact device models specified in high-level description language into ready-to-compile c code for the API of spice simulators.
 sci-electronics/qucs 9999: Quite Universal Circuit Simulator is a Qt based circuit simulator
 sci-geosciences/gpsman 6.3.1 6.4: A graphical GPS data manager that supports several devices.
-sci-geosciences/wfrog 9999: A weather station software for the web, ftp and more. Highly extensible, however easy to use.
 sci-libs/gpsmanshp 1.2: A Tcl package to read and write shapefiles.
 sys-apps/fakeroot-ng 0.15: A utility to run commands with fake root privileges
 sys-apps/mindi 2.0.5 2.0.6 2.0.7 2.0.7.5 2.1.7: A program that creates emergency boot disks/CDs using your kernel, tools and modules
 sys-auth/pam_mount 0.49 1.18: A PAM module that can mount volumes for a user session
 sys-fs/cryptmount 2.2 3.0_beta1 3.0 3.1_beta1 3.1 4.0.2: A utility for management and user-mode mounting of encrypted filesystems
-sys-fs/fuse-python 0.1-r1: Python FUSE bindings
 sys-fs/fuse-zip 0.2.3 0.2.5 0.2.6 0.2.7 0.2.10: fuse-zip is a FUSE file system to navigate, extract, create and modify ZIP archives
 sys-fs/gmailfs 0.4 0.7.2-r1: GmailFS provides a mountable Linux filesystem which uses your Gmail account as its storage medium.
 sys-fs/gnunet-fuse 0.7.2b 0.8.0: Allows you to mount directories shared over GNUnet as Linux file-systems
 sys-fs/safecopy 1.0 1.1: similar to dd but can copy from source with errors
 sys-power/apcupsd 3.14.10 3.14.10-r2: APC UPS daemon with integrated tcp/ip remote shutdown
-sys-process/audit 1.7.4 1.7.5 1.7.7 1.7.11: Userspace utilities for storing and processing auditing records
 virtual/game_spring 0.1: Virtual for Spring games
 www-apache/mod_auth_openid 0.2.1: an OpenID authentication module for the apache webserver
 www-apache/mod_security 2.5.5 2.5.9: Web application firewall and Intrusion Detection System for Apache.
@@ -249,7 +240,6 @@ www-apps/otrs 2.4.7: OTRS is an Open source Ticket Request System
 www-apps/seeks 0.4.0_rc2 0.4.0: An Open Decentralized Platform for Collaborative Search, Filtering and content Curation
 www-apps/shibboleth-sp 2.4.3 2.5.1: Standards-based middleware which provides Web Single SignOn (SSO) across or within organizational boundaries.
 www-apps/testlink 1.7.0 1.7.4 1.8.0 1.8.1: TestLink enables easily to create and manage Test cases as well as organize them into Test plans.
-www-apps/viewvc 1.0.6: ViewVC, a web interface to CVS and Subversion
 www-client/llmozlib-svn 2.13 2.17: Linden Labs Mozilla Library (customized for secondlife)
 www-client/lynx 2.8.8_pre3: An excellent console-based web browser with ssl support
 www-client/netrik 1.15.8: A text based web browser with no ssl support.
