@@ -1,0 +1,15 @@
+DEFINED_PHASES=compile configure install postinst setup unpack
+DEPEND=dev-libs/openssl =dev-libs/log4shib-2.4.3 dev-libs/xerces-c >=dev-libs/xml-security-c-1.5.1 =dev-cpp/xmltooling-c-1.4.2 =dev-cpp/opensaml-2.4.3 =www-servers/apache-2.2*
+DESCRIPTION=Standards-based middleware which provides Web Single SignOn (SSO) across or within organizational boundaries.
+EAPI=4
+HOMEPAGE=http://www.shibboleth.net
+IUSE=ads doc odbc
+KEYWORDS=~x86 ~amd64
+LICENSE=Apache-2.0
+RDEPEND==www-servers/apache-2.2*
+RESTRICT=mirror
+SLOT=0
+SRC_URI=http://www.shibboleth.net/downloads/service-provider/archive/2.4.3/shibboleth-sp-2.4.3.tar.gz
+_eclass_exported_funcs=pkg_postinst:apache-module pkg_setup:depend.apache src_unpack:- src_configure:- src_compile:- src_install:-
+_eclasses_=apache-module	bd30ba4d834196e81cf2b76c52d26b93	depend.apache	0917334d570e07f9743a04ff85b3bf1b	eutils	3c847a0129fed780bd709b98e426f89c	multilib	0236be304ee52e7f179ed2f337075515	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee
+_md5_=78c1d4bbac751fef6f4466b93a66d5cf
