@@ -1,0 +1,13 @@
+DEFINED_PHASES=install
+DEPEND=>=x11-libs/wxGTK-2.6.0 >=dev-python/wxpython-2.6.0 >=dev-python/twisted-2.0.0 >=dev-python/elementtree-1.2 >=dev-python/twisted-web-0.5.0 >=dev-python/imaging-1.1.5
+DESCRIPTION=Solipsis is a pure peer-to-peer system for a massively shared virtual world. There is no server at all: it only relies on end-users' machines. Built on twisted.
+EAPI=0
+HOMEPAGE=http://solipsis.netofpeers.net/
+KEYWORDS=~ppc ~x86 ~amd64
+LICENSE=LGPL-2.1
+RDEPEND=>=x11-libs/wxGTK-2.6.0 >=dev-python/wxpython-2.6.0 >=dev-python/twisted-2.0.0 >=dev-python/elementtree-1.2 >=dev-python/twisted-web-0.5.0 >=dev-python/imaging-1.1.5
+RESTRICT=nomirror
+SLOT=0
+SRC_URI=http://download.berlios.de/solipsis/solipsis-0.10-src.tar.gz
+_eclass_exported_funcs=src_install:-
+_md5_=0bd52326d105b50dc79512a1eaefc83f

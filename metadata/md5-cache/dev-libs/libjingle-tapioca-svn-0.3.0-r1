@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install preinst unpack
+DEPEND=>=sys-devel/autoconf-2.59 >=sys-devel/automake-1.5 dev-vcs/subversion net-misc/rsync
+DESCRIPTION=Tapioca modified Libjingle
+EAPI=0
+HOMEPAGE=http://tapioca-voip.sourceforge.net/
+KEYWORDS=x86 amd64
+LICENSE=GPL-2
+RDEPEND=>=sys-devel/autoconf-2.59 >=sys-devel/automake-1.5
+SLOT=0
+_eclass_exported_funcs=pkg_preinst:subversion src_unpack:subversion src_compile:- src_install:-
+_eclasses_=eutils	3c847a0129fed780bd709b98e426f89c	multilib	0236be304ee52e7f179ed2f337075515	subversion	a5d5826a85609611f098c0553eb24cc1	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee
+_md5_=43a3db668641ed621903260e7a76a5cb

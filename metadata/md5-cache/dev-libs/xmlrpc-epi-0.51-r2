@@ -1,0 +1,14 @@
+DEFINED_PHASES=install unpack
+DEPEND=sys-devel/gettext !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DESCRIPTION=An implementation of the xmlrpc protocol in C
+EAPI=0
+HOMEPAGE=http://xmlrpc-epi.sourceforge.net/
+IUSE=samples
+KEYWORDS=amd64 x86
+LICENSE=BSD
+RDEPEND=sys-devel/gettext
+SLOT=0
+SRC_URI=mirror://sourceforge/xmlrpc-epi/xmlrpc-epi-0.51.tar.gz
+_eclass_exported_funcs=src_unpack:- src_install:-
+_eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	eutils	3c847a0129fed780bd709b98e426f89c	libtool	48b1b9f6194d2842456514d1184ca72e	multilib	0236be304ee52e7f179ed2f337075515	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee
+_md5_=3b6584698297d6bea98bec7648d1f247

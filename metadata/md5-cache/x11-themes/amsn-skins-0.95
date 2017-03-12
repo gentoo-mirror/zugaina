@@ -1,0 +1,13 @@
+DEFINED_PHASES=install
+DEPEND=app-arch/unzip
+DESCRIPTION=Collection of AMSN themes
+EAPI=0
+HOMEPAGE=http://amsn.sourceforge.net/
+KEYWORDS=alpha amd64 ppc ~x86
+LICENSE=freedist
+RDEPEND=net-im/amsn
+RESTRICT=nomirror
+SLOT=0
+SRC_URI=mirror://sourceforge/amsn//amsn-for-mac-0.95.zip mirror://sourceforge/amsn//aDarwinV.4-0.95.zip mirror://sourceforge/amsn//AQUA-0.95.zip mirror://sourceforge/amsn//BrushedMetal-0.95.zip mirror://sourceforge/amsn//sheeny-0.95.zip mirror://sourceforge/amsn//snowgrey-0.95.zip mirror://sourceforge/amsn//TheNoNameBrand-0.95.zip mirror://sourceforge/amsn//Ubuntu-Human-0.95.zip mirror://sourceforge/amsn//Unified-0.95.zip
+_eclass_exported_funcs=src_install:-
+_md5_=212d078738c0a0100f3ca9bb97217757

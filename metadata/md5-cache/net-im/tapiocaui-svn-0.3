@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install preinst unpack
+DEPEND=net-im/tapioca-coreclient-svn net-im/tapioca-xmpp-svn x11-libs/gtk+ dev-libs/glib dev-vcs/subversion net-misc/rsync
+DESCRIPTION=Tapioca UI
+EAPI=0
+HOMEPAGE=http://tapioca-voip.sf.net
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=net-im/tapioca-coreclient-svn net-im/tapioca-xmpp-svn x11-libs/gtk+ dev-libs/glib
+SLOT=0
+_eclass_exported_funcs=pkg_preinst:subversion src_unpack:subversion src_compile:- src_install:-
+_eclasses_=eutils	3c847a0129fed780bd709b98e426f89c	multilib	0236be304ee52e7f179ed2f337075515	subversion	a5d5826a85609611f098c0553eb24cc1	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee
+_md5_=5d9278d9d175dc0ec98181650552b05b
