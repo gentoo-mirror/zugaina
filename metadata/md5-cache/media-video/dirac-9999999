@@ -1,0 +1,12 @@
+DEFINED_PHASES=compile install unpack
+DEPEND=doc? ( app-doc/doxygen virtual/tetex ) !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/cvs
+DESCRIPTION=Open Source video codec
+EAPI=0
+HOMEPAGE=http://dirac.sourceforge.net/
+IUSE=mmx debug doc
+KEYWORDS=-*
+LICENSE=MPL-1.1
+SLOT=0
+_eclass_exported_funcs=src_unpack:- src_compile:- src_install:-
+_eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	cvs	c57fc648b829862b38ad2a8b8c1c02e8	eutils	3c847a0129fed780bd709b98e426f89c	libtool	48b1b9f6194d2842456514d1184ca72e	multilib	0236be304ee52e7f179ed2f337075515	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee
+_md5_=3067efb4973f6938bd8d291edd3b3d51

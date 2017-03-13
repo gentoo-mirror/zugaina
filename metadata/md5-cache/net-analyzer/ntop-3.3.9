@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install postinst setup unpack
+DEPEND=sys-apps/gawk dev-lang/perl sys-libs/gdbm net-libs/libpcap media-libs/gd media-libs/libpng net-analyzer/rrdtool ssl? ( dev-libs/openssl ) tcpd? ( sys-apps/tcp-wrappers ) sys-libs/zlib >=sys-devel/libtool-1.4 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
+DESCRIPTION=tool that shows network usage like top
+EAPI=0
+HOMEPAGE=http://www.ntop.org/ntop.html
+IUSE=ipv6 nls ssl tcpd
+KEYWORDS=~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86
+LICENSE=GPL-2
+RDEPEND=sys-apps/gawk dev-lang/perl sys-libs/gdbm net-libs/libpcap media-libs/gd media-libs/libpng net-analyzer/rrdtool ssl? ( dev-libs/openssl ) tcpd? ( sys-apps/tcp-wrappers ) sys-libs/zlib media-fonts/corefonts media-gfx/graphviz
+SLOT=0
+SRC_URI=mirror://sourceforge/ntop/ntop-3.3.9.tar.gz
+_eclass_exported_funcs=pkg_postinst:- pkg_setup:- src_unpack:- src_compile:- src_install:-
+_eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	eutils	3c847a0129fed780bd709b98e426f89c	libtool	48b1b9f6194d2842456514d1184ca72e	multilib	0236be304ee52e7f179ed2f337075515	toolchain-funcs	6eb35f81556258a4bc9182ad3dfd58ee
+_md5_=1b01d45012a49e0cd61c218004dd5012

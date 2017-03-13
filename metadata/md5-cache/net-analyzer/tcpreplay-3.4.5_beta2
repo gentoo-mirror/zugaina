@@ -1,0 +1,13 @@
+DEFINED_PHASES=configure install prepare test
+DEPEND=>=sys-devel/autogen-5.9.8 dev-libs/libdnet >=net-libs/libpcap-0.9 tcpdump? ( net-analyzer/tcpdump ) pcapnav? ( net-libs/libpcapnav )
+DESCRIPTION=replay saved tcpdump or snoop files at arbitrary speeds
+EAPI=2
+HOMEPAGE=http://tcpreplay.synfin.net/
+IUSE=debug pcapnav +tcpdump
+KEYWORDS=~amd64 ~sparc ~x86
+LICENSE=GPL-3
+RDEPEND=>=sys-devel/autogen-5.9.8 dev-libs/libdnet >=net-libs/libpcap-0.9 tcpdump? ( net-analyzer/tcpdump ) pcapnav? ( net-libs/libpcapnav )
+SLOT=0
+SRC_URI=http://synfin.net/tcpreplay-3.4.5beta2.tar.gz
+_eclass_exported_funcs=src_prepare:- src_configure:- src_test:- src_install:-
+_md5_=f22a170665b29a46ca1d7df9fad4fcfb
