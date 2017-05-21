@@ -16,7 +16,6 @@ app-portage/adelie 20060430: Adelie is a fast replacement for equery
 app-portage/fquery 0.2: A fast replacement for equery
 app-portage/glcu 0.9.3 0.9.4 0.9.5 0.9.5.1 0.9.6.2 0.9.6.3 0.9.7 0.9.7.1 0.9.7.2: gentoo linux cron update. Full featured semi-automatic updates for your gentoo box.
 app-portage/zugaina-sync 0.3: Script to sync with Zugaina portage
-app-text/cuneiform 1.0.0: An enterprise quality OCR engine developed in USSR/Russia in the 90's.
 dev-cpp/cairomm 1.1.10: C++ wrapper for the cairo graphics library.
 dev-cpp/opensaml 2.4.3 2.5.2: Open Source Security Assertion Markup Language implementation
 dev-cpp/xmltooling-c 1.4.2 1.5.2: Internet2 lower-level library that provides a higher level interface to XML processing, particularly in light of signing and encryption.
@@ -93,7 +92,6 @@ games-simulation/secondlife-bin 1.18.5.3 1.19.0.0_rc 1.19.0.4 1.19.0.5 1.19.1.0_
 games-sports/etw 3.2: Arcade-style soccer game
 games-sports/maniadrive-bin 1.01 1.2: Trackmania clone
 games-strategy/bos 2.0: Invasion - Battle of Survival is a real-time strategy game using the Stratagus game engine
-games-strategy/spring 0.80.5.1 0.81.1.3: a 3D multiplayer real time strategy game engine
 games-strategy/spring-Modification-NOTA 1.56: Spring - Modification - NOTA 1.56
 games-strategy/spring-ota-content 1.0: Files required to run certain Spring mods
 games-strategy/wormux 0.9.0: A free Worms clone
@@ -102,7 +100,6 @@ games-util/catcodec 1.0.0-r1 1.0.3: Decode and encodes sample catalog for OpenTT
 games-util/grfcodec 1.0.0 5.1.0 5.1.3: A suite of programs to modify openttd/Transport Tycoon Deluxe's GRF files
 games-util/nforenum 4.0.0: A tool checking NFO code for errors
 games-util/openquartz-utils 20040801: Utils for PAK creation
-games-util/springlobby 0.63: lobby client for spring rts engine
 mail-client/squirrelmail 1.4.20_rc2: Webmail for nuts!
 mail-client/sylpheed-claws 2.5.0: Sylpheed-Claws is an email client (and news reader) based on GTK+
 media-gfx/gimpshop 2.2.10 2.2.11: GNU Image Manipulation Program with Adobe Photoshop like Interface
@@ -182,7 +179,6 @@ net-misc/tor 0.1.1.15_rc 0.1.1.16_rc 0.1.1.18_rc 0.1.1.19_rc 0.1.1.20 0.1.1.21 0
 net-misc/yacy 1.01.20111207.9000: YaCy - p2p based distributed web-search engine
 net-misc/youtube-dl 2009.05.23 2010.01.19: A small command-line program to download videos from YouTube.
 net-misc/zsync 0.3.3 0.4.0 0.4.1 0.4.2 0.5: Partial/differential file download client over HTTP which uses the rsync algorithm
-net-p2p/fms 0.3.48: A spam-resistant message board application for Freenet
 net-p2p/i2p 0.6.2 0.6.5 0.7 0.7.1 0.7.2 0.7.3 0.7.5 0.7.9 0.7.10 0.7.11 0.7.12 0.7.13 0.7.14 0.8 0.8.2 0.8.7 0.8.8 0.9: I2P is an anonymous network.
 net-p2p/imule 1.4.6: P2P sharing software which connects through I2P and Kad network
 net-p2p/irate-cvs 0.1 0.2 0.3 0.4: iRATE radio is a collaborative filtering system for music. You rate the tracks it downloads and the server uses your ratings and other people's to guess what you'll like. (SVN version)
