@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install
-DEPEND=>=sys-devel/libtool-1.4.1 >=dev-libs/glib-2.0.0 media-libs/libmpeg2 nls? ( virtual/libintl ) gtk? ( >=x11-libs/gtk+-2.6.10 ) zlib? ( sys-libs/zlib ) vorbis? ( >=media-libs/libvorbis-1.0_beta4 ) >=app-portage/elt-patches-20170317
+DEPEND=>=sys-devel/libtool-1.4.1 >=dev-libs/glib-2.0.0 media-libs/libmpeg2 nls? ( virtual/libintl ) gtk? ( >=x11-libs/gtk+-2.6.10 ) zlib? ( sys-libs/zlib ) vorbis? ( >=media-libs/libvorbis-1.0_beta4 ) >=app-portage/elt-patches-20170422
 DESCRIPTION=A simple library for keyword extraction
 EAPI=0
 HOMEPAGE=http://www.gnunet.org/libextractor/
@@ -10,5 +10,5 @@ RESTRICT=test
 SLOT=0
 SRC_URI=http://gnunet.org/libextractor/download/libextractor-0.5.22.tar.gz
 _eclass_exported_funcs=src_compile:- src_install:-
-_eclasses_=libtool	e32ea84bf82cf8987965b574672dba93	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
+_eclasses_=libtool	0081a71a261724730ec4c248494f044d	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
 _md5_=c7bcca87067361c9ba0fec658d0d0bc5

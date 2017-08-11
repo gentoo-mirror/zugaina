@@ -1,5 +1,5 @@
 DEFINED_PHASES=compile install preinst unpack
-DEPEND=dev-util/cvs =sys-devel/gcc-3.4* sys-apps/gawk >=dev-lang/perl-5.4 app-arch/unzip app-arch/zip >=dev-libs/libIDL-0.8.0 x11-libs/gtk+ >=app-portage/elt-patches-20170317 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/subversion net-misc/rsync
+DEPEND=dev-util/cvs =sys-devel/gcc-3.4* sys-apps/gawk >=dev-lang/perl-5.4 app-arch/unzip app-arch/zip >=dev-libs/libIDL-0.8.0 x11-libs/gtk+ >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4 dev-vcs/subversion net-misc/rsync
 DESCRIPTION=Linden Labs Mozilla Library (customized for secondlife)
 EAPI=0
 HOMEPAGE=http://wiki.secondlife.com/wiki/LLMozLib2
@@ -7,5 +7,5 @@ KEYWORDS=~amd64 ~x86
 LICENSE=BSD
 SLOT=0
 _eclass_exported_funcs=pkg_preinst:subversion src_unpack:subversion src_compile:- src_install:-
-_eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	fdo-mime	21ef5adf81836863efa968f2a25cff64	flag-o-matic	08e000dba2ecbfac8f7dfc36affdfacd	libtool	e32ea84bf82cf8987965b574672dba93	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	subversion	a5d5826a85609611f098c0553eb24cc1	toolchain-funcs	185a06792159ca143528e7010368e8af
+_eclasses_=autotools	7027963e8e8cc12c91117bdb9225dc26	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	fdo-mime	21ef5adf81836863efa968f2a25cff64	flag-o-matic	08e000dba2ecbfac8f7dfc36affdfacd	libtool	0081a71a261724730ec4c248494f044d	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	subversion	a5d5826a85609611f098c0553eb24cc1	toolchain-funcs	185a06792159ca143528e7010368e8af
 _md5_=a4f7b99d93c09ffb08369f7797171ac3
