@@ -8,6 +8,5 @@ KEYWORDS=~amd64 ~ppc ~sparc ~x86 ~hppa ~mips ~ppc64 ~alpha ~ia64
 LICENSE=GPL-2
 RDEPEND=app-arch/unzip >=x11-libs/gtk+-2.4 >=x11-libs/pango-1.2 >=gnome-base/libglade-2.3.1 >=dev-util/pkgconfig-0.9.0 esd? ( >=media-sound/esound-0.2.30 ) oggvorbis? ( >=media-libs/libvorbis-1.0 ) alsa? ( >=media-libs/alsa-lib-1.0.9_rc2 ) gnome? ( >=gnome-base/gconf-2.6.0 ) mp3? ( media-libs/id3lib )
 SLOT=0
-_eclass_exported_funcs=pkg_postinst:- src_unpack:cvs src_compile:- src_install:-
 _eclasses_=cvs	c57fc648b829862b38ad2a8b8c1c02e8	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	9c113d6a64826c40154cad7be15d95ea	flag-o-matic	2274fcc1e7ef6affaff5bcd636275417	libtool	0081a71a261724730ec4c248494f044d	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	toolchain-funcs	185a06792159ca143528e7010368e8af
 _md5_=85b3a1839c4c465c188d8bd01d3b77e9

@@ -8,5 +8,4 @@ LICENSE=GPL-2
 RDEPEND=games-misc/fortune-mod
 SLOT=0
 SRC_URI=http://distfiles.zugaina.org/bashfr-20080407.gz
-_eclass_exported_funcs=src_compile:- src_install:-
 _md5_=b55dd280dc20630ef4595426fd0dffb3

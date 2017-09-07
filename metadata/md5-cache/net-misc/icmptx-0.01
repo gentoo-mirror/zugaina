@@ -7,5 +7,4 @@ LICENSE=as-is
 RESTRICT=nomirror
 SLOT=0
 SRC_URI=http://thomer.com/icmptx/icmptx-0.01.tar.gz
-_eclass_exported_funcs=src_install:-
 _md5_=f2948f5cfbde80324062bd4cbc2a5576

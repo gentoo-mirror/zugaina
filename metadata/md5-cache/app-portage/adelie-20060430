@@ -8,5 +8,4 @@ LICENSE=as-is
 RESTRICT=nomirror
 SLOT=0
 SRC_URI=http://home.exetel.com.au/tjaden/adelie/adelie-20060430.tar.gz
-_eclass_exported_funcs=src_install:-
 _md5_=c63791e8bdad74a77dacd192dc1cdcb7

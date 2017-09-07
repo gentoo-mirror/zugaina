@@ -8,5 +8,4 @@ LICENSE=MIT
 RDEPEND=>=dev-lang/python-2.4
 SLOT=0
 SRC_URI=http://bitbucket.org/rg3/youtube-dl/get/2009.05.23.bz2 -> youtube-dl-2009.05.23.tar.bz2
-_eclass_exported_funcs=src_install:-
 _md5_=69790442365844bb3e0173e2cdfada2d

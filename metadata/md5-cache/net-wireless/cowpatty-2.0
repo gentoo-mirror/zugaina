@@ -7,5 +7,4 @@ LICENSE=GPL-2
 RESTRICT=nomirror
 SLOT=0
 SRC_URI=mirror://sourceforge/cowpatty/cowpatty-2.0.tgz
-_eclass_exported_funcs=src_compile:- src_install:-
 _md5_=6bd1bc79266836a7e49a6fc3dcff53b8

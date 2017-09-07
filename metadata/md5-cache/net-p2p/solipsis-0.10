@@ -9,5 +9,4 @@ RDEPEND=>=x11-libs/wxGTK-2.6.0 >=dev-python/wxpython-2.6.0 >=dev-python/twisted-
 RESTRICT=nomirror
 SLOT=0
 SRC_URI=http://download.berlios.de/solipsis/solipsis-0.10-src.tar.gz
-_eclass_exported_funcs=src_install:-
 _md5_=0bd52326d105b50dc79512a1eaefc83f

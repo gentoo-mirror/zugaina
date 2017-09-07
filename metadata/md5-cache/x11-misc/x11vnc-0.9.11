@@ -9,5 +9,4 @@ LICENSE=GPL-2
 RDEPEND=system-libvncserver? ( >=net-libs/libvncserver-0.9.7[threads=,jpeg=,zlib=] ) !system-libvncserver? ( zlib? ( sys-libs/zlib ) jpeg? ( media-libs/jpeg:0 ) ) ssl? ( dev-libs/openssl ) avahi? ( >=net-dns/avahi-0.6.4 ) xinerama? ( x11-libs/libXinerama ) x11-libs/libXfixes x11-libs/libXrandr x11-libs/libX11 >=x11-libs/libXtst-1.1.0 x11-libs/libXdamage x11-libs/libXext
 SLOT=0
 SRC_URI=mirror://sourceforge/libvncserver/x11vnc-0.9.11.tar.gz
-_eclass_exported_funcs=pkg_setup:- src_configure:- src_install:-
 _md5_=381bb11a8bd5d289e4506c572ea43685
