@@ -10,5 +10,5 @@ RDEPEND=app-text/ghostscript-gpl >=net-print/cups-1.1.14 !amd64? ( sys-libs/glib
 RESTRICT=nomirror
 SLOT=0
 SRC_URI=ftp://download.canon.jp/pub/driver/bj/linux/cnijfilter-common-2.60-1.src.rpm
-_eclasses_=desktop	2ccd1dd1dd7bfb8795eea024a4f91bb6	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	97ce9decef1ff4b6c5be700283f67343	flag-o-matic	a6089a2a4027ae3da4a460dc87b21050	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	rpm	f52cfa3a435468d86d3b49c357b9cb35	toolchain-funcs	185a06792159ca143528e7010368e8af
+_eclasses_=desktop	2ccd1dd1dd7bfb8795eea024a4f91bb6	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	97ce9decef1ff4b6c5be700283f67343	flag-o-matic	02908f00f002f0f07c5b74783d778325	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	rpm	f52cfa3a435468d86d3b49c357b9cb35	toolchain-funcs	185a06792159ca143528e7010368e8af
 _md5_=aff1d0285d9d40a9e77ccb60476259d9
