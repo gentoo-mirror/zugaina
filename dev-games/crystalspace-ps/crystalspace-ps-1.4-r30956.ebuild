@@ -24,7 +24,7 @@ RDEPEND="virtual/opengl
 		      media-libs/libvorbis )
 	alsa? ( media-libs/alsa-lib )
 	mng? ( media-libs/libmng )
-	media-libs/jpeg
+	media-libs/libjpeg-turbo
 	x11-libs/libXaw
 	x11-libs/libXxf86vm
 	media-gfx/nvidia-cg-toolkit

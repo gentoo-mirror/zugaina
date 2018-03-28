@@ -1,14 +1,14 @@
 DEFINED_PHASES=compile install
-DEPEND=virtual/opengl virtual/glu tcmalloc? ( >=dev-util/google-perftools-0.91 ) cegui? ( >=dev-games/cegui-0.5 ) ode? ( dev-games/ode ) sdl? ( media-libs/libsdl ) vorbis? ( media-libs/libogg media-libs/libvorbis ) alsa? ( media-libs/alsa-lib ) mng? ( media-libs/libmng ) media-libs/jpeg x11-libs/libXaw x11-libs/libXxf86vm media-gfx/nvidia-cg-toolkit >=media-libs/cal3d-0.12 >=media-libs/freetype-2.1 media-libs/libpng media-libs/openal media-libs/freealut 3ds? ( media-libs/lib3ds ) dev-util/ftjam python? ( dev-lang/swig )
+DEPEND=virtual/opengl virtual/glu tcmalloc? ( >=dev-util/google-perftools-0.91 ) cegui? ( >=dev-games/cegui-0.5 ) ode? ( dev-games/ode ) sdl? ( media-libs/libsdl ) vorbis? ( media-libs/libogg media-libs/libvorbis ) alsa? ( media-libs/alsa-lib ) mng? ( media-libs/libmng ) media-libs/libjpeg-turbo x11-libs/libXaw x11-libs/libXxf86vm media-gfx/nvidia-cg-toolkit >=media-libs/cal3d-0.12 >=media-libs/freetype-2.1 media-libs/libpng media-libs/openal media-libs/freealut 3ds? ( media-libs/lib3ds ) dev-util/ftjam python? ( dev-lang/swig )
 DESCRIPTION=Portable 3D Game Development Kit written in C++
 EAPI=0
 HOMEPAGE=http://crystal.sourceforge.net/
 IUSE=3ds alsa cegui mng ode sdl vorbis static maxoptimization doc debug tcmalloc python
 KEYWORDS=~x86 ~amd64
 LICENSE=LGPL-2.1
-RDEPEND=virtual/opengl virtual/glu tcmalloc? ( >=dev-util/google-perftools-0.91 ) cegui? ( >=dev-games/cegui-0.5 ) ode? ( dev-games/ode ) sdl? ( media-libs/libsdl ) vorbis? ( media-libs/libogg media-libs/libvorbis ) alsa? ( media-libs/alsa-lib ) mng? ( media-libs/libmng ) media-libs/jpeg x11-libs/libXaw x11-libs/libXxf86vm media-gfx/nvidia-cg-toolkit >=media-libs/cal3d-0.12 >=media-libs/freetype-2.1 media-libs/libpng media-libs/openal media-libs/freealut
+RDEPEND=virtual/opengl virtual/glu tcmalloc? ( >=dev-util/google-perftools-0.91 ) cegui? ( >=dev-games/cegui-0.5 ) ode? ( dev-games/ode ) sdl? ( media-libs/libsdl ) vorbis? ( media-libs/libogg media-libs/libvorbis ) alsa? ( media-libs/alsa-lib ) mng? ( media-libs/libmng ) media-libs/libjpeg-turbo x11-libs/libXaw x11-libs/libXxf86vm media-gfx/nvidia-cg-toolkit >=media-libs/cal3d-0.12 >=media-libs/freetype-2.1 media-libs/libpng media-libs/openal media-libs/freealut
 RESTRICT=mirror
 SLOT=0
 SRC_URI=http://dev.gentooexperimental.org/~loux/distfiles/crystalspace-ps-1.4-r30956.tar.bz2 http://loux.thefuture.free.fr/distfiles/crystalspace-ps-1.4-r30956.tar.bz2
 _eclasses_=desktop	2ccd1dd1dd7bfb8795eea024a4f91bb6	epatch	8233751dc5105a6ae8fcd86ce2bb0247	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	63392afb034aad67f17fa129019eb4d9	flag-o-matic	02908f00f002f0f07c5b74783d778325	ltprune	2770eed66a9b8ef944714cd0e968182e	multilib	97f470f374f2e94ccab04a2fb21d811e	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	885c7d8dd70a58825f3d17e35a3cd1e9	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf
-_md5_=ca251ef80688e3ad82f7ced70befb849
+_md5_=4920908f04b7bb414004077c8e613a00
