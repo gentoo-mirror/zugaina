@@ -1,4 +1,4 @@
-DEFINED_PHASES=compile install postinst
+DEFINED_PHASES=compile config install postinst
 DEPEND=>=dev-libs/openssl-0.9.6 dev-libs/libevent
 DESCRIPTION=The Onion Router - Anonymizing overlay network for TCP
 EAPI=0

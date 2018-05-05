@@ -1,4 +1,4 @@
-DEFINED_PHASES=configure install postinst prepare setup
+DEFINED_PHASES=config configure install postinst prepare setup
 DEPEND=ssl? ( >=dev-libs/openssl-0.9.6g ) mysql? ( >=virtual/mysql-4.0 ) odbc? ( >=dev-db/unixODBC-2.2.6 ) ldap? ( net-nds/openldap ) idn? ( net-dns/idnkit ) postgres? ( virtual/postgresql-base ) threads? ( >=sys-libs/libcap-2.1.0 ) xml? ( dev-libs/libxml2 ) >=app-portage/elt-patches-20170422 !<sys-devel/gettext-0.18.1.1-r3 || ( >=sys-devel/automake-1.16:1.16 >=sys-devel/automake-1.15.1:1.15 ) >=sys-devel/autoconf-2.69 >=sys-devel/libtool-2.4
 DESCRIPTION=BIND - Berkeley Internet Name Domain - Name Server
 EAPI=2
