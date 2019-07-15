@@ -7,16 +7,13 @@ dev-util/diffuse 0.2.13 0.2.15 0.3.0 0.3.2 0.3.3: Diffuse is a graphical tool fo
 dev-util/metro 1.5.1: release metatool used for creating Gentoo and Funtoo releases
 games-misc/fortune-mod-bashfr 20080407: Fortune database of quotes from bashfr.org
 games-misc/fortune-mod-french 0.02 0.02-r1 0.03: set of fortunes in french
-games-strategy/spring-ota-content 1.0: Files required to run certain Spring mods
 games-util/grfcodec 1.0.0 5.1.0 5.1.3: A suite of programs to modify openttd/Transport Tycoon Deluxe's GRF files
 games-util/nforenum 4.0.0: A tool checking NFO code for errors
 mail-client/squirrelmail 1.4.20_rc2: Webmail for nuts!
 media-sound/dvda-author-cvs 0.1: Tools for generating DVD Audio files to be played on standalone DVD Audio players
-media-sound/skale 0.81: Sk@le Tracker - FastTracker 2 clone
 media-video/motion 3.2.12: Motion is a video motion detector with tracking-support for webcams.
 net-misc/r1000 1.04: Drivers for Realtek 8168 8169 8101 8111 based PCI-E/PCI Ethernet Cards
 net-misc/tor 0.1.1.21 0.1.1.22 0.1.1.23 0.1.2.1_alpha 0.1.2.3_alpha 0.1.2.4_alpha 0.2.0.6_alpha 0.2.0.7_alpha: Anonymizing overlay network for TCP
 net-misc/youtube-dl 2010.01.19: A small command-line program to download videos from YouTube.
 net-wireless/aircrack-ng 1.1: WLAN tools for breaking 802.11 WEP/WPA keys
 net-wireless/kismet 2008.05.1: IEEE 802.11 wireless LAN sniffer
-x11-themes/amsn-skins 0.95: Collection of AMSN themes
