@@ -1,7 +1,6 @@
 app-forensics/chkrootkit 0.49: a tool to locally check for signs of a rootkit
 app-portage/zugaina-sync 0.3: Script to sync with Zugaina portage
 dev-libs/farsight-darcs 0.1 0.1-r1: FarSight is an audio/video conferencing framework specifically designed for Instant Messengers.
-dev-libs/libjingle-tapioca-svn 0.3.0 0.3.0-r1: Tapioca modified Libjingle
 dev-libs/xmlrpc-epi 0.51-r2: An implementation of the xmlrpc protocol in C
 dev-util/diffuse 0.2.13 0.2.15 0.3.0 0.3.2 0.3.3: Diffuse is a graphical tool for merging and comparing text files.
 dev-util/metro 1.5.1: release metatool used for creating Gentoo and Funtoo releases
@@ -10,7 +9,6 @@ games-misc/fortune-mod-french 0.02 0.02-r1 0.03: set of fortunes in french
 games-util/grfcodec 1.0.0 5.1.0 5.1.3: A suite of programs to modify openttd/Transport Tycoon Deluxe's GRF files
 games-util/nforenum 4.0.0: A tool checking NFO code for errors
 mail-client/squirrelmail 1.4.20_rc2: Webmail for nuts!
-media-sound/dvda-author-cvs 0.1: Tools for generating DVD Audio files to be played on standalone DVD Audio players
 media-video/motion 3.2.12: Motion is a video motion detector with tracking-support for webcams.
 net-misc/r1000 1.04: Drivers for Realtek 8168 8169 8101 8111 based PCI-E/PCI Ethernet Cards
 net-misc/tor 0.1.1.21 0.1.1.22 0.1.1.23 0.1.2.1_alpha 0.1.2.3_alpha 0.1.2.4_alpha 0.2.0.6_alpha 0.2.0.7_alpha: Anonymizing overlay network for TCP

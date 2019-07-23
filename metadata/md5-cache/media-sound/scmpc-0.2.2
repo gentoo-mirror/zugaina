@@ -1,12 +1,12 @@
-DEFINED_PHASES=compile install
-DESCRIPTION=A GTK+ 2.6 based XMMS2 client
+DEFINED_PHASES=install postinst
+DEPEND=>=net-misc/curl-7.10.0 dev-libs/libdaemon dev-libs/confuse dev-libs/argtable
+DESCRIPTION=A multithreaded MPD client for Audioscrobbler
 EAPI=0
-HOMEPAGE=http://wejp.k.vu/projects/xmms2/
-KEYWORDS=~amd64 ~ppc ~sparc x86 ~hppa ~mips ~ppc64 ~alpha ~ia64
+HOMEPAGE=http://scmpc.berlios.de
+KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
-RDEPEND=>=x11-libs/gtk+-2.6 >=media-sound/xmms2-0.2.3
-RESTRICT=nomirror
+RESTRICT=primaryuri
 SLOT=0
-SRC_URI=http://wejp.k.vu/projects/xmms2/gxmms2-0.6.3.tar.gz
+SRC_URI=http://download.berlios.de/scmpc/scmpc-0.2.2.tar.bz2
 _eclasses_=desktop	b1d22ac8bdd4679ab79c71aca235009d	epatch	a1bf4756dba418a7238f3be0cb010c54	estack	43ddf5aaffa7a8d0482df54d25a66a1f	eutils	6e6c2737b59a4b982de6fb3ecefd87f8	ltprune	2729691420b6deeda2a90b1f1183fb55	multilib	1d91b03d42ab6308b5f4f6b598ed110e	preserve-libs	ef207dc62baddfddfd39a164d9797648	toolchain-funcs	a3a237ef6c0c58546bf23b2c382f9e56	vcs-clean	2a0f74a496fa2b1552c4f3398258b7bf
-_md5_=6005041095348aba8a5e8425e56f3c4f
+_md5_=a611286d646fef025f6573667abc6cff
