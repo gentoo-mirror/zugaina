@@ -9,5 +9,5 @@ LICENSE=GPL-3
 RDEPEND=>=sys-libs/pam-0.72 dev-libs/openssl >=sys-libs/libhx-1.25 dev-libs/libxml2 >=sys-fs/cryptsetup-1.0.5 sys-process/lsof
 SLOT=0
 SRC_URI=mirror://sourceforge/pam-mount/pam_mount-0.49.tar.lzma
-_eclasses_=multilib	1d91b03d42ab6308b5f4f6b598ed110e	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c
+_eclasses_=multilib	c9e26066f2b7b5a91ad08d042f7f7306	toolchain-funcs	512eb3367f507ebaa1d1d43ab7d66e6c
 _md5_=e0931ab98a19f47fc1b836d0432d1cca
