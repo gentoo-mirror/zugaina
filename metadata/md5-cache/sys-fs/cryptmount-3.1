@@ -3,11 +3,12 @@ DEPEND=sys-fs/device-mapper >=dev-libs/libgcrypt-1.1.94 ssl? ( dev-libs/openssl 
 DESCRIPTION=A utility for management and user-mode mounting of encrypted filesystems
 EAPI=0
 HOMEPAGE=http://cryptmount.sourceforge.net/
+INHERIT=linux-info
 IUSE=nls ssl kernel_linux
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=sys-fs/device-mapper >=dev-libs/libgcrypt-1.1.94 ssl? ( dev-libs/openssl ) nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=mirror://sourceforge/cryptmount/cryptmount-3.1.tar.gz
-_eclasses_=eapi7-ver	f9ec87e93172b25ce65a85303dc06964	linux-info	c90a203b1c14cfa77bd3e37a0e96c955	multilib	d410501a125f99ffb560b0c523cd3d1e	toolchain-funcs	24921b57d6561d87cbef4916a296ada4
+_eclasses_=toolchain-funcs	24921b57d6561d87cbef4916a296ada4	multilib	d410501a125f99ffb560b0c523cd3d1e	eapi7-ver	f9ec87e93172b25ce65a85303dc06964	linux-info	30ded7f9adbdd03d3e848cdd74f6c395
 _md5_=426f020b278ee6ad05b7aa5a1e4b0772
