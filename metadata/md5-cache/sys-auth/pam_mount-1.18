@@ -3,6 +3,7 @@ DEPEND=>=sys-libs/pam-0.99 dev-libs/openssl >=sys-libs/libhx-2.2 dev-libs/libxml
 DESCRIPTION=A PAM module that can mount volumes for a user session
 EAPI=0
 HOMEPAGE=http://pam-mount.sourceforge.net
+INHERIT=multilib
 IUSE=crypt
 KEYWORDS=~amd64 ~ppc ~x86
 LICENSE=GPL-3
