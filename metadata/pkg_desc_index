@@ -5,25 +5,20 @@ app-crypt/weplab 0.1.2_beta1 0.1.3 0.1.4 0.1.5: A tool to analyze the Wired Equi
 app-editors/vile 9.7: VI Like Emacs -- yet another full-featured vi clone
 app-forensics/afflib 3.3.4 3.6.2: Library that implements the AFF image standard
 app-forensics/chkrootkit 0.49: a tool to locally check for signs of a rootkit
-app-forensics/libewf 20090209 20090606 20100805: Implementation of the EWF (SMART and EnCase) image format
 app-misc/gcstar 0.2 0.3 0.4.1 0.5.0 1.0.0 1.1.1 1.3.0 1.3.2 1.4.0 1.4.1 1.4.2 1.4.3 1.5.0_beta1 1.5.0: Collections management.
-app-mobilephone/gnokii 0.6.29: user space driver and tools for use with mobile phones
 app-portage/adelie 20060430: Adelie is a fast replacement for equery
 app-portage/fquery 0.2: A fast replacement for equery
 app-portage/glcu 0.9.3 0.9.4 0.9.5 0.9.5.1 0.9.6.2 0.9.6.3 0.9.7 0.9.7.1 0.9.7.2: gentoo linux cron update. Full featured semi-automatic updates for your gentoo box.
 app-portage/zugaina-sync 0.3: Script to sync with Zugaina portage
 dev-cpp/cairomm 1.1.10: C++ wrapper for the cairo graphics library.
-dev-cpp/opensaml 2.4.3 2.5.2: Open Source Security Assertion Markup Language implementation
 dev-cpp/xmltooling-c 1.4.2 1.5.2: Internet2 lower-level library that provides a higher level interface to XML processing, particularly in light of signing and encryption.
 dev-dotnet/evolution-sharp 0.16.1: Mono bindings for Evolution
 dev-embedded/u-boot-tools 2009.01 2009.06: utilities for working with Das U-Boot
 dev-games/flatzebra 0.1.5: A generic game engine for 2D double-buffering animation
 dev-games/simgear 3.0.0: Development library for simulation games
-dev-libs/boost-coroutine 2009.12.01-r2: The Boost.Coroutine library contains a family of class templates that wrap function objects in coroutines.
 dev-libs/farsight-darcs 0.1 0.1-r1: FarSight is an audio/video conferencing framework specifically designed for Instant Messengers.
 dev-libs/jrtplib 3.5.1: JRTPLIB is an object-oriented RTP library written in C++.
 dev-libs/libndofdev 0.3: Replacement for the libndofdev library used by the Second Life client to handle joysticks and the 6DOF devices on Windows and Macs.
-dev-libs/softhsm 1.1.3 1.1.4: A software PKCS#11 implementation
 dev-libs/xapian 0.9.6: Xapian Probabilistic Information Retrieval library
 dev-libs/xmlrpc-epi 0.51 0.51-r2: An implementation of the xmlrpc protocol in C
 dev-perl/Apache-AuthenNIS 0.13: mod_perl NIS Authentication module
@@ -48,7 +43,6 @@ dev-perl/XML-SAX-Base 1.02: Perl extension to generate and test check digits
 dev-util/diffuse 0.2.13 0.2.15 0.3.0 0.3.2 0.3.3: Diffuse is a graphical tool for merging and comparing text files.
 dev-util/gef 0.12.3: Java Graph Editing Framework
 dev-util/google-perftools 0.3 0.7 0.91 0.92 0.97 0.98 1.0 1.3: Fast, mutli-threaded malloc() and nifty performance analysis tools
-dev-util/kbuild 0.1.5: A makefile framework for writing simple makefiles for complex tasks
 dev-util/metro 1.5.1: release metatool used for creating Gentoo and Funtoo releases
 games-arcade/edgar 0.46 0.61 0.65 0.77 1.08: You take on the role of Edgar, battling creatures and solving puzzles
 games-arcade/sdlroads 0.1: SDLRoads is a cross platform remake of the Bluemoon classic Skyroads.
@@ -63,13 +57,11 @@ games-misc/fortune-mod-french 0.02 0.02-r1 0.03: set of fortunes in french
 games-rpg/planeshift-art 0.3.018 0.3.018-r1 0.3.019 0.3.019-r1 0.3.020-r1 0.3.020-r2 0.4.00-r1: Virtual fantasy world MMORPG
 games-simulation/flightgear 3.0.0: Open Source Flight Simulator
 games-simulation/flightgear-data 3.0.0: FlightGear data files
-games-simulation/opencity 0.0.6_pre1 0.0.6.1 0.0.6.2: OpenCity is a full 3D city simulator game project.
 games-sports/etw 3.2: Arcade-style soccer game
 games-sports/maniadrive-bin 1.01 1.2: Trackmania clone
 games-strategy/bos 2.0: Invasion - Battle of Survival is a real-time strategy game using the Stratagus game engine
 games-strategy/spring-Modification-NOTA 1.56: Spring - Modification - NOTA 1.56
 games-strategy/spring-ota-content 1.0: Files required to run certain Spring mods
-games-strategy/wormux 0.9.0: A free Worms clone
 games-util/atlas 0.3.1: Chart Program to use with Flightgear Flight Simulator
 games-util/catcodec 1.0.0-r1 1.0.3: Decode and encodes sample catalog for OpenTTD
 games-util/grfcodec 1.0.0 5.1.0 5.1.3: A suite of programs to modify openttd/Transport Tycoon Deluxe's GRF files
@@ -77,14 +69,12 @@ games-util/nforenum 4.0.0: A tool checking NFO code for errors
 games-util/openquartz-utils 20040801: Utils for PAK creation
 mail-client/squirrelmail 1.4.20_rc2: Webmail for nuts!
 mail-client/sylpheed-claws 2.5.0: Sylpheed-Claws is an email client (and news reader) based on GTK+
-media-gfx/gimpshop 2.2.10 2.2.11: GNU Image Manipulation Program with Adobe Photoshop like Interface
 media-gfx/ldraw 201003: LDraw parts library
 media-gfx/nvidia-cg-toolkit 1.5.0023: nvidia's c graphics compiler toolkit
 media-gfx/refocus-it 2.0.0: Iterative refocus GIMP plug-in.
 media-gfx/sweethome3d-bin 2.2 2.5: Sweet Home 3D is a free interior design application.
 media-libs/cal3d 0.12-r493 0.12-r507: Cal3D is a skeletal based character animation library
 media-libs/libextractor 0.5.22 0.5.23 0.6.0: A simple library for keyword extraction
-media-libs/mediastreamer 2.6.0: Mediastreaming library for telephony application
 media-sound/abcm2ps 5.9.10: A program to convert abc files to Postscript files
 media-sound/audio-convert 0.3.1.1: Convert wav, ogg, mp3, mpc, flac, ape, aac or wma files into wav, ogg, mp3, mpc, flac, ape or aac files
 media-sound/azrael 0.3.4 0.3.5 0.3.5-r1: A GTK XMMS2 client
@@ -96,25 +86,18 @@ media-sound/skale 0.80a 0.81: Sk@le Tracker - FastTracker 2 clone
 media-tv/linuxtv-dvb-apps 9999: small utils for DVB to scan, zap, view signal strength, ...
 media-tv/w_scan 20130331: Scan for DVB-C/DVB-T/DVB-S channels without prior knowledge of frequencies and modulations
 media-video/image2mpeg 1.02: convert digital photos (and any other images) into MPEG video streams with transitions between the images
-media-video/lives 0.9.8.11 0.9.9.3 0.9.9.5 0.9.9.8 1.0.0_pre1 1.0.0_pre2 1.0.0 1.2.0 1.2.1 1.3.3 1.4.9: LiVES is a Video Editing System
 media-video/mandvd 2.4: This is a program to simply create DVD Video
 media-video/motion 3.2.12: Motion is a video motion detector with tracking-support for webcams.
-media-video/mplayer 1.0_rc4_p20100107: Media Player for Linux
 media-video/nvidia-settings 180.18: NVIDIA Linux X11 Settings Utility
 net-analyzer/halberd 0.2.4: Halberd is a tool aimed at discovering real servers behind virtual IPs.
 net-analyzer/metasploit 3.3.3 3.4.1: Advanced open-source framework for developing, testing, and using vulnerability exploit code
 net-analyzer/nikto 2.02 2.03: Web Server vulnerability scanner.
-net-analyzer/ntop 3.3.9: tool that shows network usage like top
 net-analyzer/onesixtyone 0.3.2: An efficient SNMP scanner
 net-analyzer/sing 1.1: SING stands for 'Send ICMP Nasty Garbage'. It is a tool that sends ICMP packets fully customized from command line
-net-analyzer/snort 2.8.1 2.8.2.2 2.8.3_rc1 2.8.3.1 2.8.4_rc1 2.8.4: Libpcap-based packet sniffer/logger/lightweight IDS
 net-analyzer/tcpreplay 3.4.5_beta2: replay saved tcpdump or snoop files at arbitrary speeds
-net-dns/bind 9.7.0 9.7.0_p1 9.7.0_p2 9.7.1 9.7.1_p2 9.7.2_beta1 9.7.2_rc1 9.7.2_p2 9.9.0_beta1 9.9.0_beta2 9.9.0_rc1 9.9.0_rc2 9.9.0_rc3 9.9.0_rc4: BIND - Berkeley Internet Name Domain - Name Server
-net-dns/dnssec-tools 1.7: 
 net-dns/pdns 3.1 3.2 3.3: The PowerDNS Daemon
 net-firewall/ip6wall 1.0: A bash firewall script for ip6tables.
 net-im/ejabberd 2.0.3 2.0.4 2.1.0_rc2 2.1.0 2.1.2 2.1.4: The Erlang Jabber Daemon
-net-im/jit 1.1.6-r4: ICQ transport for wpjabber / jabberd
 net-im/prosody 0.9.0_beta1 0.9.0_rc2: Prosody is a flexible communications server for Jabber/XMPP written in Lua.
 net-im/psi-jingle 0.10-r1 0.10-r2: QT 3.x Jabber Client, with Licq-like interface and voice support (Jingle)
 net-im/tapioca 0.3.0: Tapioca VOIP and IM framework and UI
@@ -124,13 +107,10 @@ net-im/tapioca-xmpp 0.3.0: Tapioca XMPP protocol
 net-im/tapiocaui 0.3.0: Tapioca UI
 net-irc/inspircd 1.1.20: InspIRCd - The Modular C++ IRC Daemon
 net-libs/libmicrohttpd 0.3.1 0.4.0_pre0 0.4.0_pre1 0.4.0 0.4.1 0.4.5 0.9.0 0.9.3 0.9.8: A small C library that makes it easy to run an HTTP server as part of another application.
-net-libs/opal 3.6.2 3.6.3 3.6.4 3.6.8: C++ class library normalising numerous telephony protocols
 net-libs/ptlib 2.6.2 2.6.3 2.6.4 2.6.7: Network focused portable C++ class library providing high level functions
 net-mail/dovecot 1.2.2 1.2.3 1.2.4 1.2.9 2.0.1: An IMAP and POP3 server written with security primarily in mind
 net-misc/icmptx 0.01: IP over ICMP.
 net-misc/miredo 1.2.0 1.2.2: Teredo IPv6 tunneling
-net-misc/ntp 4.2.6_p1: Network Time Protocol suite/programs
-net-misc/onioncat 0.2.2: An IP-Transparent Tor Hidden Service Connector
 net-misc/packETH 1.6: Packet generator tool for ethernet
 net-misc/pglinux 1.5_beta: A lightweight IP blocker to stop rogue connections
 net-misc/r1000 1.04: Drivers for Realtek 8168 8169 8101 8111 based PCI-E/PCI Ethernet Cards
@@ -140,19 +120,13 @@ net-misc/yacy 1.01.20111207.9000: YaCy - p2p based distributed web-search engine
 net-misc/youtube-dl 2009.05.23 2010.01.19: A small command-line program to download videos from YouTube.
 net-misc/zsync 0.3.3 0.4.0 0.4.1 0.4.2 0.5: Partial/differential file download client over HTTP which uses the rsync algorithm
 net-p2p/i2p 0.6.2 0.6.5 0.7 0.7.1 0.7.2 0.7.3 0.7.5 0.7.9 0.7.10 0.7.11 0.7.12 0.7.13 0.7.14 0.8 0.8.2 0.8.7 0.8.8 0.9: I2P is an anonymous network.
-net-p2p/imule 1.4.6: P2P sharing software which connects through I2P and Kad network
 net-p2p/microdc 0.11.0: A lightweight text-based DirectConnect client.
 net-p2p/moodriver 0.07 0.09: MooDriver to use Mooseekd or museekd
 net-p2p/mooseekd 0.05: File-sharing application for the Soulseek peer-to-peer network.
 net-p2p/mute 0.4 0.4.1 0.5: MUTE File Sharing is a peer-to-peer network that provides easy search-and-download functionality while also protecting your privacy.
 net-p2p/napshare 2.1 2.2.3: NapShare is a fully automated MUTE P2P client made to run 24/7 unattended
 net-p2p/solipsis 0.10: Solipsis is a pure peer-to-peer system for a massively shared virtual world. There is no server at all: it only relies on end-users' machines. Built on twisted.
-net-print/bjfilter 2.50 2.50-r8: Canon Bubble Jet Printer Driver for Linux (Pixus/Pixma-Series).
-net-print/cnijfilter 2.60 2.80-r1 3.00.2: Canon InkJet Printer Driver for Linux (Pixus/Pixma-Series).
 net-proxy/haproxy 1.3.15.1 1.3.15.3 1.3.15.4 1.3.23 1.4.0 1.4.7: A TCP/HTTP reverse proxy for high availability environments
-net-proxy/privoxy 3.0.13_beta: A web proxy with advanced filtering capabilities for protecting privacy against Internet junk
-net-voip/linphone 3.3.2: Video softphone based on the SIP protocol
-net-wireless/aircrack-ng 1.1: WLAN tools for breaking 802.11 WEP/WPA keys
 net-wireless/ap-utils 1.5 1.5.1_pre1 1.5.1_pre3: Wireless Access Point Utilities for Unix
 net-wireless/asleap 2.1 2.2: asleap - exploiting cisco leap
 net-wireless/bluebugger 0.1: mobile phone bluebug exploitation
@@ -164,7 +138,6 @@ net-wireless/hotspotter 0.4: Automatic wireless client penetration
 net-wireless/kismet 2008.05.1: IEEE 802.11 wireless LAN sniffer
 net-wireless/ndiswrapper-cvs 0.1: Wrapper for using Windows drivers for some wireless cards
 net-wireless/wifi-radar 1.9.4: WiFi Radar is a Python/PyGTK2 utility for managing WiFi profiles.
-sci-electronics/adms 2.3.0: A code generator that converts electrical compact device models specified in high-level description language into ready-to-compile c code for the API of spice simulators.
 sci-geosciences/gpsman 6.3.1 6.4: A graphical GPS data manager that supports several devices.
 sci-libs/gpsmanshp 1.2: A Tcl package to read and write shapefiles.
 sys-apps/fakeroot-ng 0.15: A utility to run commands with fake root privileges
@@ -175,13 +148,9 @@ sys-fs/fuse-zip 0.2.3 0.2.5 0.2.6 0.2.7 0.2.10: fuse-zip is a FUSE file system t
 sys-fs/gmailfs 0.4 0.7.2-r1: GmailFS provides a mountable Linux filesystem which uses your Gmail account as its storage medium.
 sys-fs/gnunet-fuse 0.7.2b 0.8.0: Allows you to mount directories shared over GNUnet as Linux file-systems
 sys-fs/safecopy 1.0 1.1: similar to dd but can copy from source with errors
-sys-power/apcupsd 3.14.10 3.14.10-r2: APC UPS daemon with integrated tcp/ip remote shutdown
 virtual/game_spring 0.1: Virtual for Spring games
-www-apache/mod_auth_openid 0.2.1: an OpenID authentication module for the apache webserver
 www-apache/mod_security 2.5.5 2.5.9: Web application firewall and Intrusion Detection System for Apache.
-www-apache/mod_suphp 0.6.3: A PHP wrapper for Apache2
 www-apps/bugzilla 3.1.3 3.1.4 3.2_rc1 3.2_rc2 3.2 3.2.2 3.2.3 3.3.2 3.3.3 3.3.4: Bugzilla is the Bug-Tracking System from the Mozilla project
-www-apps/seeks 0.4.0_rc2 0.4.0: An Open Decentralized Platform for Collaborative Search, Filtering and content Curation
 www-apps/shibboleth-sp 2.4.3 2.5.1: Standards-based middleware which provides Web Single SignOn (SSO) across or within organizational boundaries.
 www-client/lynx 2.8.8_pre3: An excellent console-based web browser with ssl support
 www-client/netrik 1.15.8: A text based web browser with no ssl support.
