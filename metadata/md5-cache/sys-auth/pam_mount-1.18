@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install
+DEPEND=>=sys-libs/pam-0.99 dev-libs/openssl >=sys-libs/libhx-2.2 dev-libs/libxml2 dev-util/pkgconfig
+DESCRIPTION=A PAM module that can mount volumes for a user session
+EAPI=0
+HOMEPAGE=http://pam-mount.sourceforge.net
+INHERIT=multilib
+IUSE=crypt
+KEYWORDS=~amd64 ~ppc ~x86
+LICENSE=GPL-3
+RDEPEND=>=sys-libs/pam-0.99 dev-libs/openssl >=sys-libs/libhx-2.2 dev-libs/libxml2 >=sys-fs/cryptsetup-1.0.5 sys-process/lsof
+SLOT=0
+SRC_URI=mirror://sourceforge/pam-mount/pam_mount-1.18.tar.bz2
+_eclasses_=multilib	f8d35c2432bb32c4f1e779c4287b31ec	toolchain-funcs	e867df3870e8ff04a5b94f925be8b06a
+_md5_=9d4d4f82fe93ac34e99921a9339d18e3

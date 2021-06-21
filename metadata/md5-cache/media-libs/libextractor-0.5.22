@@ -1,0 +1,14 @@
+DEFINED_PHASES=compile install
+DEPEND=>=sys-devel/libtool-1.4.1 >=dev-libs/glib-2.0.0 media-libs/libmpeg2 nls? ( virtual/libintl ) gtk? ( >=x11-libs/gtk+-2.6.10 ) zlib? ( sys-libs/zlib ) vorbis? ( >=media-libs/libvorbis-1.0_beta4 ) >=app-portage/elt-patches-20170815
+DESCRIPTION=A simple library for keyword extraction
+EAPI=0
+HOMEPAGE=http://www.gnunet.org/libextractor/
+INHERIT=libtool
+IUSE=gtk nls vorbis zlib
+KEYWORDS=~amd64 ~ppc ~ppc64 ~sparc ~x86
+LICENSE=LGPL-2.1
+RESTRICT=test
+SLOT=0
+SRC_URI=http://gnunet.org/libextractor/download/libextractor-0.5.22.tar.gz
+_eclasses_=toolchain-funcs	e867df3870e8ff04a5b94f925be8b06a	multilib	f8d35c2432bb32c4f1e779c4287b31ec	libtool	f143db5a74ccd9ca28c1234deffede96
+_md5_=c7bcca87067361c9ba0fec658d0d0bc5
