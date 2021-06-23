@@ -30,7 +30,6 @@ dev-perl/XML-SAX-Base 1.02: Perl extension to generate and test check digits
 dev-util/metro 1.5.1: release metatool used for creating Gentoo and Funtoo releases
 games-misc/fortune-mod-bashfr 20080407: Fortune database of quotes from bashfr.org
 media-gfx/nvidia-cg-toolkit 1.5.0023: nvidia's c graphics compiler toolkit
-media-libs/libextractor 0.5.22 0.5.23 0.6.0: A simple library for keyword extraction
 media-sound/audio-convert 0.3.1.1: Convert wav, ogg, mp3, mpc, flac, ape, aac or wma files into wav, ogg, mp3, mpc, flac, ape or aac files
 media-sound/mpg123 1.4.3 1.7.0: a realtime MPEG 1.0/2.0/2.5 audio player for layers 1, 2 and 3.
 media-tv/w_scan 20130331: Scan for DVB-C/DVB-T/DVB-S channels without prior knowledge of frequencies and modulations
