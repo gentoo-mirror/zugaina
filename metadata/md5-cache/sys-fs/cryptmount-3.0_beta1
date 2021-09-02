@@ -10,5 +10,5 @@ LICENSE=GPL-2
 RDEPEND=sys-fs/device-mapper >=dev-libs/libgcrypt-1.1.94 ssl? ( dev-libs/openssl ) nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=mirror://sourceforge/cryptmount/cryptmount-3.0beta1.tar.gz
-_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	eapi7-ver	1a0a60ad07c8b32d2faba2d085dc0f24	linux-info	a99e3ead651192b4866986c9640612da
+_eclasses_=toolchain-funcs	9ea1c67b6f8315fdc2568abb674519aa	multilib	97566c1a256d07b00848aa767e38a352	eapi7-ver	1a0a60ad07c8b32d2faba2d085dc0f24	linux-info	fac9fc514a517caeef5d45bf5a60411b
 _md5_=426f020b278ee6ad05b7aa5a1e4b0772
