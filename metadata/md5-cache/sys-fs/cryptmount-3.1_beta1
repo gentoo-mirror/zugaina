@@ -4,11 +4,11 @@ DESCRIPTION=A utility for management and user-mode mounting of encrypted filesys
 EAPI=0
 HOMEPAGE=http://cryptmount.sourceforge.net/
 INHERIT=linux-info
-IUSE=nls ssl kernel_linux
+IUSE=nls ssl
 KEYWORDS=~amd64 ~x86
 LICENSE=GPL-2
 RDEPEND=sys-fs/device-mapper >=dev-libs/libgcrypt-1.1.94 ssl? ( dev-libs/openssl ) nls? ( virtual/libintl )
 SLOT=0
 SRC_URI=mirror://sourceforge/cryptmount/cryptmount-3.1beta1.tar.gz
-_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	eapi7-ver	1a0a60ad07c8b32d2faba2d085dc0f24	linux-info	6b67971d8a0a029d13181f2cfb9f5fa9
+_eclasses_=toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8	multilib	de4beb52bfa93c4c5d96792a6b5e1784	eapi7-ver	1a0a60ad07c8b32d2faba2d085dc0f24	linux-info	2f039741fe92bcea55c78806d16ac0f5
 _md5_=426f020b278ee6ad05b7aa5a1e4b0772
