@@ -1,7 +1,0 @@
-# ChangeLog for net-wireless/ap-utils
-# Copyright 1999-2009 Gentoo Foundation; Distributed under the GPL v2
-# $Header: $
-
-  25 Feb 2009; Ycarus <ycarus@zugaina.org> +ap-utils-1.5.1_pre3.ebuild:
-  Add ap-utils 1.5.1 pre3
-
