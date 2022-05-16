@@ -10,5 +10,5 @@ LICENSE=GPL-3
 RDEPEND=>=sys-libs/pam-0.99 dev-libs/openssl >=sys-libs/libhx-2.2 dev-libs/libxml2 >=sys-fs/cryptsetup-1.0.5 sys-process/lsof
 SLOT=0
 SRC_URI=mirror://sourceforge/pam-mount/pam_mount-1.18.tar.bz2
-_eclasses_=multilib	4a33c9008e5ee30cb8840a3fdc24df2b	toolchain-funcs	badd6e329e1f3e6bee99b35bf8763ce8
+_eclasses_=multilib	4a33c9008e5ee30cb8840a3fdc24df2b	toolchain-funcs	fd9cde67030b26e479eeadaced488253
 _md5_=9d4d4f82fe93ac34e99921a9339d18e3
