@@ -8,25 +8,6 @@ dev-games/simgear 3.0.0: Development library for simulation games
 dev-libs/jrtplib 3.5.1: JRTPLIB is an object-oriented RTP library written in C++.
 dev-libs/libndofdev 0.3: Replacement for the libndofdev library used by the Second Life client to handle joysticks and the 6DOF devices on Windows and Macs.
 dev-libs/xapian 0.9.6: Xapian Probabilistic Information Retrieval library
-dev-perl/Apache-AuthenNIS 0.13: mod_perl NIS Authentication module
-dev-perl/Apache2-AuthenNIS 0.15: mod_perl NIS Authentication module
-dev-perl/Crypt-OpenSSL-DSA 0.13: Crypt::OpenSSL::DSA module for perl
-dev-perl/Data-Transformer 0.04: Traverse a data structure, altering it in place
-dev-perl/Encoding-FixLatin 1.02: takes mixed encoding input and produces UTF-8 output
-dev-perl/File-Stat 0.01: OOP Interface for Perl's built-in stat() functions
-dev-perl/Net-DNS-SEC 0.16: Perl Net::DNS::SEC - Perl DNSSEC Resolver Module
-dev-perl/Net-NIS 0.43: Interface to Sun's Network Information Service
-dev-perl/RTSP-Lite 0.1: A lightweight RTSP implementation
-dev-perl/Rose-Object 0.859: A generic object base class. It provides very little functionality, but a healthy dose of convention.
-dev-perl/Rose-ObjectX-CAF 0.03: Class::Accessor::Fast compatability for Rose::Object
-dev-perl/Search-Query 0.18: polyglot query parsing
-dev-perl/Spreadsheet-ParseExcel-Simple 1.04: A simple interface to Excel data
-dev-perl/Spreadsheet-XLSX 0.13: Perl extension for readinf MS Excel 2007 files
-dev-perl/String-Escape 2010.002: Backslash escapes, quoted phrase, word elision, etc.
-dev-perl/Sys-Mmap 0.14: uses mmap to map in a file as a Perl variable
-dev-perl/Text-CSV-Separator 0.20: Determine the field separator of a CSV file
-dev-perl/WebService-Validator-HTML-W3C 0.26: Access the W3Cs online HTML validator
-dev-perl/XML-SAX-Base 1.02: Perl extension to generate and test check digits
 dev-util/metro 1.5.1: release metatool used for creating Gentoo and Funtoo releases
 media-gfx/nvidia-cg-toolkit 1.5.0023: nvidia's c graphics compiler toolkit
 media-sound/audio-convert 0.3.1.1: Convert wav, ogg, mp3, mpc, flac, ape, aac or wma files into wav, ogg, mp3, mpc, flac, ape or aac files
