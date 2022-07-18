@@ -4,7 +4,6 @@ app-portage/zugaina-sync 0.3: Script to sync with Zugaina portage
 dev-cpp/cairomm 1.1.10: C++ wrapper for the cairo graphics library.
 dev-embedded/u-boot-tools 2009.01 2009.06: utilities for working with Das U-Boot
 dev-games/flatzebra 0.1.5: A generic game engine for 2D double-buffering animation
-dev-games/simgear 3.0.0: Development library for simulation games
 dev-libs/jrtplib 3.5.1: JRTPLIB is an object-oriented RTP library written in C++.
 dev-libs/libndofdev 0.3: Replacement for the libndofdev library used by the Second Life client to handle joysticks and the 6DOF devices on Windows and Macs.
 dev-libs/xapian 0.9.6: Xapian Probabilistic Information Retrieval library
@@ -33,11 +32,8 @@ net-wireless/carwhisperer 0.2: The carwhisperer project intends to sensibilise m
 net-wireless/cowpatty 2.0 4.3: coWPAtty is designed to audit the security of pre-shared keys selected in WiFi Protected Access (WPA) networks.
 net-wireless/hotspotter 0.4: Automatic wireless client penetration
 sci-geosciences/gpsman 6.3.1 6.4: A graphical GPS data manager that supports several devices.
-sci-libs/gpsmanshp 1.2: A Tcl package to read and write shapefiles.
 sys-apps/fakeroot-ng 0.15: A utility to run commands with fake root privileges
 sys-apps/mindi 2.0.5 2.0.6 2.0.7 2.0.7.5 2.1.7: A program that creates emergency boot disks/CDs using your kernel, tools and modules
-sys-auth/pam_mount 0.49 1.18: A PAM module that can mount volumes for a user session
-sys-fs/cryptmount 2.2 3.0_beta1 3.0 3.1_beta1 3.1 4.0.2: A utility for management and user-mode mounting of encrypted filesystems
 sys-fs/safecopy 1.0 1.1: similar to dd but can copy from source with errors
 virtual/game_spring 0.1: Virtual for Spring games
 www-client/netrik 1.15.8: A text based web browser with no ssl support.
