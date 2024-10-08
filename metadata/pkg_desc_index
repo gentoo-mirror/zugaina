@@ -8,7 +8,6 @@ dev-libs/jrtplib 3.5.1: JRTPLIB is an object-oriented RTP library written in C++
 dev-libs/libndofdev 0.3: Replacement for the libndofdev library used by the Second Life client to handle joysticks and the 6DOF devices on Windows and Macs.
 dev-libs/xapian 0.9.6: Xapian Probabilistic Information Retrieval library
 dev-util/metro 1.5.1: release metatool used for creating Gentoo and Funtoo releases
-media-gfx/nvidia-cg-toolkit 1.5.0023: nvidia's c graphics compiler toolkit
 media-sound/audio-convert 0.3.1.1: Convert wav, ogg, mp3, mpc, flac, ape, aac or wma files into wav, ogg, mp3, mpc, flac, ape or aac files
 media-sound/mpg123 1.4.3 1.7.0: a realtime MPEG 1.0/2.0/2.5 audio player for layers 1, 2 and 3.
 media-tv/w_scan 20130331: Scan for DVB-C/DVB-T/DVB-S channels without prior knowledge of frequencies and modulations
